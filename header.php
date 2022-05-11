@@ -17,7 +17,7 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header class="sticky top-0">
+	<header class="sticky top-0 z-50">
 
 		<?php get_template_part( 'template-parts/partials/main-nav' ); ?>
 		<!-- <div class="mx-auto container">

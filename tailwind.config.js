@@ -32,12 +32,14 @@ module.exports = {
             fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme)),
             fontWeight: {
                 normal: 500
+            },
+            height: {
+                'hero': 'calc(100vh - 112px)'
             }
         },
         screens: {
-            'xs': '480px',
-            'sm': '600px',
-            'md': '782px',
+            'sm': '640px',
+            'md': '768px',
             'lg': tailpress.theme('settings.layout.contentSize', theme),
             'xl': tailpress.theme('settings.layout.wideSize', theme),
             '2xl': '1440px'
