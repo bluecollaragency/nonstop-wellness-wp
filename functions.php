@@ -47,6 +47,18 @@ function tailpress_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
 
+function nonstop_defer_scripts( $tag, $handle, $src ) {
+	$defer = array (
+		'tailpress'
+	);
+
+	if ( in_array( $handle, $defer ) ) {
+		return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+ }
+	 
+	 return $tag;
+}
+add_filter( 'script_loader_tag', 'nonstop_defer_scripts', 10, 3 );
 /**
  * Get asset path.
  *
