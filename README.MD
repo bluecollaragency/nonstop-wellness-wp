@@ -49,7 +49,7 @@ You will be asked if you would like to have WordPress installed as well. Keep in
 * Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
 * Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
 * Run `npm install`
-* Run `npm run watch` to start developing
+* Run `npm run watch-sync` to start developing
 
 ### General
 

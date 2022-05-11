@@ -10,6 +10,12 @@ module.exports = {
         './resources/js/*.js',
         './safelist.txt'
     ],
+    options: {
+        safelist: [
+            'opacity-0',
+            'opacity-100'
+        ]
+    },
     theme: {
         container: {
             padding: {
@@ -18,9 +24,15 @@ module.exports = {
                 lg: '0rem'
             },
         },
+        fontFamily: {
+            'sans': ['Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+        },
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
-            fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme))
+            fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme)),
+            fontWeight: {
+                normal: 500
+            }
         },
         screens: {
             'xs': '480px',
