@@ -10,7 +10,7 @@
     class="relative flex flex-col w-full max-w-screen-2xl mx-auto md:items-center md:justify-start md:flex-row"
     >
 		<div class="relative p-4 flex flex-row items-center justify-between h-[112px]">
-			<a href="<?= home_url('/'); ?>" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline" rel="home" aria-current="page">Flowtrail UI</a>
+			<a href="<?= home_url('/'); ?>" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline" rel="home" aria-current="page">nonstop</a>
 			<button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open" @keyup.escape.window="open = false">
 				<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
 					<path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>

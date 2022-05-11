@@ -1,8 +1,8 @@
-import Alpine from 'alpinejs'
+import Alpine from 'alpinejs';
  
-window.Alpine = Alpine
+window.Alpine = Alpine;
  
-Alpine.start()
+Alpine.start();
 
 // window.addEventListener('load', function () {
 //       let main_navigation = document.querySelector('#primary-menu');

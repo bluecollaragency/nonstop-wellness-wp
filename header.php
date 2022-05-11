@@ -9,7 +9,6 @@
 	<?php wp_head(); ?>
 </head>
 
-<!-- <body x-data="{ mobNavOpen: false }" <?php body_class( 'bg-light text-gray-900 antialiased ' ); ?> :class="{ 'mobile-nav-open': mobNavOpen }"> -->
 <body <?php body_class( 'bg-light text-gray-900 antialiased ' ); ?>>
 
 <?php do_action( 'tailpress_site_before' ); ?>
