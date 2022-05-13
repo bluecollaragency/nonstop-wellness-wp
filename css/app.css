@@ -616,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left:0px
 }
 
+.left-2{
+  left:0.5rem
+}
+
 .z-50{
   z-index:50
 }
@@ -778,6 +782,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top:2rem
 }
 
+.ml-2{
+  margin-left:0.5rem
+}
+
+.ml-\[7px\]{
+  margin-left:7px
+}
+
+.ml-12{
+  margin-left:3rem
+}
+
+.ml-6{
+  margin-left:1.5rem
+}
+
+.ml-8{
+  margin-left:2rem
+}
+
+.ml-7{
+  margin-left:1.75rem
+}
+
 .block{
   display:block
 }
@@ -842,6 +870,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height:2px
 }
 
+.h-\[150\%\]{
+  height:150%
+}
+
+.h-1\/2{
+  height:50%
+}
+
 .min-h-screen{
   min-height:100vh
 }
@@ -876,6 +912,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[150\%\]{
   width:150%
+}
+
+.w-\[2px\]{
+  width:2px
+}
+
+.w-auto{
+  width:auto
 }
 
 .max-w-sm{
@@ -1228,6 +1272,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-64{
   padding-top:16rem
+}
+
+.pl-2{
+  padding-left:0.5rem
 }
 
 .text-left{
@@ -1740,9 +1788,45 @@ h2{
   bottom:0px
 }
 
+.after\:left-0::after{
+  content:var(--tw-content);
+  left:0px
+}
+
+.after\:top-0::after{
+  content:var(--tw-content);
+  top:0px
+}
+
 .after\:z-0::after{
   content:var(--tw-content);
   z-index:0
+}
+
+.after\:mx-auto::after{
+  content:var(--tw-content);
+  margin-left:auto;
+  margin-right:auto
+}
+
+.after\:-ml-2::after{
+  content:var(--tw-content);
+  margin-left:-0.5rem
+}
+
+.after\:-ml-\[7px\]::after{
+  content:var(--tw-content);
+  margin-left:-7px
+}
+
+.after\:-ml-\[6px\]::after{
+  content:var(--tw-content);
+  margin-left:-6px
+}
+
+.after\:-ml-\[5px\]::after{
+  content:var(--tw-content);
+  margin-left:-5px
 }
 
 .after\:block::after{
@@ -1760,6 +1844,11 @@ h2{
   height:6rem
 }
 
+.after\:h-3::after{
+  content:var(--tw-content);
+  height:0.75rem
+}
+
 .after\:w-4::after{
   content:var(--tw-content);
   width:1rem
@@ -1770,9 +1859,26 @@ h2{
   width:100%
 }
 
+.after\:w-3::after{
+  content:var(--tw-content);
+  width:0.75rem
+}
+
 .after\:rotate-45::after{
   content:var(--tw-content);
   --tw-rotate:45deg;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.after\:rotate-90::after{
+  content:var(--tw-content);
+  --tw-rotate:90deg;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.after\:rotate-180::after{
+  content:var(--tw-content);
+  --tw-rotate:180deg;
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
@@ -1799,6 +1905,11 @@ h2{
 .after\:border-r-2::after{
   content:var(--tw-content);
   border-right-width:2px
+}
+
+.after\:border-l-2::after{
+  content:var(--tw-content);
+  border-left-width:2px
 }
 
 .after\:border-primary::after{
@@ -2266,6 +2377,11 @@ h2{
 
   .xl\:mt-20{
     margin-top:5rem
+  }
+
+  .xl\:px-0{
+    padding-left:0px;
+    padding-right:0px
   }
 }
 /*# sourceMappingURL=app.css.map */

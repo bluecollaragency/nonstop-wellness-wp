@@ -16,7 +16,7 @@
 	<div class="container relative mx-auto px-8 lg:px-4 bg-primary z-10 rounded-b-2xl lg:rounded-br-2xl h-full flex items-end lg:items-center">
 		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center">
 			<div class="lg:col-span-6">
-				<img src="//via.placeholder.com/410x410" alt="">
+				<img src="//via.placeholder.com/410x410" alt="" class="mx-auto rounded-2xl">
 			</div>
 			<div class="lg:col-span-5">
 				<h2 class="text-2xl md:text-4xl font-bold tracking-[0.01em]">The cost of health insurance is crushing the american workforce – and their employers</h2>
@@ -160,9 +160,10 @@
 				<p class="mt-12 xl:mt-20 hidden lg:block">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
 				<div class="w-[150%] h-[2px] bg-primary hidden lg:flex items-center relative z-20 mt-4 after:right-0 after:absolute after:h-4 after:w-4 after:border-t-2 after:border-r-2 after:transform after:rotate-45 after:border-primary"></div>
 			</div>
-			<div class="col-start-1 lg:col-start-7 col-end-12 md:col-end-12">
+			<div class="relative col-start-1 lg:col-start-7 col-end-12 md:col-end-12">
 				<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
-				<p class="mt-8 block lg:hidden">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
+				<p class="mt-8 block lg:hidden ml-12">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
+				<div class="absolute bottom-0 h-1/2"><div class="absolute h-full w-[2px] bg-primary flex lg:hidden z-20 mt-4 ml-7 after:mx-auto after:top-0 after:absolute after:h-3 after:w-3 after:border-t-2 after:border-l-2 after:transform after:rotate-45 after:border-primary after:-ml-[5px]"></div></div>
 			</div>
 		</div>
 	</div>
