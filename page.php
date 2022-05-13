@@ -226,27 +226,27 @@
 				lg:h-[2px] 
 				bottom-0 
 				lg:bottom-auto 
-				lg:right-0 
+				lg:left-0 
 				bg-primary 
 				flex 
 				lg:items-center 
 				z-20 
-				lg:mr-[8.33%]
+				lg:ml-[8.33%]
 				ml-7 
-				lg:ml-0 
 				lg:mt-4 
 
 				after:absolute
-				lg:after:left-0 
+				lg:after:right-0 
 				after:h-3 
 				lg:after:h-4 
 				after:w-3 
 				lg:after:w-4 
 				after:border-t-2 
 				after:border-l-2 
+				lg:after:border-r-2 
+				lg:after:border-l-0
 				after:transform 
 				after:rotate-45 
-				lg:after:-rotate-45 
 				after:border-primary 
 				after:-ml-[5px] 
 				lg:after:ml-0">
