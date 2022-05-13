@@ -652,6 +652,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column:span 4 / span 4
 }
 
+.col-span-6{
+  grid-column:span 6 / span 6
+}
+
+.col-span-5{
+  grid-column:span 5 / span 5
+}
+
 .col-start-2{
   grid-column-start:2
 }
@@ -662,6 +670,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .col-start-1{
   grid-column-start:1
+}
+
+.col-start-8{
+  grid-column-start:8
 }
 
 .col-end-5{
@@ -2239,6 +2251,14 @@ h2{
     bottom:auto
   }
 
+  .lg\:order-1{
+    order:1
+  }
+
+  .lg\:order-2{
+    order:2
+  }
+
   .lg\:col-span-6{
     grid-column:span 6 / span 6
   }
@@ -2263,12 +2283,28 @@ h2{
     grid-column-start:8
   }
 
+  .lg\:col-start-1{
+    grid-column-start:1
+  }
+
+  .lg\:col-start-6{
+    grid-column-start:6
+  }
+
   .lg\:col-end-6{
     grid-column-end:6
   }
 
   .lg\:col-end-7{
     grid-column-end:7
+  }
+
+  .lg\:col-end-12{
+    grid-column-end:12
+  }
+
+  .lg\:col-end-5{
+    grid-column-end:5
   }
 
   .lg\:-mx-4{
@@ -2520,12 +2556,40 @@ h2{
     grid-column:span 5 / span 5
   }
 
+  .xl\:col-span-4{
+    grid-column:span 4 / span 4
+  }
+
   .xl\:col-start-2{
     grid-column-start:2
   }
 
+  .xl\:col-start-8{
+    grid-column-start:8
+  }
+
+  .xl\:col-start-9{
+    grid-column-start:9
+  }
+
+  .xl\:col-start-7{
+    grid-column-start:7
+  }
+
+  .xl\:col-end-12{
+    grid-column-end:12
+  }
+
+  .xl\:col-end-6{
+    grid-column-end:6
+  }
+
   .xl\:mt-20{
     margin-top:5rem
+  }
+
+  .xl\:grid-cols-12{
+    grid-template-columns:repeat(12, minmax(0, 1fr))
   }
 
   .xl\:px-0{

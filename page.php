@@ -170,11 +170,11 @@
 </section>
 
 <div class="container mx-auto px-8 lg:px-4 mt-24">
-	<div class="grid grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
+	<div class="grid lg:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
 		<div class="relative col-start-1 xl:col-start-2 col-end-12 lg:col-end-7 overflow-visible">
 			<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
 		</div>
-		<div class="col-start-1 lg:col-start-8 col-end-12 md:col-end-12">
+		<div class="col-start-1 lg:col-start-8 xl:col-start-8 col-end-12 md:col-end-12 lg:col-span-5 xl:col-span-4">
 			<p class="lg:mt-12 ml-12 lg:ml-0">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
 			<div class="
 				absolute 
@@ -214,11 +214,9 @@
 </div>
 
 <div class="container mx-auto px-8 lg:px-4 mt-24">
-	<div class="grid grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
-		<div class="relative col-start-1 xl:col-start-2 col-end-12 lg:col-end-7 overflow-visible">
-			<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
-		</div>
-		<div class="col-start-1 lg:col-start-8 col-end-12 md:col-end-12">
+	<div class="grid lg:grid-cols-12 xl:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
+		<!-- <div class="order-2 lg:order-1 col-start-1 xl:col-start-2 col-end-12 lg:col-end-6 overflow-visible"> -->
+		<div class="order-2 lg:order-1 col-start-1 xl:col-start-2 lg:col-end-6 xl:col-end-6 lg:col-span-6 xl:col-span-5 overflow-visible">
 			<p class="lg:mt-12 ml-12 lg:ml-0">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
 			<div class="
 				absolute 
@@ -253,6 +251,9 @@
 				after:-ml-[5px] 
 				lg:after:ml-0">
 			</div>
+		</div>
+		<div class="order-1 lg:order-2 lg:col-start-7 xl:col-start-7 lg:col-span-6 xl:col-span-5">
+			<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
 		</div>
 	</div>
 </div>
