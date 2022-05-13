@@ -71,16 +71,16 @@
   z-index: 50
 }
 
+.z-20 {
+  z-index: 20
+}
+
 .z-10 {
   z-index: 10
 }
 
 .z-0 {
   z-index: 0
-}
-
-.z-20 {
-  z-index: 20
 }
 
 .m-8 {
@@ -133,8 +133,20 @@
   margin-top: 1.5rem
 }
 
-.mt-8 {
-  margin-top: 2rem
+.mt-auto {
+  margin-top: auto
+}
+
+.-mt-8 {
+  margin-top: -2rem
+}
+
+.mt-20 {
+  margin-top: 5rem
+}
+
+.mt-10 {
+  margin-top: 2.5rem
 }
 
 .mb-4 {
@@ -165,16 +177,8 @@
   margin-right: 0.5rem
 }
 
-.mt-auto {
-  margin-top: auto
-}
-
 .ml-auto {
   margin-left: auto
-}
-
-.-mt-24 {
-  margin-top: -6rem
 }
 
 .block {
@@ -191,6 +195,10 @@
 
 .flex {
   display: flex
+}
+
+.inline-flex {
+  display: inline-flex
 }
 
 .grid {
@@ -273,6 +281,10 @@
   flex: none
 }
 
+.shrink {
+  flex-shrink: 1
+}
+
 .flex-grow {
   flex-grow: 1
 }
@@ -311,8 +323,16 @@
   flex-direction: column
 }
 
+.items-end {
+  align-items: flex-end
+}
+
 .items-center {
   align-items: center
+}
+
+.justify-end {
+  justify-content: flex-end
 }
 
 .justify-center {
@@ -323,8 +343,27 @@
   justify-content: space-between
 }
 
+.gap-12 {
+  gap: 3rem
+}
+
 .gap-4 {
   gap: 1rem
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem
+}
+
+.gap-y-24 {
+  row-gap: 6rem
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse))
 }
 
 .overflow-auto {
@@ -345,6 +384,10 @@
 
 .rounded-2xl {
   border-radius: 1rem
+}
+
+.rounded-\[32px\] {
+  border-radius: 32px
 }
 
 .rounded-full {
@@ -426,13 +469,18 @@
   background-color: rgb(254 202 202 / var(--tw-bg-opacity))
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
 .bg-transparent {
   background-color: transparent
 }
 
-.bg-white {
+.bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+  background-color: rgb(0 161 155 / var(--tw-bg-opacity))
 }
 
 .object-cover {
@@ -442,6 +490,10 @@
 
 .p-4 {
   padding: 1rem
+}
+
+.p-12 {
+  padding: 3rem
 }
 
 .px-4 {
@@ -484,6 +536,16 @@
   padding-right: 2rem
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem
@@ -494,9 +556,9 @@
   padding-right: 3rem
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem
 }
 
 .pb-12 {
@@ -507,8 +569,8 @@
   padding-top: 1.5rem
 }
 
-.pt-24 {
-  padding-top: 6rem
+.pt-8 {
+  padding-top: 2rem
 }
 
 .text-left {
@@ -542,11 +604,6 @@
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem
-}
-
-.text-4xl {
-  font-size: 2.5rem;
-  line-height: 2.75rem
 }
 
 .text-xs {
@@ -592,6 +649,10 @@
 
 .tracking-tight {
   letter-spacing: -0.025em
+}
+
+.tracking-\[0\.01em\] {
+  letter-spacing: 0.01em
 }
 
 .tracking-widest {
@@ -779,6 +840,11 @@ body {
   top: 0px
 }
 
+.before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px
+}
+
 .before\:z-0::before {
   content: var(--tw-content);
   z-index: 0
@@ -789,20 +855,31 @@ body {
   display: block
 }
 
-.before\:h-full::before {
+.before\:h-8::before {
   content: var(--tw-content);
-  height: 100%
+  height: 2rem
 }
 
-.before\:w-1\/2::before {
+.before\:w-full::before {
   content: var(--tw-content);
-  width: 50%
+  width: 100%
+}
+
+.before\:rounded-2xl::before {
+  content: var(--tw-content);
+  border-radius: 1rem
 }
 
 .before\:bg-primary::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(112 212 75 / var(--tw-bg-opacity))
+}
+
+.before\:bg-secondary::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 161 155 / var(--tw-bg-opacity))
 }
 
 .hover\:bg-gray-200:hover {
@@ -874,6 +951,10 @@ body {
     margin-right: 0px
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem
+  }
+
   .md\:mt-0 {
     margin-top: 0px
   }
@@ -916,6 +997,10 @@ body {
 
   .md\:w-80 {
     width: 20rem
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
   }
 
   .md\:flex-row {
@@ -961,6 +1046,16 @@ body {
     line-height: 2.25rem
   }
 
+  .md\:text-4xl {
+    font-size: 2.5rem;
+    line-height: 2.75rem
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem
@@ -1004,6 +1099,14 @@ body {
     margin-left: 8.33%
   }
 
+  .lg\:mt-8 {
+    margin-top: 2rem
+  }
+
+  .lg\:-mt-24 {
+    margin-top: -6rem
+  }
+
   .lg\:block {
     display: block
   }
@@ -1020,6 +1123,14 @@ body {
     height: 100%
   }
 
+  .lg\:h-hero {
+    height: calc(100vh - 112px)
+  }
+
+  .lg\:min-h-\[600px\] {
+    min-height: 600px
+  }
+
   .lg\:min-h-0 {
     min-height: 0px
   }
@@ -1034,6 +1145,10 @@ body {
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr))
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
   }
 
   .lg\:items-center {
@@ -1062,6 +1177,14 @@ body {
     border-bottom-right-radius: 0px
   }
 
+  .lg\:rounded-br-2xl {
+    border-bottom-right-radius: 1rem
+  }
+
+  .lg\:rounded-tl-2xl {
+    border-top-left-radius: 1rem
+  }
+
   .lg\:bg-transparent {
     background-color: transparent
   }
@@ -1075,8 +1198,18 @@ body {
     padding-right: 1rem
   }
 
-  .lg\:pt-0 {
-    padding-top: 0px
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px
+  }
+
+  .lg\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem
   }
 
   .lg\:text-7xl {
@@ -1096,5 +1229,31 @@ body {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1
+  }
+
+  .lg\:before\:h-full::before {
+    content: var(--tw-content);
+    height: 100%
+  }
+
+  .lg\:before\:w-1\/2::before {
+    content: var(--tw-content);
+    width: 50%
+  }
+
+  .lg\:before\:rounded::before {
+    content: var(--tw-content);
+    border-radius: 0.25rem
+  }
+
+  .lg\:before\:rounded-none::before {
+    content: var(--tw-content);
+    border-radius: 0px
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5
   }
 }

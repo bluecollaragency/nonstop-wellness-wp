@@ -44,9 +44,10 @@ article > *:not(.entry-content),
     }
 }
 
-/* .h-hero {
-    height: calc(100vh - 112px);
-} */
+h2 {
+    @apply text-2xl md:text-4xl font-bold tracking-[0.01em];
+}
+
 .h-fullnav {
     height: calc(100vh - 112px);
     /* @apply min-h-[300px] lg:min-h-0 overflow-auto; */
