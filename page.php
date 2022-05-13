@@ -12,9 +12,9 @@
 		<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover lg:rounded-l-2xl rounded-b-2xl lg:rounded-br-none">
 	</div>
 </div>
-<div class="relative bg-primary lg:bg-transparent before:block before:bg-primary before:absolute before:left-0 before:top-0 before:w-full lg:before:w-1/2 before:h-8 lg:before:h-full before:z-0 rounded-2xl z-10 lg:h-hero">
+<div class="relative bg-primary lg:bg-transparent before:block before:bg-primary before:absolute before:left-0 before:top-0 before:w-full lg:before:w-1/2 before:h-8 lg:before:h-full before:z-0 rounded-2xl z-10">
 	<div class="container relative mx-auto px-8 lg:px-4 bg-primary z-10 rounded-b-2xl lg:rounded-br-2xl h-full flex items-end lg:items-center">
-		<div class="grid lg:grid-cols-12 gap-12 py-8 items-center">
+		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center">
 			<div class="lg:col-span-6">
 				<img src="//via.placeholder.com/410x410" alt="">
 			</div>
