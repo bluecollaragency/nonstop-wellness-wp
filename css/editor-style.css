@@ -87,6 +87,14 @@
   z-index: 0
 }
 
+.order-1 {
+  order: 1
+}
+
+.order-2 {
+  order: 2
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12
 }
