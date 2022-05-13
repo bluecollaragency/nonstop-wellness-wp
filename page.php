@@ -153,7 +153,7 @@
 		</div>
 	</div>
 	<div class="container mx-auto px-8 lg:px-4">
-		<div class="grid grid-cols-12 mt-4 gap-y-16">
+		<div class="grid grid-cols-12 mt-4 gap-y-16 gap-x-6">
 			<div class="col-start-1 xl:col-start-2 col-end-12 lg:col-end-6 overflow-visible">
 				<p class="">The Nonstop team takes immense pride in our level of customer service and the ability to develop strong trusting relationships with our clients.</p>
 				<a href="#" class="btn-lg bg-dark text-white mt-6">Learn about us</a>
@@ -163,11 +163,55 @@
 			<div class="relative col-start-1 lg:col-start-7 col-end-12 md:col-end-12">
 				<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
 				<p class="mt-8 block lg:hidden ml-12">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
-				<div class="absolute bottom-0 h-1/2"><div class="absolute h-full w-[2px] bg-primary flex lg:hidden z-20 mt-4 ml-7 after:mx-auto after:top-0 after:absolute after:h-3 after:w-3 after:border-t-2 after:border-l-2 after:transform after:rotate-45 after:border-primary after:-ml-[5px]"></div></div>
+				<div class="absolute bottom-0 h-1/2"><div class="absolute h-full w-[2px] bg-primary flex lg:hidden z-20 ml-7 after:mx-auto after:top-0 after:absolute after:h-3 after:w-3 after:border-t-2 after:border-l-2 after:transform after:rotate-45 after:border-primary after:-ml-[5px]"></div></div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<div class="container mx-auto px-8 lg:px-4 mt-24">
+		<div class="grid grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
+			<div class="relative col-start-1 xl:col-start-2 col-end-12 lg:col-end-7 overflow-visible">
+				<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
+				<!-- <div class="absolute bottom-0 h-1/2"><div class="absolute h-full w-[2px] bg-primary flex lg:hidden z-20 mt-4 ml-7 after:mx-auto after:top-0 after:absolute after:h-3 after:w-3 after:border-t-2 after:border-l-2 after:transform after:rotate-45 after:border-primary after:-ml-[5px]"></div></div> -->
+			</div>
+			<div class="col-start-1 lg:col-start-8 col-end-12 md:col-end-12">
+				<p class="lg:mt-12 ml-12 lg:ml-0">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
+				<div class="
+					absolute 
+					w-[2px] 
+					lg:w-1/2 
+					h-1/2 
+					lg:h-[2px] 
+					bottom-0 
+					lg:bottom-auto 
+					lg:right-0 
+					bg-primary 
+					flex 
+					lg:items-center 
+					z-20 
+					lg:mr-[8.33%]
+					ml-7 
+					lg:ml-0 
+					lg:mt-4 
+
+					after:absolute
+					lg:after:left-0 
+					after:h-3 
+					lg:after:h-4 
+					after:w-3 
+					lg:after:w-4 
+					after:border-t-2 
+					after:border-l-2 
+					after:transform 
+					after:rotate-45 
+					lg:after:-rotate-45 
+					after:border-primary 
+					after:-ml-[5px] 
+					lg:after:ml-0"></div>
+			</div>
+		</div>
+	</div>
 
 <div class="container mx-auto my-8 pt-64">
 
