@@ -88,6 +88,22 @@
 	</div>
 </div>
 
+<div class="relative">
+	<div class="container mx-auto flex">
+		<div class="w-2/3">
+			<div class="glide testimonial-slider">
+				<div data-glide-el="track" class="glide__track overflow-visible">
+					<ul class="glide__slides">
+						<li class="glide__slide bg-green-100">1</li>
+						<li class="glide__slide bg-green-100">2</li>
+						<li class="glide__slide bg-green-100">3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="container mx-auto my-8">
 
 	<?php if ( have_posts() ) : ?>

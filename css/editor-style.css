@@ -265,6 +265,10 @@
   width: 1rem
 }
 
+.w-2\/3 {
+  width: 66.666667%
+}
+
 .max-w-sm {
   max-width: 24rem
 }
@@ -374,6 +378,10 @@
   overflow: hidden
 }
 
+.overflow-visible {
+  overflow: visible
+}
+
 .rounded {
   border-radius: 0.25rem
 }
@@ -474,13 +482,18 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 161 155 / var(--tw-bg-opacity))
+}
+
 .bg-transparent {
   background-color: transparent
 }
 
-.bg-secondary {
+.bg-green-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 161 155 / var(--tw-bg-opacity))
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity))
 }
 
 .object-cover {
@@ -546,6 +559,11 @@
   padding-bottom: 9rem
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem
@@ -554,11 +572,6 @@
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem
 }
 
 .pb-12 {
@@ -1147,10 +1160,6 @@ body {
     grid-template-columns: repeat(12, minmax(0, 1fr))
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr))
-  }
-
   .lg\:items-center {
     align-items: center
   }
@@ -1239,11 +1248,6 @@ body {
   .lg\:before\:w-1\/2::before {
     content: var(--tw-content);
     width: 50%
-  }
-
-  .lg\:before\:rounded::before {
-    content: var(--tw-content);
-    border-radius: 0.25rem
   }
 
   .lg\:before\:rounded-none::before {

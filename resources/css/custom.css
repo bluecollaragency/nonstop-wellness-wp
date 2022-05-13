@@ -58,3 +58,5 @@ h2 {
 .btn-lg {
     @apply inline-block py-4 px-12 rounded-full text-sm text-center font-semibold leading-none transition-all hover:brightness-90;
 }
+
+/* Glide Overrides */
