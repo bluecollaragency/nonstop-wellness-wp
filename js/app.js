@@ -4687,7 +4687,8 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     new Glide(".testimonial-slider", {
       type: "slider",
       startAt: 0,
-      perView: 1
+      perView: 1,
+      gap: 24
     }).mount();
   }
 })();

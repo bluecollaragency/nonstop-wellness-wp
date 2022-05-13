@@ -7,11 +7,11 @@ Alpine.start();
 
 // Testimonial Glide Slider
 if( document.getElementsByClassName('testimonial-slider').length > 0 ) {
-  // new Glide('.testimonial-slider').mount();
   new Glide('.testimonial-slider', {
     type: 'slider',
     startAt: 0,
-    perView: 1
+    perView: 1,
+    gap: 24
   }).mount();
 }
 // window.addEventListener('load', function () {

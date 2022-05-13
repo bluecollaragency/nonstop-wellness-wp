@@ -88,18 +88,58 @@
 	</div>
 </div>
 
-<div class="relative">
-	<div class="container mx-auto flex">
-		<div class="w-2/3">
-			<div class="glide testimonial-slider">
-				<div data-glide-el="track" class="glide__track overflow-visible">
-					<ul class="glide__slides">
-						<li class="glide__slide bg-green-100">1</li>
-						<li class="glide__slide bg-green-100">2</li>
-						<li class="glide__slide bg-green-100">3</li>
-					</ul>
+<div class="relative overflow-hidden pt-32">
+	<div class="container mx-auto px-8 lg:px-4">
+		<h2 class="h2">What Our Customers Say</h2>
+		<div class="flex pt-12">
+			<div class="w-full md:w-10/12 lg:w-2/3">
+				<div class="glide testimonial-slider">
+					<div data-glide-el="track" class="glide__track overflow-visible">
+						<ul class="glide__slides">
+							<li class="glide__slide bg-white rounded-2xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
+								<div class="w-full md:w-[37.5%] text-center">
+									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
+								</div>
+								<div class="w-full md:w-[62.5%] text-center md:text-left">
+									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
+									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
+								</div>
+							</li>
+							<li class="glide__slide bg-white rounded-2xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
+								<div class="w-full md:w-[37.5%] text-center">
+									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
+								</div>
+								<div class="w-full md:w-[62.5%] text-center md:text-left">
+									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
+									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
+								</div>
+							</li>
+							<li class="glide__slide bg-white rounded-2xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
+								<div class="w-full md:w-[37.5%] text-center">
+									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
+								</div>
+								<div class="w-full md:w-[62.5%] text-center md:text-left">
+									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
+									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
+								</div>
+							</li>
+							<li class="glide__slide bg-white rounded-2xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
+								<div class="w-full md:w-[37.5%] text-center">
+									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
+								</div>
+								<div class="w-full md:w-[62.5%] text-center md:text-left">
+									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
+									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+		</div>
+		<div class="flex justify-between mt-12">
+			<div>Controls</div>
+			<div>Read more reviews</div>
 		</div>
 	</div>
 </div>
