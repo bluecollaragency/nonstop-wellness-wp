@@ -144,7 +144,31 @@
 	</div>
 </div>
 
-<div class="container mx-auto my-8">
+<section>
+	<div class="container mx-auto px-8 lg:px-4 mt-40">
+		<div class="grid grid-cols-12">
+			<div class="col-start-1 xl:col-start-2 col-end-12 md:col-end-6 lg:col-end-6">
+				<h2>Our mission drives our service</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container mx-auto px-8 lg:px-4">
+		<div class="grid grid-cols-12 mt-4 gap-y-16">
+			<div class="col-start-1 xl:col-start-2 col-end-12 lg:col-end-6 overflow-visible">
+				<p class="">The Nonstop team takes immense pride in our level of customer service and the ability to develop strong trusting relationships with our clients.</p>
+				<a href="#" class="btn-lg bg-dark text-white mt-6">Learn about us</a>
+				<p class="mt-12 xl:mt-20 hidden lg:block">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
+				<div class="w-[150%] h-[2px] bg-primary hidden lg:flex items-center relative z-20 mt-4 after:right-0 after:absolute after:h-4 after:w-4 after:border-t-2 after:border-r-2 after:transform after:rotate-45 after:border-primary"></div>
+			</div>
+			<div class="col-start-1 lg:col-start-7 col-end-12 md:col-end-12">
+				<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-2xl w-full h-auto">
+				<p class="mt-8 block lg:hidden">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container mx-auto my-8 pt-64">
 
 	<?php if ( have_posts() ) : ?>
 		<?php

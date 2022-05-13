@@ -632,6 +632,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index:0
 }
 
+.col-span-12{
+  grid-column:span 12 / span 12
+}
+
+.col-span-4{
+  grid-column:span 4 / span 4
+}
+
+.col-start-2{
+  grid-column-start:2
+}
+
+.col-start-auto{
+  grid-column-start:auto
+}
+
+.col-start-1{
+  grid-column-start:1
+}
+
+.col-end-5{
+  grid-column-end:5
+}
+
+.col-end-6{
+  grid-column-end:6
+}
+
+.col-end-12{
+  grid-column-end:12
+}
+
 .m-8{
   margin:2rem
 }
@@ -698,6 +730,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top:2.5rem
 }
 
+.mt-12{
+  margin-top:3rem
+}
+
+.mt-40{
+  margin-top:10rem
+}
+
 .mb-4{
   margin-bottom:1rem
 }
@@ -730,8 +770,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left:auto
 }
 
-.mt-12{
-  margin-top:3rem
+.mt-24{
+  margin-top:6rem
+}
+
+.mt-8{
+  margin-top:2rem
 }
 
 .block{
@@ -790,6 +834,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height:1rem
 }
 
+.h-auto{
+  height:auto
+}
+
+.h-\[2px\]{
+  height:2px
+}
+
 .min-h-screen{
   min-height:100vh
 }
@@ -818,12 +870,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width:1rem
 }
 
-.w-2\/3{
-  width:66.666667%
+.w-\[110\%\]{
+  width:110%
 }
 
-.w-11\/12{
-  width:91.666667%
+.w-\[150\%\]{
+  width:150%
 }
 
 .max-w-sm{
@@ -876,6 +928,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-type:decimal
 }
 
+.grid-cols-12{
+  grid-template-columns:repeat(12, minmax(0, 1fr))
+}
+
 .flex-row{
   flex-direction:row
 }
@@ -916,6 +972,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap:1rem
 }
 
+.gap-16{
+  gap:4rem
+}
+
 .gap-x-10{
   -moz-column-gap:2.5rem;
        column-gap:2.5rem
@@ -923,6 +983,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-24{
   row-gap:6rem
+}
+
+.gap-y-16{
+  row-gap:4rem
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -969,6 +1033,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-none{
   border-radius:0px
+}
+
+.rounded-sm{
+  border-radius:0.125rem
 }
 
 .rounded-b-2xl{
@@ -1048,11 +1116,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color:rgb(0 161 155 / var(--tw-bg-opacity))
 }
 
-.bg-green-100{
-  --tw-bg-opacity:1;
-  background-color:rgb(220 252 231 / var(--tw-bg-opacity))
-}
-
 .bg-transparent{
   background-color:transparent
 }
@@ -1068,6 +1131,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-12{
   padding:3rem
+}
+
+.p-2{
+  padding:0.5rem
+}
+
+.p-1{
+  padding:0.25rem
 }
 
 .px-4{
@@ -1153,6 +1224,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-12{
   padding-top:3rem
+}
+
+.pt-64{
+  padding-top:16rem
 }
 
 .text-left{
@@ -1645,6 +1720,68 @@ h2{
   background-color:rgb(0 161 155 / var(--tw-bg-opacity))
 }
 
+.after\:absolute::after{
+  content:var(--tw-content);
+  position:absolute
+}
+
+.after\:relative::after{
+  content:var(--tw-content);
+  position:relative
+}
+
+.after\:right-0::after{
+  content:var(--tw-content);
+  right:0px
+}
+
+.after\:h-4::after{
+  content:var(--tw-content);
+  height:1rem
+}
+
+.after\:w-4::after{
+  content:var(--tw-content);
+  width:1rem
+}
+
+.after\:rotate-45::after{
+  content:var(--tw-content);
+  --tw-rotate:45deg;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.after\:transform::after{
+  content:var(--tw-content);
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.after\:rounded::after{
+  content:var(--tw-content);
+  border-radius:0.25rem
+}
+
+.after\:rounded-sm::after{
+  content:var(--tw-content);
+  border-radius:0.125rem
+}
+
+.after\:border-t-2::after{
+  content:var(--tw-content);
+  border-top-width:2px
+}
+
+.after\:border-r-2::after{
+  content:var(--tw-content);
+  border-right-width:2px
+}
+
+.after\:border-primary::after{
+  content:var(--tw-content);
+  --tw-border-opacity:1;
+  border-color:rgb(112 212 75 / var(--tw-border-opacity))
+}
+
 .hover\:bg-gray-200:hover{
   --tw-bg-opacity:1;
   background-color:rgb(229 231 235 / var(--tw-bg-opacity))
@@ -1704,6 +1841,38 @@ h2{
     position:relative
   }
 
+  .md\:col-span-6{
+    grid-column:span 6 / span 6
+  }
+
+  .md\:col-start-2{
+    grid-column-start:2
+  }
+
+  .md\:col-start-7{
+    grid-column-start:7
+  }
+
+  .md\:col-end-8{
+    grid-column-end:8
+  }
+
+  .md\:col-end-10{
+    grid-column-end:10
+  }
+
+  .md\:col-end-6{
+    grid-column-end:6
+  }
+
+  .md\:col-end-11{
+    grid-column-end:11
+  }
+
+  .md\:col-end-12{
+    grid-column-end:12
+  }
+
   .md\:my-6{
     margin-top:1.5rem;
     margin-bottom:1.5rem
@@ -1754,18 +1923,6 @@ h2{
     width:50%
   }
 
-  .md\:w-auto{
-    width:auto
-  }
-
-  .md\:w-80{
-    width:20rem
-  }
-
-  .md\:w-2\/3{
-    width:66.666667%
-  }
-
   .md\:w-10\/12{
     width:83.333333%
   }
@@ -1776,6 +1933,14 @@ h2{
 
   .md\:w-\[62\.5\%\]{
     width:62.5%
+  }
+
+  .md\:w-auto{
+    width:auto
+  }
+
+  .md\:w-80{
+    width:20rem
   }
 
   .md\:grid-cols-2{
@@ -1819,19 +1984,14 @@ h2{
     background-color:rgb(255 255 255 / var(--tw-bg-opacity))
   }
 
-  .md\:px-0{
-    padding-left:0px;
-    padding-right:0px
-  }
-
-  .md\:px-24{
-    padding-left:6rem;
-    padding-right:6rem
-  }
-
   .md\:px-20{
     padding-left:5rem;
     padding-right:5rem
+  }
+
+  .md\:px-0{
+    padding-left:0px;
+    padding-right:0px
   }
 
   .md\:text-left{
@@ -1876,6 +2036,26 @@ h2{
 
   .lg\:col-span-5{
     grid-column:span 5 / span 5
+  }
+
+  .lg\:col-span-4{
+    grid-column:span 4 / span 4
+  }
+
+  .lg\:col-start-2{
+    grid-column-start:2
+  }
+
+  .lg\:col-start-7{
+    grid-column-start:7
+  }
+
+  .lg\:col-end-6{
+    grid-column-end:6
+  }
+
+  .lg\:col-end-7{
+    grid-column-end:7
   }
 
   .lg\:-mx-4{
@@ -2047,6 +2227,14 @@ h2{
 @media (min-width: 1280px){
   .xl\:col-span-5{
     grid-column:span 5 / span 5
+  }
+
+  .xl\:col-start-2{
+    grid-column-start:2
+  }
+
+  .xl\:mt-20{
+    margin-top:5rem
   }
 }
 /*# sourceMappingURL=app.css.map */
