@@ -1735,14 +1735,39 @@ h2{
   right:0px
 }
 
+.after\:bottom-0::after{
+  content:var(--tw-content);
+  bottom:0px
+}
+
+.after\:z-0::after{
+  content:var(--tw-content);
+  z-index:0
+}
+
+.after\:block::after{
+  content:var(--tw-content);
+  display:block
+}
+
 .after\:h-4::after{
   content:var(--tw-content);
   height:1rem
 }
 
+.after\:h-24::after{
+  content:var(--tw-content);
+  height:6rem
+}
+
 .after\:w-4::after{
   content:var(--tw-content);
   width:1rem
+}
+
+.after\:w-full::after{
+  content:var(--tw-content);
+  width:100%
 }
 
 .after\:rotate-45::after{
@@ -1780,6 +1805,12 @@ h2{
   content:var(--tw-content);
   --tw-border-opacity:1;
   border-color:rgb(112 212 75 / var(--tw-border-opacity))
+}
+
+.after\:bg-primary::after{
+  content:var(--tw-content);
+  --tw-bg-opacity:1;
+  background-color:rgb(112 212 75 / var(--tw-bg-opacity))
 }
 
 .hover\:bg-gray-200:hover{

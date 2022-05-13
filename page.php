@@ -1,18 +1,18 @@
 <?php get_header(); ?>
 
-<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-2xl lg:rounded-none z-20">
-	<div class="container px-8 lg:px-4 mx-auto relative z-10 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
+<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-2xl lg:rounded-none z-20 after:block after:absolute after:bottom-0 after:w-full after:h-24 after:bg-primary after:z-0">
+	<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
 		<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0 flex flex-col">
 			<h1 class="text-3xl lg:text-6xl font-bold">Lower premiums.<br/>Accesible benefits.<br/>Better health.</h1>
       <p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
 			<span class="block mt-auto lg:mt-8"><a href="#" class="btn-lg bg-dark text-white">See our services</a></span>
 		</div>
 	</div>
-	<div class="w-full lg:w-[77%] h-[70%] lg:h-full absolute right-0 bottom-0 lg:top-0 bg-red-200 z-0 rounded-2xl lg:rounded-r-none">
+	<div class="w-full lg:w-[77%] h-[70%] lg:h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-2xl lg:rounded-r-none">
 		<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover lg:rounded-l-2xl rounded-b-2xl lg:rounded-br-none">
 	</div>
 </div>
-<div class="relative bg-primary lg:bg-transparent before:block before:bg-primary before:absolute before:left-0 before:top-0 before:w-full lg:before:w-1/2 before:h-8 lg:before:h-full before:z-0 -mt-8 pt-8 lg:-mt-24 lg:pt-24 rounded-2xl z-10 lg:h-hero">
+<div class="relative bg-primary lg:bg-transparent before:block before:bg-primary before:absolute before:left-0 before:top-0 before:w-full lg:before:w-1/2 before:h-8 lg:before:h-full before:z-0 rounded-2xl z-10 lg:h-hero">
 	<div class="container relative mx-auto px-8 lg:px-4 bg-primary z-10 rounded-b-2xl lg:rounded-br-2xl h-full flex items-end lg:items-center">
 		<div class="grid lg:grid-cols-12 gap-12 py-8 items-center">
 			<div class="lg:col-span-6">
