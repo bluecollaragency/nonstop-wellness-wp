@@ -1295,6 +1295,14 @@ body {
 }
 
 @media (min-width: 960px) {
+  .lg\:absolute {
+    position: absolute
+  }
+
+  .lg\:relative {
+    position: relative
+  }
+
   .lg\:top-0 {
     top: 0px
   }
@@ -1353,6 +1361,11 @@ body {
     margin-right: 1rem
   }
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
   .lg\:mt-0 {
     margin-top: 0px
   }
@@ -1381,8 +1394,20 @@ body {
     margin-top: 1rem
   }
 
+  .lg\:ml-4 {
+    margin-left: 1rem
+  }
+
+  .lg\:-mt-1 {
+    margin-top: -0.25rem
+  }
+
   .lg\:block {
     display: block
+  }
+
+  .lg\:inline {
+    display: inline
   }
 
   .lg\:flex {
@@ -1399,6 +1424,10 @@ body {
 
   .lg\:h-\[2px\] {
     height: 2px
+  }
+
+  .lg\:h-auto {
+    height: auto
   }
 
   .lg\:min-h-\[600px\] {
@@ -1425,20 +1454,52 @@ body {
     width: 50%
   }
 
+  .lg\:w-auto {
+    width: auto
+  }
+
+  .lg\:w-80 {
+    width: 20rem
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr))
+  }
+
+  .lg\:flex-row {
+    flex-direction: row
+  }
+
+  .lg\:items-start {
+    align-items: flex-start
   }
 
   .lg\:items-center {
     align-items: center
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end
+  }
+
   .lg\:justify-between {
     justify-content: space-between
   }
 
+  .lg\:overflow-visible {
+    overflow: visible
+  }
+
   .lg\:rounded-none {
     border-radius: 0px
+  }
+
+  .lg\:rounded-2xl {
+    border-radius: 1rem
   }
 
   .lg\:rounded-r-none {
@@ -1467,6 +1528,11 @@ body {
     background-color: transparent
   }
 
+  .lg\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+  }
+
   .lg\:p-0 {
     padding: 0px
   }
@@ -1486,6 +1552,11 @@ body {
     padding-bottom: 11rem
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1
@@ -1503,6 +1574,17 @@ body {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem
+  }
+
+  .lg\:shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
   }
 
   .lg\:before\:h-full::before {
