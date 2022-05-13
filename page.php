@@ -91,9 +91,9 @@
 <div class="relative overflow-hidden pt-32">
 	<div class="container mx-auto px-8 lg:px-4">
 		<h2>What Our Customers Say</h2>
-		<div class="flex pt-12">
-			<div class="w-full md:w-10/12 lg:w-2/3">
-				<div class="glide testimonial-slider">
+		<div class="glide testimonial-slider">
+			<div class="flex pt-12">
+				<div class="w-full md:w-10/12 lg:w-2/3">
 					<div data-glide-el="track" class="glide__track overflow-visible">
 						<ul class="glide__slides">
 							<li class="glide__slide bg-white rounded-2xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
@@ -136,10 +136,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="flex justify-between mt-12">
-			<div>Controls</div>
-			<div>Read more reviews</div>
+			<div class="flex justify-between items-center mt-12">
+				<div>
+					<div class="glide__bullets flex gap-4" data-glide-el="controls[nav]">
+						<button class="glide__bullet" data-glide-dir="=0"></button>
+						<button class="glide__bullet" data-glide-dir="=1"></button>
+						<button class="glide__bullet" data-glide-dir="=2"></button>
+						<button class="glide__bullet" data-glide-dir="=3"></button>
+					</div>
+				</div>
+				<div>Read more reviews</div>
+			</div>
 		</div>
 	</div>
 </div>

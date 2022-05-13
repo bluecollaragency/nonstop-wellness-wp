@@ -14,6 +14,7 @@ if( document.getElementsByClassName('testimonial-slider').length > 0 ) {
     gap: 24
   }).mount();
 }
+
 if( document.getElementsByClassName('blog-slider').length > 0 ) {
   new Glide('.blog-slider', {
     type: 'slider',

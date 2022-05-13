@@ -133,6 +133,18 @@
   margin-bottom: 2rem
 }
 
+.mt-20 {
+  margin-top: 5rem
+}
+
+.mt-2 {
+  margin-top: 0.5rem
+}
+
+.mt-8 {
+  margin-top: 2rem
+}
+
 .mt-4 {
   margin-top: 1rem
 }
@@ -149,10 +161,6 @@
   margin-top: auto
 }
 
-.mt-20 {
-  margin-top: 5rem
-}
-
 .mt-10 {
   margin-top: 2.5rem
 }
@@ -163,10 +171,6 @@
 
 .mt-40 {
   margin-top: 10rem
-}
-
-.mt-8 {
-  margin-top: 2rem
 }
 
 .ml-12 {
@@ -181,6 +185,14 @@
   margin-top: 6rem
 }
 
+.mt-32 {
+  margin-top: 8rem
+}
+
+.mt-3 {
+  margin-top: 0.75rem
+}
+
 .mb-4 {
   margin-bottom: 1rem
 }
@@ -191,10 +203,6 @@
 
 .mb-12 {
   margin-bottom: 3rem
-}
-
-.mt-2 {
-  margin-top: 0.5rem
 }
 
 .mt-1 {
@@ -211,14 +219,6 @@
 
 .ml-auto {
   margin-left: auto
-}
-
-.mt-32 {
-  margin-top: 8rem
-}
-
-.mt-3 {
-  margin-top: 0.75rem
 }
 
 .block {
@@ -281,6 +281,10 @@
   height: 50%
 }
 
+.h-2 {
+  height: 0.5rem
+}
+
 .h-\[112px\] {
   height: 112px
 }
@@ -313,20 +317,20 @@
   width: 1.5rem
 }
 
-.w-\[150\%\] {
-  width: 150%
+.w-1\/2 {
+  width: 50%
 }
 
 .w-\[2px\] {
   width: 2px
 }
 
-.w-4 {
-  width: 1rem
+.w-2 {
+  width: 0.5rem
 }
 
-.w-1\/2 {
-  width: 50%
+.w-4 {
+  width: 1rem
 }
 
 .max-w-sm {
@@ -337,24 +341,16 @@
   max-width: 960px
 }
 
-.max-w-screen-2xl {
-  max-width: 1440px
-}
-
 .max-w-prose {
   max-width: 65ch
 }
 
-.max-w-screen-md {
-  max-width: 768px
+.max-w-screen-2xl {
+  max-width: 1440px
 }
 
 .flex-none {
   flex: none
-}
-
-.flex-1 {
-  flex: 1 1 0%
 }
 
 .shrink {
@@ -375,6 +371,12 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
@@ -391,20 +393,16 @@
   list-style-type: decimal
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr))
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr))
-}
-
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr))
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr))
 }
 
 .flex-row {
@@ -439,6 +437,10 @@
   justify-content: space-between
 }
 
+.gap-8 {
+  gap: 2rem
+}
+
 .gap-12 {
   gap: 3rem
 }
@@ -447,8 +449,8 @@
   gap: 1rem
 }
 
-.gap-8 {
-  gap: 2rem
+.gap-y-2 {
+  row-gap: 0.5rem
 }
 
 .gap-x-10 {
@@ -473,36 +475,16 @@
   row-gap: 2rem
 }
 
-.gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem
-}
-
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse))
-}
-
-.space-x-20 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(5rem * var(--tw-space-x-reverse));
-  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)))
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
 .overflow-auto {
@@ -582,9 +564,9 @@
   background-color: rgb(229 231 235 / var(--tw-bg-opacity))
 }
 
-.bg-gray-50 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity))
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
 .bg-light {
@@ -612,14 +594,14 @@
   background-color: rgb(4 31 37 / var(--tw-bg-opacity))
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(0 161 155 / var(--tw-bg-opacity))
+}
+
+.bg-\[\#CED0D7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(206 208 215 / var(--tw-bg-opacity))
 }
 
 .bg-transparent {
@@ -658,9 +640,14 @@
   padding-right: 0.75rem
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem
 }
 
 .py-6 {
@@ -678,11 +665,6 @@
   padding-right: 1.5rem
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem
@@ -691,6 +673,11 @@
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem
 }
 
 .py-4 {
@@ -706,16 +693,6 @@
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem
 }
 
 .pb-12 {
@@ -738,10 +715,6 @@
   padding-top: 16rem
 }
 
-.pt-24 {
-  padding-top: 6rem
-}
-
 .text-left {
   text-align: left
 }
@@ -760,6 +733,11 @@
   line-height: 2rem
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem
@@ -775,18 +753,8 @@
   line-height: 2.25rem
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem
-}
-
 .text-xl {
   font-size: 1.25rem
-}
-
-.text-6xl {
-  font-size: 3.5rem;
-  line-height: 1.2
 }
 
 .font-light {
@@ -797,16 +765,16 @@
   font-weight: 700
 }
 
+.font-semibold {
+  font-weight: 600
+}
+
 .font-extrabold {
   font-weight: 800
 }
 
 .font-medium {
   font-weight: 500
-}
-
-.font-semibold {
-  font-weight: 600
 }
 
 .uppercase {
@@ -845,11 +813,6 @@
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity))
 }
 
 .text-gray-900 {
@@ -1131,24 +1094,6 @@ body {
   width: 0.75rem
 }
 
-.after\:-translate-y-1\/4::after {
-  content: var(--tw-content);
-  --tw-translate-y: -25%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.after\:-translate-y-1\/2::after {
-  content: var(--tw-content);
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.after\:-translate-y-full::after {
-  content: var(--tw-content);
-  --tw-translate-y: -100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
 .after\:rotate-45::after {
   content: var(--tw-content);
   --tw-rotate: 45deg;
@@ -1197,6 +1142,23 @@ body {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.hover\:bg-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 31 37 / var(--tw-bg-opacity))
 }
 
 .hover\:bg-gray-200:hover {
@@ -1254,14 +1216,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute
-  }
-
-  .md\:relative {
-    position: relative
-  }
-
   .md\:col-end-6 {
     grid-column-end: 6
   }
@@ -1284,36 +1238,8 @@ body {
     margin-top: 1.5rem
   }
 
-  .md\:mt-0 {
-    margin-top: 0px
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem
-  }
-
-  .md\:-mt-1 {
-    margin-top: -0.25rem
-  }
-
-  .md\:block {
-    display: block
-  }
-
-  .md\:inline {
-    display: inline
-  }
-
   .md\:flex {
     display: flex
-  }
-
-  .md\:hidden {
-    display: none
-  }
-
-  .md\:h-auto {
-    height: auto
   }
 
   .md\:w-1\/2 {
@@ -1332,71 +1258,17 @@ body {
     width: 62.5%
   }
 
-  .md\:w-auto {
-    width: auto
-  }
-
-  .md\:w-80 {
-    width: 20rem
-  }
-
-  .md\:max-w-screen-md {
-    max-width: 768px
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-
-  .md\:flex-row {
-    flex-direction: row
   }
 
   .md\:flex-nowrap {
     flex-wrap: nowrap
   }
 
-  .md\:items-start {
-    align-items: flex-start
-  }
-
-  .md\:items-center {
-    align-items: center
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end
-  }
-
-  .md\:overflow-visible {
-    overflow: visible
-  }
-
-  .md\:rounded-2xl {
-    border-radius: 1rem
-  }
-
-  .md\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
-  }
-
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px
   }
 
   .md\:text-left {
@@ -1416,17 +1288,6 @@ body {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem
-  }
-
-  .md\:shadow-md {
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
   }
 }
 
@@ -1602,12 +1463,12 @@ body {
     max-width: 768px
   }
 
-  .lg\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr))
-  }
-
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr))
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr))
   }
 
   .lg\:flex-row {
