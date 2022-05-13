@@ -90,7 +90,7 @@
 
 <div class="relative overflow-hidden pt-32">
 	<div class="container mx-auto px-8 lg:px-4">
-		<h2 class="h2">What Our Customers Say</h2>
+		<h2>What Our Customers Say</h2>
 		<div class="flex pt-12">
 			<div class="w-full md:w-10/12 lg:w-2/3">
 				<div class="glide testimonial-slider">
@@ -258,6 +258,103 @@
 	</div>
 </div>
 
+<div class="relative overflow-hidden mt-32">
+	<div class="container mx-auto px-8 lg:px-4">
+		<h2>Nonstop Toolbox</h2>
+		<p class="max-w-prose mt-4">Explore expert insights, tips, tools and articles created to help your organization navigate the healthcare landscape.</p>
+		<div class="glide blog-slider mt-12">
+			<div data-glide-el="track" class="glide__track overflow-visible">
+				<ul class="glide__slides">
+					<li class="glide__slide bg-white rounded-2xl">
+						<img src="//via.placeholder.com/460x460" alt="" class="block rounded-t-2xl">
+						<div class="block p-10">
+							<h3 class="text-xl font-bold leading-tight">Fermentum Malesuada Ultricies Purus</h3>
+							<p class="mt-3">Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+					</li>
+					<li class="glide__slide bg-white rounded-2xl">
+						<img src="//via.placeholder.com/460x460" alt="" class="block rounded-t-2xl">
+						<div class="block p-10">
+							<h3 class="text-xl font-bold leading-tight">Fermentum Malesuada Ultricies Purus</h3>
+							<p class="mt-3">Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+					</li>
+					<li class="glide__slide bg-white rounded-2xl">
+						<img src="//via.placeholder.com/460x460" alt="" class="block rounded-t-2xl">
+						<div class="block p-10">
+							<h3 class="text-xl font-bold leading-tight">Fermentum Malesuada Ultricies Purus</h3>
+							<p class="mt-3">Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+					</li>
+					<li class="glide__slide bg-white rounded-2xl">
+						<img src="//via.placeholder.com/460x460" alt="" class="block rounded-t-2xl">
+						<div class="block p-10">
+							<h3 class="text-xl font-bold leading-tight">Fermentum Malesuada Ultricies Purus</h3>
+							<p class="mt-3">Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+					</li>
+					<li class="glide__slide bg-white rounded-2xl">
+						<img src="//via.placeholder.com/460x460" alt="" class="block rounded-t-2xl">
+						<div class="block p-10">
+							<h3 class="text-xl font-bold leading-tight">Fermentum Malesuada Ultricies Purus</h3>
+							<p class="mt-3">Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+					</li>
+					<li class="glide__slide bg-white rounded-2xl">
+						<img src="//via.placeholder.com/460x460" alt="" class="block rounded-t-2xl">
+						<div class="block p-10">
+							<h3 class="text-xl font-bold leading-tight">Fermentum Malesuada Ultricies Purus</h3>
+							<p class="mt-3">Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex justify-between mt-12">
+			<div>Controls</div>
+			<div>Read our blog</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mx-auto px-8 lg:px-4 mt-32">
+	<h2>Our Partners</h2>
+	<p class="max-w-prose mt-4">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	<div class="grid grid-cols-1 md:flex gap-8 lg:gap-x-20 mt-12 justify-between items-center">
+		<a href=""><img src="//via.placeholder.com/302x60" alt="" class="mx-auto"></a>
+		<a href=""><img src="//via.placeholder.com/127x50" alt="" class="mx-auto"></a>
+		<a href=""><img src="//via.placeholder.com/240x54" alt="" class="mx-auto"></a>
+		<a href=""><img src="//via.placeholder.com/62x55" alt="" class="mx-auto"></a>
+		<a href=""><img src="//via.placeholder.com/237x52" alt="" class="mx-auto"></a>
+	</div>
+	<div class="flex justify-end mt-12">
+			<div>Read our blog</div>
+		</div>
+</div>
+
+<div 
+	class="
+		relative
+
+		after:block
+		after:absolute
+		after:w-full
+		after:h-24
+		after:bg-white
+		after:rounded-t-2xl
+		after:bottom-0
+		after:z-0
+	"
+	>
+	<div class="container bg-primary py-24 px-8 mx-auto rounded-2xl mt-32 relative z-10">
+		<div class="max-w-prose lg:max-w-screen-md mx-auto text-center">
+			<h2 class="text-center text-3xl lg:text-6xl">Contact us to learn more or request a quote</h2>
+			<a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Contact us</a>
+		</div>
+	</div>
+</div>
+
+<!-- 
 <div class="container mx-auto my-8 pt-64">
 
 	<?php if ( have_posts() ) : ?>
@@ -273,6 +370,6 @@
 	<?php endif; ?>
 
 </div>
-
+		-->
 <?php
 get_footer();

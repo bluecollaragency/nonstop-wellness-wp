@@ -4691,6 +4691,22 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
       gap: 24
     }).mount();
   }
+  if (document.getElementsByClassName("blog-slider").length > 0) {
+    new Glide(".blog-slider", {
+      type: "slider",
+      startAt: 0,
+      perView: 3,
+      gap: 24,
+      breakpoints: {
+        1024: {
+          perView: 2
+        },
+        640: {
+          perView: 1
+        }
+      }
+    }).mount();
+  }
 })();
 /*!
  * Glide.js v3.5.2
