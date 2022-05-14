@@ -316,11 +316,19 @@
 					</li>
 				</ul>
 			</div>
+			<div class="flex justify-between mt-12">
+				<div>
+					<div class="glide__bullets flex gap-4" data-glide-el="controls[nav]">
+						<button class="glide__bullet" data-glide-dir="=0"></button>
+						<button class="glide__bullet" data-glide-dir="=1"></button>
+						<button class="glide__bullet" data-glide-dir="=2"></button>
+						<button class="glide__bullet" data-glide-dir="=3"></button>
+					</div>
+				</div>
+				<div>Read our blog</div>
+			</div>
 		</div>
-		<div class="flex justify-between mt-12">
-			<div>Controls</div>
-			<div>Read our blog</div>
-		</div>
+		
 	</div>
 </div>
 

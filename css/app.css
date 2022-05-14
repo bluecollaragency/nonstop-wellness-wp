@@ -1715,10 +1715,10 @@ h2{
   --tw-scale-y:1.25;
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity:1;
-  background-color:rgb(4 31 37 / var(--tw-bg-opacity))
+  background-color:rgb(118 122 135 / var(--tw-bg-opacity))
 }
 
-.glide__bullet--active{
+.glide__bullet.is-active{
   --tw-scale-x:1.25;
   --tw-scale-y:1.25;
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1907,26 +1907,25 @@ h2{
   background-color:rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
-.hover\:scale-110:hover{
-  --tw-scale-x:1.1;
-  --tw-scale-y:1.1;
-  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
 .hover\:scale-125:hover{
   --tw-scale-x:1.25;
   --tw-scale-y:1.25;
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
-.hover\:bg-dark:hover{
+.hover\:bg-gray-400:hover{
   --tw-bg-opacity:1;
-  background-color:rgb(4 31 37 / var(--tw-bg-opacity))
+  background-color:rgb(73 76 84 / var(--tw-bg-opacity))
 }
 
 .hover\:bg-gray-200:hover{
   --tw-bg-opacity:1;
   background-color:rgb(229 231 235 / var(--tw-bg-opacity))
+}
+
+.hover\:bg-gray-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(118 122 135 / var(--tw-bg-opacity))
 }
 
 .hover\:text-gray-900:hover{

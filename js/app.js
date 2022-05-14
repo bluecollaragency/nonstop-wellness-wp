@@ -4680,16 +4680,71 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     return Glide2;
   }(Glide$1);
 
+  // node_modules/@glidejs/glide/src/utils/dom.js
+  function siblings2(node) {
+    if (node && node.parentNode) {
+      let n = node.parentNode.firstChild;
+      let matched = [];
+      for (; n; n = n.nextSibling) {
+        if (n.nodeType === 1 && n !== node) {
+          matched.push(n);
+        }
+      }
+      return matched;
+    }
+    return [];
+  }
+
   // resources/js/app.js
   window.Alpine = module_default;
   module_default.start();
+  var CustomActiveClass = (Glide2, Components, Events) => {
+    const Component = {
+      mount() {
+        this.changeActiveSlide();
+      },
+      changeActiveSlide() {
+        const slide = Components.Html.slides[Glide2.index];
+        const bullets = Components.Controls.items[0];
+        const bullet = [...bullets.children].find((bullet2) => bullet2.getAttribute("data-glide-dir") === `=${Glide2.index}`);
+        bullet.classList.remove("is-next", "is-prev");
+        bullet.classList.add("is-active");
+        slide.classList.remove("is-next", "is-prev");
+        slide.classList.add("is-active");
+        siblings2(slide).forEach((sibling) => {
+          sibling.classList.remove("is-active", "is-next", "is-prev");
+        });
+        siblings2(bullet).forEach((sibling) => {
+          sibling.classList.remove("is-active", "is-next", "is-prev");
+        });
+        if (slide.nextElementSibling) {
+          slide.nextElementSibling.classList.add("is-next");
+        }
+        if (slide.previousElementSibling) {
+          slide.previousElementSibling.classList.add("is-prev");
+        }
+        if (bullet.nextElementSibling) {
+          bullet.nextElementSibling.classList.add("is-next");
+        }
+        if (bullet.previousElementSibling) {
+          bullet.previousElementSibling.classList.add("is-prev");
+        }
+      }
+    };
+    Events.on("run", () => {
+      Component.changeActiveSlide();
+    });
+    return Component;
+  };
   if (document.getElementsByClassName("testimonial-slider").length > 0) {
     new Glide(".testimonial-slider", {
       type: "slider",
       startAt: 0,
       perView: 1,
       gap: 24
-    }).mount();
+    }).mount({
+      CustomActiveClass
+    });
   }
   if (document.getElementsByClassName("blog-slider").length > 0) {
     new Glide(".blog-slider", {
@@ -4705,7 +4760,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
           perView: 1
         }
       }
-    }).mount();
+    }).mount({ CustomActiveClass });
   }
 })();
 /*!
