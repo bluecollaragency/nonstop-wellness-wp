@@ -1,7 +1,7 @@
 <?php
 
   $main_nav = (new \Log1x\Navi\Navi())->build('primary');
-
+  
 ?>
 <div class="relative w-full text-dark bg-light items-center flex">
 	<div 
@@ -102,15 +102,15 @@
           <?php endif; ?>
         <?php endforeach; ?>
         <div class="flex flex-col lg:hidden relative mx-auto gap-4 px-8 w-full mt-auto py-8">
-          <a href="#" class="btn block bg-white">Account Login</a>
-          <a href="#" class="btn block bg-primary">Get a quote</a>
+          <?php get_template_part( 'template-parts/partials/main-nav-btn-1' ); ?>
+          <?php get_template_part( 'template-parts/partials/main-nav-btn-2' ); ?>
         </div>
 			</nav>
 		</div>
     <?php endif; ?>
     <div class="hidden lg:flex relative ml-auto gap-4 px-4">
-      <a href="#" class="btn bg-white">Account Login</a>
-      <a href="#" class="btn bg-primary">Get a quote</a>
+      <?php get_template_part( 'template-parts/partials/main-nav-btn-1' ); ?>
+      <?php get_template_part( 'template-parts/partials/main-nav-btn-2' ); ?>
     </div>
 
 	</div>
