@@ -19,7 +19,7 @@
 
 	<header class="sticky top-0 z-50">
 
-		<?php get_template_part( 'template-parts/partials/main-nav' ); ?>
+		<?php get_template_part( 'template-parts/components/main-nav' ); ?>
 		<!-- <div class="mx-auto container">
 			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
 				<div class="flex justify-between items-center">

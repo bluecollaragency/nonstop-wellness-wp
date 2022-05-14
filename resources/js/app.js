@@ -15,7 +15,7 @@ const CustomActiveClass = (Glide, Components, Events) => {
 
     changeActiveSlide() {
       const slide = Components.Html.slides[Glide.index];
-      const bullets = Components.Controls.items[0];
+      const bullets = Components.Controls.items[1];
       const bullet = [...bullets.children].find(
         (bullet) => bullet.getAttribute("data-glide-dir") === `=${Glide.index}`
       );

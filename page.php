@@ -92,7 +92,7 @@
 	<div class="container mx-auto px-8 lg:px-4">
 		<h2>What Our Customers Say</h2>
 		<div class="glide testimonial-slider">
-			<div class="flex pt-12">
+			<div class="flex mt-12 relative">
 				<div class="w-full md:w-10/12 lg:w-2/3">
 					<div data-glide-el="track" class="glide__track overflow-visible">
 						<ul class="glide__slides">
@@ -135,6 +135,7 @@
 						</ul>
 					</div>
 				</div>
+				<?php get_template_part( 'template-parts/partials/slider-next-btn-round' ); ?>
 			</div>
 			<div class="flex justify-between items-center mt-12">
 				<div>
@@ -316,6 +317,7 @@
 					</li>
 				</ul>
 			</div>
+			<?php get_template_part( 'template-parts/partials/slider-next-btn-round' ); ?>
 			<div class="flex justify-between mt-12">
 				<div>
 					<div class="glide__bullets flex gap-4" data-glide-el="controls[nav]">
@@ -323,6 +325,8 @@
 						<button class="glide__bullet" data-glide-dir="=1"></button>
 						<button class="glide__bullet" data-glide-dir="=2"></button>
 						<button class="glide__bullet" data-glide-dir="=3"></button>
+						<button class="glide__bullet" data-glide-dir="=4"></button>
+						<button class="glide__bullet" data-glide-dir="=5"></button>
 					</div>
 				</div>
 				<div>Read our blog</div>

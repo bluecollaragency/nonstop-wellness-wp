@@ -4705,7 +4705,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
       },
       changeActiveSlide() {
         const slide = Components.Html.slides[Glide2.index];
-        const bullets = Components.Controls.items[0];
+        const bullets = Components.Controls.items[1];
         const bullet = [...bullets.children].find((bullet2) => bullet2.getAttribute("data-glide-dir") === `=${Glide2.index}`);
         bullet.classList.remove("is-next", "is-prev");
         bullet.classList.add("is-active");
