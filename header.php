@@ -18,7 +18,7 @@
 	<?php do_action( 'tailpress_header' ); ?>
 
 	<header class="sticky top-0 z-50">
-
+		<a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
 		<?php get_template_part( 'template-parts/components/main-nav' ); ?>
 		<!-- <div class="mx-auto container">
 			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">

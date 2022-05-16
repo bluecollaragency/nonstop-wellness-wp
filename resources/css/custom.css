@@ -59,6 +59,17 @@ h2 {
     @apply inline-block py-4 px-12 rounded-full text-sm text-center font-semibold leading-none transition-all hover:brightness-90;
 }
 
+.main-nav-nav {
+    &:hover {
+        a, button {
+            @apply opacity-50;
+            &:hover {
+                @apply opacity-100;
+            }
+        }
+    }
+}
+
 /* Glide */
 .glide__bullet {
     @apply 

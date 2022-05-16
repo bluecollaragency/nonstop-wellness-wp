@@ -587,6 +587,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0, 0, 0, 0);
+  white-space:nowrap;
+  border-width:0
+}
+
 .absolute{
   position:absolute
 }
@@ -626,10 +638,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-10{
   z-index:10
-}
-
-.z-30{
-  z-index:30
 }
 
 .order-2{
@@ -1714,6 +1722,14 @@ h2{
   filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
+.main-nav-nav:hover a, .main-nav-nav:hover button{
+      opacity:0.5
+    }
+
+.main-nav-nav:hover a:hover,.main-nav-nav:hover button:hover{
+        opacity:1
+      }
+
 /* Glide */
 
 .glide__bullet{
@@ -1944,6 +1960,17 @@ h2{
 .hover\:text-gray-900:hover{
   --tw-text-opacity:1;
   color:rgb(17 24 39 / var(--tw-text-opacity))
+}
+
+.focus\:not-sr-only:focus{
+  position:static;
+  width:auto;
+  height:auto;
+  padding:0;
+  margin:0;
+  overflow:visible;
+  clip:auto;
+  white-space:normal
 }
 
 .focus\:bg-gray-200:focus{
