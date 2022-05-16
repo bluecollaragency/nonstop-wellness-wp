@@ -1182,6 +1182,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color:transparent
 }
 
+.bg-red-100{
+  --tw-bg-opacity:1;
+  background-color:rgb(254 226 226 / var(--tw-bg-opacity))
+}
+
 .object-cover{
   -o-object-fit:cover;
      object-fit:cover
@@ -1722,11 +1727,11 @@ h2{
   filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
-.main-nav-nav:hover a, .main-nav-nav:hover button{
+.main-nav-nav:hover .item-level-1{
       opacity:0.5
     }
 
-.main-nav-nav:hover a:hover,.main-nav-nav:hover button:hover{
+.main-nav-nav:hover .item-level-1:hover, .main-nav-nav:hover .item-level-1:focus{
         opacity:1
       }
 

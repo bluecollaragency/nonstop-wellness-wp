@@ -54,7 +54,7 @@
                 :aria-expanded="open"
                 :aria-controls="$id('dropdown-button')"
                 type="button"
-                class="flex flex-row items-center w-full px-4 py-2 mt-2 font-semibold text-left text-2xl lg:text-base bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-4  hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline <?= $item->classes; ?>"
+                class="item-level-1 flex flex-row items-center w-full px-4 py-2 mt-2 font-semibold text-left text-2xl lg:text-base bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-4  hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline <?= $item->classes; ?>"
                 >
                   <span><?= $nav_item->label ?></span>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -66,9 +66,9 @@
                 x-on:click.outside="close($refs.button)"
                 :id="$id('dropdown-button')"
                 style="display: none;"
-                class="relative lg:absolute left-0 mt-2 w-full lg:w-80 bg-transparent lg:bg-white rounded-none lg:rounded-2xl lg:shadow-md overflow-hidden"
+                class="relative lg:absolute left-0 w-full lg:w-80"
                 >
-                <div>
+                <div class="bg-transparent lg:bg-white rounded-none lg:rounded-2xl lg:shadow-md overflow-hidden mt-2">
                   <?php foreach ($nav_item->children as $child_nav_item) : ?>
                     <a 
                       role="menuitem"
@@ -94,7 +94,7 @@
             <a 
               role="menuitem"
               href="<?= $nav_item->url ?>"
-              class="px-4 py-2 mt-2 mx-4 lg:mx-0 font-semibold bg-transparent rounded-lg lg:mt-0 lg:ml-4 text-2xl lg:text-base hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+              class="item-level-1 px-4 py-2 mt-2 mx-4 lg:mx-0 font-semibold bg-transparent rounded-lg lg:mt-0 lg:ml-4 text-2xl lg:text-base hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
               aria-label="<?= $nav_item->label ?> link"
               >
               <?= $nav_item->label ?>
