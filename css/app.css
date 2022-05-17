@@ -599,6 +599,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width:0
 }
 
+.fixed{
+  position:fixed
+}
+
 .absolute{
   position:absolute
 }
@@ -628,6 +632,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   left:0px
 }
 
+.bottom-12{
+  bottom:3rem
+}
+
+.right-12{
+  right:3rem
+}
+
+.right-8{
+  right:2rem
+}
+
+.bottom-8{
+  bottom:2rem
+}
+
+.bottom-4{
+  bottom:1rem
+}
+
+.right-4{
+  right:1rem
+}
+
 .z-50{
   z-index:50
 }
@@ -638,6 +666,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-10{
   z-index:10
+}
+
+.z-40{
+  z-index:40
 }
 
 .order-2{
@@ -863,6 +895,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height:5rem
 }
 
+.h-12{
+  height:3rem
+}
+
+.h-8{
+  height:2rem
+}
+
+.h-16{
+  height:4rem
+}
+
 .min-h-screen{
   min-height:100vh
 }
@@ -905,6 +949,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-20{
   width:5rem
+}
+
+.w-12{
+  width:3rem
 }
 
 .max-w-sm{
@@ -1430,6 +1478,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-osx-font-smoothing:grayscale
 }
 
+.opacity-50{
+  opacity:0.5
+}
+
+.opacity-80{
+  opacity:0.8
+}
+
 .drop-shadow-\[0_0_20px_rgba\(0\2c 0\2c 0\2c 0\.15\)\]{
   --tw-drop-shadow:drop-shadow(0 0 20px rgba(0,0,0,0.15));
   filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
@@ -1451,6 +1507,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .transition-transform{
   transition-property:transform;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms
+}
+
+.transition-opacity{
+  transition-property:opacity;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration:150ms
 }
@@ -1597,6 +1659,10 @@ Ensure the default browser behavior of the `hidden` attribute.
        url('../fonts/montserrat-v24-latin-700.svg#Montserrat') format('svg');
 
   /* Legacy iOS */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body.mobile-nav-open{
@@ -1965,6 +2031,10 @@ h2{
 .hover\:text-gray-900:hover{
   --tw-text-opacity:1;
   color:rgb(17 24 39 / var(--tw-text-opacity))
+}
+
+.hover\:opacity-100:hover{
+  opacity:1
 }
 
 .focus\:not-sr-only:focus{

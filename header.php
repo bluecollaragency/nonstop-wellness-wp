@@ -10,7 +10,7 @@
 </head>
 
 <body <?php body_class( 'bg-light text-gray-900 antialiased ' ); ?>>
-
+<a id="top"></a>
 <?php do_action( 'tailpress_site_before' ); ?>
 
 <div id="page" class="min-h-screen flex flex-col">
