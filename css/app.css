@@ -819,6 +819,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left:auto
 }
 
+.mt-9{
+  margin-top:2.25rem
+}
+
 .block{
   display:block
 }

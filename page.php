@@ -2,10 +2,10 @@
 
 <div class="relative bg-[#52D3E5] lg:bg-transparent rounded-2xl lg:rounded-none z-20 after:block after:absolute after:bottom-0 after:w-full after:h-24 after:bg-primary after:z-0">
 	<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-		<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0 flex flex-col">
+		<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
 			<h1 class="text-3xl lg:text-6xl font-bold">Lower premiums.<br/>Accesible benefits.<br/>Better health.</h1>
       <p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-			<span class="block mt-auto lg:mt-8"><a href="#" class="btn-lg bg-dark text-white">See our services</a></span>
+			<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
 		</div>
 	</div>
 	<div class="w-full lg:w-[77%] h-[70%] lg:h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-2xl lg:rounded-r-none">
