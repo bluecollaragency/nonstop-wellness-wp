@@ -20,7 +20,7 @@
 		</div>
     <?php if ( $main_nav->isNotEmpty() ) : ?>
 		<div class="relative">
-			<nav :class="{'flex': open, 'hidden': !open}" class="main-nav-nav absolute lg:relative flex-col flex-grow hidden lg:flex lg:justify-end lg:flex-row bg-light w-full h-fullnav lg:h-auto overflow-auto lg:overflow-visible">
+			<nav x-transition :class="{'flex': open, 'hidden': !open}" class="main-nav-nav absolute lg:relative flex-col flex-grow hidden lg:flex lg:justify-end lg:flex-row bg-light w-full h-fullnav lg:h-auto overflow-auto lg:overflow-visible">
         <?php foreach ($main_nav->toArray() as $nav_item) : ?>
           <?php if( $nav_item->children ): ?>
             <div

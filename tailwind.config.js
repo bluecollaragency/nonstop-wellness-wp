@@ -29,6 +29,12 @@ module.exports = {
         },
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
+            backgroundImage: {
+                'watermark': "url('../img/watermark.svg')"
+            },
+            borderRadius: {
+                '4xl': '2rem'
+            },
             fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme)),
             fontWeight: {
                 normal: 500
