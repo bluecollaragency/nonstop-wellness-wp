@@ -648,6 +648,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right:1rem
 }
 
+.top-12{
+  top:3rem
+}
+
 .z-50{
   z-index:50
 }
@@ -676,8 +680,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   order:1
 }
 
+.col-span-5{
+  grid-column:span 5 / span 5
+}
+
+.col-span-4{
+  grid-column:span 4 / span 4
+}
+
 .col-start-1{
   grid-column-start:1
+}
+
+.col-start-7{
+  grid-column-start:7
+}
+
+.col-start-8{
+  grid-column-start:8
 }
 
 .col-end-12{
@@ -895,6 +915,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height:4rem
 }
 
+.h-\[80\%\]{
+  height:80%
+}
+
 .min-h-screen{
   min-height:100vh
 }
@@ -937,6 +961,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4{
   width:1rem
+}
+
+.w-7{
+  width:1.75rem
+}
+
+.w-7\/12{
+  width:58.333333%
+}
+
+.w-8\/12{
+  width:66.666667%
 }
 
 .max-w-sm{
@@ -1165,6 +1201,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color:transparent
 }
 
+.border-dark{
+  --tw-border-opacity:1;
+  border-color:rgb(4 31 37 / var(--tw-border-opacity))
+}
+
 .bg-primary{
   --tw-bg-opacity:1;
   background-color:rgb(112 212 75 / var(--tw-bg-opacity))
@@ -1256,6 +1297,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding:1.5rem
 }
 
+.p-2{
+  padding:0.5rem
+}
+
 .px-4{
   padding-left:1rem;
   padding-right:1rem
@@ -1331,6 +1376,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom:2rem
 }
 
+.py-32{
+  padding-top:8rem;
+  padding-bottom:8rem
+}
+
+.px-2{
+  padding-left:0.5rem;
+  padding-right:0.5rem
+}
+
+.py-1{
+  padding-top:0.25rem;
+  padding-bottom:0.25rem
+}
+
 .pb-12{
   padding-bottom:3rem
 }
@@ -1353,6 +1413,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20{
   padding-bottom:5rem
+}
+
+.pb-32{
+  padding-bottom:8rem
 }
 
 .text-left{
@@ -1400,6 +1464,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-xl{
   font-size:1.25rem
+}
+
+.text-7xl{
+  font-size:4.5rem;
+  line-height:1
+}
+
+.text-base{
+  font-size:1rem;
+  line-height:1.5rem
 }
 
 .font-light{
@@ -1493,6 +1567,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-dark{
   --tw-text-opacity:1;
   color:rgb(4 31 37 / var(--tw-text-opacity))
+}
+
+.no-underline{
+  -webkit-text-decoration-line:none;
+          text-decoration-line:none
 }
 
 .antialiased{
@@ -1699,52 +1778,52 @@ article > *:not(.entry-content), .entry-content > *{
   max-width:960px
 }
 
-.entry-content h1,.block-editor-block-list__layout h1{
+.entry-content h1{
     font-size:1.5rem;
     line-height:2rem
   }
 
-.entry-content h2,.block-editor-block-list__layout h2{
+.entry-content h2{
     font-size:1.25rem
   }
 
-.entry-content h3,.block-editor-block-list__layout h3{
+.entry-content h3{
     font-size:1.125rem;
     line-height:1.75rem
   }
 
-.entry-content p a,.entry-content ul a,.entry-content ol a,.block-editor-block-list__layout p a,.block-editor-block-list__layout ul a,.block-editor-block-list__layout ol a{
+.entry-content p a,.entry-content ul a,.entry-content ol a{
       --tw-text-opacity:1;
       color:rgb(59 130 246 / var(--tw-text-opacity))
     }
 
-.entry-content p a,.entry-content ul a,.entry-content ol a,.block-editor-block-list__layout p a,.block-editor-block-list__layout ul a,.block-editor-block-list__layout ol a{
+.entry-content p a,.entry-content ul a,.entry-content ol a{
       -webkit-text-decoration-line:underline;
               text-decoration-line:underline
     }
 
-.entry-content p a:hover,.entry-content ul a:hover,.entry-content ol a:hover,.block-editor-block-list__layout p a:hover,.block-editor-block-list__layout ul a:hover,.block-editor-block-list__layout ol a:hover{
+.entry-content p a:hover,.entry-content ul a:hover,.entry-content ol a:hover{
         -webkit-text-decoration-line:none;
                 text-decoration-line:none
       }
 
-.entry-content p, .entry-content ul, .entry-content ol, .block-editor-block-list__layout p, .block-editor-block-list__layout ul, .block-editor-block-list__layout ol{
+.entry-content p, .entry-content ul, .entry-content ol{
     margin-bottom:2rem
   }
 
-.entry-content ul:not(.block-editor-block-variation-picker__variations) li,.block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li{
+.entry-content ul:not(.block-editor-block-variation-picker__variations) li{
       list-style-position:inside
     }
 
-.entry-content ul:not(.block-editor-block-variation-picker__variations) li,.block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li{
+.entry-content ul:not(.block-editor-block-variation-picker__variations) li{
       list-style-type:disc
     }
 
-.entry-content ol li,.block-editor-block-list__layout ol li{
+.entry-content ol li{
       list-style-position:inside
     }
 
-.entry-content ol li,.block-editor-block-list__layout ol li{
+.entry-content ol li{
       list-style-type:decimal
     }
 
@@ -2270,6 +2349,10 @@ h2{
     left:0px
   }
 
+  .lg\:top-12{
+    top:3rem
+  }
+
   .lg\:order-1{
     order:1
   }
@@ -2377,6 +2460,10 @@ h2{
     height:auto
   }
 
+  .lg\:h-full{
+    height:100%
+  }
+
   .lg\:min-h-\[600px\]{
     min-height:600px
   }
@@ -2476,6 +2563,11 @@ h2{
     border-bottom-right-radius:2rem
   }
 
+  .lg\:rounded-l-none{
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px
+  }
+
   .lg\:rounded-tl-4xl{
     border-top-left-radius:2rem
   }
@@ -2500,6 +2592,11 @@ h2{
 
   .lg\:bg-watermark{
     background-image:url('../img/watermark.svg')
+  }
+
+  .lg\:object-cover{
+    -o-object-fit:cover;
+       object-fit:cover
   }
 
   .lg\:p-0{
@@ -2531,6 +2628,14 @@ h2{
     padding-right:0px
   }
 
+  .lg\:pt-44{
+    padding-top:11rem
+  }
+
+  .lg\:pb-32{
+    padding-bottom:8rem
+  }
+
   .lg\:text-7xl{
     font-size:4.5rem;
     line-height:1
@@ -2553,6 +2658,11 @@ h2{
   .lg\:text-base{
     font-size:1rem;
     line-height:1.5rem
+  }
+
+  .lg\:text-4xl{
+    font-size:2.5rem;
+    line-height:2.75rem
   }
 
   .lg\:shadow-md{
@@ -2663,6 +2773,11 @@ h2{
 
   .xl\:grid-cols-12{
     grid-template-columns:repeat(12, minmax(0, 1fr))
+  }
+
+  .xl\:text-7xl{
+    font-size:4.5rem;
+    line-height:1
   }
 }
 /*# sourceMappingURL=app.css.map */

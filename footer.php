@@ -7,17 +7,6 @@
 
 <?php do_action( 'tailpress_content_after' ); ?>
 
-<div 
-	class="relative"
-	>
-	<div class="container bg-primary py-24 px-8 mx-auto rounded-4xl mt-32 relative z-10">
-		<div class="max-w-prose lg:max-w-screen-md mx-auto text-center">
-			<h2 class="text-center text-3xl lg:text-6xl">Contact us to learn more or request a quote</h2>
-			<a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Contact us</a>
-		</div>
-	</div>
-</div>
-
 <footer id="colophon" class="site-footer bg-white pt-44 pb-20 -mt-24 rounded-t-4xl" role="contentinfo">
 	<?php do_action( 'tailpress_footer' ); ?>
 	<div class="container px-8 lg:px-4 mx-auto">

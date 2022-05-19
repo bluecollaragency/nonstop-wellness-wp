@@ -165,35 +165,35 @@
 	"
 	>
 	<div class="
-	container 
-	mx-auto 
-	px-8 
-	lg:px-4 
-	bg-secondary 
-	z-10 
-	rounded-b-4xl 
-	lg:rounded-tl-4xl 
-	h-full 
-	flex 
-	items-end 
-	lg:items-center 
-	overflow-visible
-	
-	before:block 
-	before:bg-secondary 
-	before:absolute 
-	before:right-0 
-	before:top-0 
-	before:w-full 
-	lg:before:w-1/2 
-	before:h-full 
-	before:z-0 
-	before:rounded-4xl 
-	lg:before:rounded-none
-	before:bg-watermark  
-	before:bg-right-bottom 
-	before:bg-no-repeat 
-	before:bg-contain">
+		container 
+		mx-auto 
+		px-8 
+		lg:px-4 
+		bg-secondary 
+		z-10 
+		rounded-b-4xl 
+		lg:rounded-tl-4xl 
+		h-full 
+		flex 
+		items-end 
+		lg:items-center 
+		overflow-visible
+		
+		before:block 
+		before:bg-secondary 
+		before:absolute 
+		before:right-0 
+		before:top-0 
+		before:w-full 
+		lg:before:w-1/2 
+		before:h-full 
+		before:z-0 
+		before:rounded-4xl 
+		lg:before:rounded-none
+		before:bg-watermark  
+		before:bg-right-bottom 
+		before:bg-no-repeat 
+		before:bg-contain">
 		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center z-10">
 			<div class="lg:col-span-6 text-center">
 				<img src="//via.placeholder.com/410x410" alt="" class="mx-auto rounded-4xl">
@@ -468,6 +468,17 @@
 	<div class="flex justify-end mt-12">
 			<div>Read our blog</div>
 		</div>
+</div>
+
+<div 
+	class="relative"
+	>
+	<div class="container bg-primary py-24 px-8 mx-auto rounded-4xl mt-32 relative z-10">
+		<div class="max-w-prose lg:max-w-screen-md mx-auto text-center">
+			<h2 class="text-center text-3xl lg:text-6xl">Contact us to learn more or request a quote</h2>
+			<a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Contact us</a>
+		</div>
+	</div>
 </div>
 
 <!-- 

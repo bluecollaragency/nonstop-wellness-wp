@@ -137,3 +137,17 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 }
+
+require get_stylesheet_directory() . '/includes/custom-blocks.php';
+
+function mce_font_drop( $font_drop ) {
+    
+	array_unshift( $font_drop, 'fontsizeselect' ); 
+	return $font_drop;
+}
+add_filter( 'mce_buttons_2', 'mce_font_drop' );
+function scanwp_font_size( $initArray ){
+	$initArray['fontsize_formats'] = "12px 14px 16px 18px 20px 22px 24px";
+	return $initArray;
+}
+add_filter( 'tiny_mce_before_init', 'scanwp_font_size' );
