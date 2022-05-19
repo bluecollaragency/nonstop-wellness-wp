@@ -432,28 +432,6 @@
 		</div>
 </div>
 
-<div 
-	class="
-		relative
-
-		after:block
-		after:absolute
-		after:w-full
-		after:h-24
-		after:bg-white
-		after:rounded-t-4xl
-		after:bottom-0
-		after:z-0
-	"
-	>
-	<div class="container bg-primary py-24 px-8 mx-auto rounded-4xl mt-32 relative z-10">
-		<div class="max-w-prose lg:max-w-screen-md mx-auto text-center">
-			<h2 class="text-center text-3xl lg:text-6xl">Contact us to learn more or request a quote</h2>
-			<a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Contact us</a>
-		</div>
-	</div>
-</div>
-
 <!-- 
 <div class="container mx-auto my-8 pt-64">
 
