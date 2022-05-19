@@ -13,46 +13,40 @@
 		<img src="//via.placeholder.com/160x100" alt="" class="mx-auto">
 		<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 mt-20 gap-8">
 			<div>
-				<h3 class="font-semibold">Outcomes</h3>
-				<ul class="flex flex-col gap-y-2 mt-2">
-					<li><a class="inline-flex" href="#">Benefits</a></li>
-					<li><a class="inline-flex" href="#">Services</a></li>
-				</ul>
+				<?php if( have_rows('footer_column_1', 'option') ):
+					while( have_rows('footer_column_1', 'option') ): the_row(); ?>
+					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
+				<?php endwhile; endif; ?>
 			</div>
 			<div>
-				<h3 class="font-semibold">Outcomes</h3>
-				<ul class="flex flex-col gap-y-2 mt-2">
-					<li><a class="inline-flex" href="#">Benefits</a></li>
-					<li><a class="inline-flex" href="#">Services</a></li>
-				</ul>
+				<?php if( have_rows('footer_column_2', 'option') ):
+					while( have_rows('footer_column_2', 'option') ): the_row(); ?>
+					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
+				<?php endwhile; endif; ?>
 			</div>
 			<div>
-				<h3 class="font-semibold">Outcomes</h3>
-				<ul class="flex flex-col gap-y-2 mt-2">
-					<li><a class="inline-flex" href="#">Benefits</a></li>
-					<li><a class="inline-flex" href="#">Services</a></li>
-				</ul>
+				<?php if( have_rows('footer_column_3', 'option') ):
+					while( have_rows('footer_column_3', 'option') ): the_row(); ?>
+					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
+				<?php endwhile; endif; ?>
 			</div>
 			<div>
-				<h3 class="font-semibold">Outcomes</h3>
-				<ul class="flex flex-col gap-y-2 mt-2">
-					<li><a class="inline-flex" href="#">Benefits</a></li>
-					<li><a class="inline-flex" href="#">Services</a></li>
-				</ul>
+				<?php if( have_rows('footer_column_4', 'option') ):
+					while( have_rows('footer_column_4', 'option') ): the_row(); ?>
+					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
+				<?php endwhile; endif; ?>
 			</div>
 			<div>
-				<h3 class="font-semibold">Outcomes</h3>
-				<ul class="flex flex-col gap-y-2 mt-2">
-					<li><a class="inline-flex" href="#">Benefits</a></li>
-					<li><a class="inline-flex" href="#">Services</a></li>
-				</ul>
+				<?php if( have_rows('footer_column_5', 'option') ):
+					while( have_rows('footer_column_5', 'option') ): the_row(); ?>
+					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
+				<?php endwhile; endif; ?>
 			</div>
 			<div>
-				<h3 class="font-semibold">Outcomes</h3>
-				<ul class="flex flex-col gap-y-2 mt-2">
-					<li><a class="inline-flex" href="#">Benefits</a></li>
-					<li><a class="inline-flex" href="#">Services</a></li>
-				</ul>
+				<?php if( have_rows('footer_column_6', 'option') ):
+					while( have_rows('footer_column_6', 'option') ): the_row(); ?>
+					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
+				<?php endwhile; endif; ?>
 			</div>
 		</div>
 		<ul class="mx-auto flex mt-20 space-x-6 justify-center items-center">
@@ -61,7 +55,7 @@
 			<li>3</li>
 		</ul>
 		<div class="text-center mt-8 text-xs">
-			&copy; Copyright <?php echo date_i18n( 'Y' );?> Nonstop Administration and Insurance Services, Inc. All Rights Reserved. <span  class="font-semibold"><a href="#">Terms & Conditions</a> • <a href="#">Privacy Policy</a></span>
+			&copy; Copyright <?php echo date_i18n( 'Y' );?> <?= the_field('copyright_text', 'option'); ?> <span  class="font-semibold"><a href="#">Terms & Conditions</a> • <a href="#">Privacy Policy</a></span>
 		</div>
 	</div>
 </footer>
@@ -69,17 +63,6 @@
 </div>
 
 <?php wp_footer(); ?>
-<a 
-	href="#top" 
-	class="fixed bottom-4 right-4 w-16 h-16 rounded-full bg-dark flex items-center justify-center z-40 opacity-80 text-white hover:opacity-100 transition-opacity"
-	x-data="{scroll : false}"
-	@scroll.window.throttle="
-		document.documentElement.scrollTop > 600 ? scroll = true : scroll = false
-	"
-	x-show="scroll"
-	x-transition.opacity.duration.250ms
-	>
-	top
-</a>
+<?php get_template_part( 'template-parts/partials/back-to-top' ); ?>
 </body>
 </html>

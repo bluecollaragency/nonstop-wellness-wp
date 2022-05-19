@@ -62,7 +62,7 @@ if( document.getElementsByClassName('hero-slider').length > 0 ) {
     type: 'slider',
     startAt: 0,
     perView: 1
-  }).mount()
+  }).mount({ CustomActiveClass })
 }
 
 // Testimonial Glide Slider

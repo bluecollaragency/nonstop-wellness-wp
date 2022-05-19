@@ -4741,7 +4741,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
       type: "slider",
       startAt: 0,
       perView: 1
-    }).mount();
+    }).mount({ CustomActiveClass });
   }
   if (document.getElementsByClassName("testimonial-slider").length > 0) {
     new Glide(".testimonial-slider", {
