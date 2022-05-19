@@ -6,7 +6,7 @@
 			<div class="absolute right-0 w-20 h-20 rounded-full drop-shadow-[0_0_20px_rgba(0,0,0,0.15)] transform -translate-y-1/2 top-1/2 z-20 hidden lg:block" data-glide-el="controls">
 				<button class="w-full h-full rounded-full bg-white" data-glide-dir=">">nxt</button>
 			</div>
-			<div class="absolute left-0 right-0 mx-auto w-full flex items-center justify-center bottom-12">
+			<div class="absolute left-0 right-0 mx-auto w-full flex lg:hidden items-center justify-center bottom-12">
 				<div class="glide__bullets flex gap-4 z-20" data-glide-el="controls[nav]">
 					<button class="glide__bullet" data-glide-dir="=0"></button>
 					<button class="glide__bullet" data-glide-dir="=1"></button>
@@ -154,9 +154,47 @@
 	</div>
 </div>
 
-<div class="relative bg-secondary lg:bg-transparent rounded-4xl z-10 before:block before:bg-secondary before:absolute before:right-0 before:top-0 before:w-full lg:before:w-1/2 before:h-8 lg:before:h-full before:z-0 before:rounded-4xl lg:before:rounded-none">
-	<div class="container relative mx-auto px-8 lg:px-4 bg-secondary z-10 rounded-b-4xl lg:rounded-tl-4xl h-full flex items-end lg:items-center">
-		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center">
+<div class="
+	overflow-hidden
+	relative 
+	bg-secondary 
+	lg:bg-transparent  
+	z-10 
+	rounded-4xl
+	lg:rounded-none
+	"
+	>
+	<div class="
+	container 
+	mx-auto 
+	px-8 
+	lg:px-4 
+	bg-secondary 
+	z-10 
+	rounded-b-4xl 
+	lg:rounded-tl-4xl 
+	h-full 
+	flex 
+	items-end 
+	lg:items-center 
+	overflow-visible
+	
+	before:block 
+	before:bg-secondary 
+	before:absolute 
+	before:right-0 
+	before:top-0 
+	before:w-full 
+	lg:before:w-1/2 
+	before:h-full 
+	before:z-0 
+	before:rounded-4xl 
+	lg:before:rounded-none
+	before:bg-watermark  
+	before:bg-right-bottom 
+	before:bg-no-repeat 
+	before:bg-contain">
+		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center z-10">
 			<div class="lg:col-span-6 text-center">
 				<img src="//via.placeholder.com/410x410" alt="" class="mx-auto rounded-4xl">
 			</div>

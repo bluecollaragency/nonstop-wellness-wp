@@ -1877,14 +1877,34 @@ h2{
   z-index:0
 }
 
+.before\:-z-10::before{
+  content:var(--tw-content);
+  z-index:-10
+}
+
+.before\:z-10::before{
+  content:var(--tw-content);
+  z-index:10
+}
+
 .before\:block::before{
   content:var(--tw-content);
   display:block
 }
 
+.before\:hidden::before{
+  content:var(--tw-content);
+  display:none
+}
+
 .before\:h-8::before{
   content:var(--tw-content);
   height:2rem
+}
+
+.before\:h-full::before{
+  content:var(--tw-content);
+  height:100%
 }
 
 .before\:w-full::before{
@@ -1907,6 +1927,26 @@ h2{
   content:var(--tw-content);
   --tw-bg-opacity:1;
   background-color:rgb(0 161 155 / var(--tw-bg-opacity))
+}
+
+.before\:bg-watermark::before{
+  content:var(--tw-content);
+  background-image:url('../img/watermark.svg')
+}
+
+.before\:bg-contain::before{
+  content:var(--tw-content);
+  background-size:contain
+}
+
+.before\:bg-right-bottom::before{
+  content:var(--tw-content);
+  background-position:right bottom
+}
+
+.before\:bg-no-repeat::before{
+  content:var(--tw-content);
+  background-repeat:no-repeat
 }
 
 .after\:absolute::after{
@@ -2519,6 +2559,11 @@ h2{
     --tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+
+  .lg\:before\:block::before{
+    content:var(--tw-content);
+    display:block
   }
 
   .lg\:before\:h-full::before{
