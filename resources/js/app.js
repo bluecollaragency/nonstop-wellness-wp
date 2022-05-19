@@ -56,6 +56,15 @@ const CustomActiveClass = (Glide, Components, Events) => {
   return Component;
 };
 
+// hero slider
+if( document.getElementsByClassName('hero-slider').length > 0 ) {
+  new Glide('.hero-slider', {
+    type: 'slider',
+    startAt: 0,
+    perView: 1
+  }).mount()
+}
+
 // Testimonial Glide Slider
 if( document.getElementsByClassName('testimonial-slider').length > 0 ) {
   new Glide('.testimonial-slider', {

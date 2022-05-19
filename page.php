@@ -1,20 +1,73 @@
 <?php get_header(); ?>
 
-<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20 after:block after:absolute after:bottom-0 after:w-full after:h-24 after:bg-primary after:z-0">
-	<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-		<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
-			<h1 class="text-3xl lg:text-6xl font-bold">Lower premiums.<br/>Accesible benefits.<br/>Better health.</h1>
-      <p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-			<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
-		</div>
-	</div>
-	<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-		<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover lg:rounded-l-4xl rounded-b-4xl lg:rounded-br-none">
+<div class="glide hero-slider z-10">
+	<div data-glide-el="track" class="glide__track">
+		<ul class="glide__slides">
+			<li class="glide__slide">
+				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
+					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
+						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
+							<h1 class="text-3xl lg:text-6xl font-bold">Lower premiums.<br/>Accesible benefits.<br/>Better health.</h1>
+							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
+							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
+						</div>
+					</div>
+					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
+						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover lg:rounded-l-4xl rounded-b-4xl lg:rounded-br-none">
+					</div>
+				</div>
+			</li>
+			<li class="glide__slide">
+				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
+					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
+						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
+							<h1 class="text-3xl lg:text-6xl font-bold">Slide 2</h1>
+							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
+							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
+						</div>
+					</div>
+					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
+						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover lg:rounded-l-4xl rounded-b-4xl lg:rounded-br-none">
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
-<div class="relative bg-primary lg:bg-transparent before:block before:bg-primary before:absolute before:left-0 before:top-0 before:w-full lg:before:w-1/2 before:h-8 lg:before:h-full before:z-0 rounded-4xl z-10 bg-watermark lg:bg-none bg-right-bottom bg-no-repeat bg-contain">
-	<div class="container relative mx-auto px-8 lg:px-4 lg:bg-primary z-10 rounded-b-4xl lg:rounded-br-4xl h-full flex items-end lg:items-center lg:bg-watermark bg-right-bottom bg-no-repeat bg-contain">
-		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center">
+<div class="
+	relative 
+	bg-primary 
+	lg:bg-transparent 
+	rounded-4xl 
+	z-0
+	bg-watermark 
+	lg:bg-none 
+	bg-right-bottom 
+	bg-no-repeat 
+	bg-contain
+
+	after:bg-primary
+	after:top-0
+	after:h-1/2
+	after:w-full
+	after:transform
+	after:-translate-y-full
+	after:absolute
+	after:block
+	lg:after:hidden
+
+	before:block 
+	before:bg-primary 
+	before:absolute 
+	before:left-0 
+	before:top-0 
+	before:w-full 
+	lg:before:w-1/2 
+	before:h-8 
+	lg:before:h-full 
+	before:z-0">
+	<div class="container relative mx-auto px-8 lg:px-4 lg:bg-primary z-10 rounded-b-4xl lg:rounded-r-4xl h-full flex items-end lg:items-center lg:bg-watermark bg-right-bottom bg-no-repeat bg-contain lg:-mt-12 xl:-mt-24">
+		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-48 items-center">
 			<div class="lg:col-span-6">
 				<img src="//via.placeholder.com/410x410" alt="" class="mx-auto rounded-4xl">
 			</div>

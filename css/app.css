@@ -656,6 +656,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index:10
 }
 
+.z-0{
+  z-index:0
+}
+
 .order-2{
   order:2
 }
@@ -801,6 +805,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-auto{
   margin-left:auto
+}
+
+.-mt-24{
+  margin-top:-6rem
 }
 
 .block{
@@ -1101,8 +1109,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius:0.75rem
 }
 
-.rounded-2xl{
-  border-radius:1rem
+.rounded-4xl{
+  border-radius:2rem
 }
 
 .rounded-\[32px\]{
@@ -1117,23 +1125,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius:0px
 }
 
-.rounded-4xl{
-  border-radius:2rem
-}
-
-.rounded-b-2xl{
-  border-bottom-right-radius:1rem;
-  border-bottom-left-radius:1rem
-}
-
 .rounded-b-4xl{
   border-bottom-right-radius:2rem;
   border-bottom-left-radius:2rem
-}
-
-.rounded-t-2xl{
-  border-top-left-radius:1rem;
-  border-top-right-radius:1rem
 }
 
 .rounded-t-4xl{
@@ -1331,6 +1325,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top:16rem
 }
 
+.pt-24{
+  padding-top:6rem
+}
+
 .text-left{
   text-align:left
 }
@@ -1369,13 +1367,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height:2.25rem
 }
 
-.text-xl{
-  font-size:1.25rem
-}
-
 .text-4xl{
   font-size:2.5rem;
   line-height:2.75rem
+}
+
+.text-xl{
+  font-size:1.25rem
 }
 
 .font-light{
@@ -1868,11 +1866,6 @@ h2{
   width:100%
 }
 
-.before\:rounded-2xl::before{
-  content:var(--tw-content);
-  border-radius:1rem
-}
-
 .before\:rounded-4xl::before{
   content:var(--tw-content);
   border-radius:2rem
@@ -1946,6 +1939,11 @@ h2{
   height:0.75rem
 }
 
+.after\:h-1\/2::after{
+  content:var(--tw-content);
+  height:50%
+}
+
 .after\:w-full::after{
   content:var(--tw-content);
   width:100%
@@ -1961,6 +1959,18 @@ h2{
   width:0.75rem
 }
 
+.after\:translate-y-full::after{
+  content:var(--tw-content);
+  --tw-translate-y:100%;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.after\:-translate-y-full::after{
+  content:var(--tw-content);
+  --tw-translate-y:-100%;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
 .after\:rotate-45::after{
   content:var(--tw-content);
   --tw-rotate:45deg;
@@ -1970,12 +1980,6 @@ h2{
 .after\:transform::after{
   content:var(--tw-content);
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.after\:rounded-t-2xl::after{
-  content:var(--tw-content);
-  border-top-left-radius:1rem;
-  border-top-right-radius:1rem
 }
 
 .after\:rounded-t-4xl::after{
@@ -2277,6 +2281,14 @@ h2{
     margin-top:-0.25rem
   }
 
+  .lg\:-mt-24{
+    margin-top:-6rem
+  }
+
+  .lg\:-mt-12{
+    margin-top:-3rem
+  }
+
   .lg\:block{
     display:block
   }
@@ -2391,14 +2403,14 @@ h2{
     border-bottom-right-radius:0px
   }
 
-  .lg\:rounded-l-2xl{
-    border-top-left-radius:1rem;
-    border-bottom-left-radius:1rem
-  }
-
   .lg\:rounded-l-4xl{
     border-top-left-radius:2rem;
     border-bottom-left-radius:2rem
+  }
+
+  .lg\:rounded-r-4xl{
+    border-top-right-radius:2rem;
+    border-bottom-right-radius:2rem
   }
 
   .lg\:rounded-br-none{
@@ -2407,10 +2419,6 @@ h2{
 
   .lg\:rounded-br-4xl{
     border-bottom-right-radius:2rem
-  }
-
-  .lg\:rounded-tl-2xl{
-    border-top-left-radius:1rem
   }
 
   .lg\:rounded-tl-4xl{
@@ -2461,6 +2469,11 @@ h2{
   .lg\:px-0{
     padding-left:0px;
     padding-right:0px
+  }
+
+  .lg\:py-48{
+    padding-top:12rem;
+    padding-bottom:12rem
   }
 
   .lg\:text-7xl{
@@ -2523,6 +2536,11 @@ h2{
     margin-left:0px
   }
 
+  .lg\:after\:hidden::after{
+    content:var(--tw-content);
+    display:none
+  }
+
   .lg\:after\:h-4::after{
     content:var(--tw-content);
     height:1rem
@@ -2577,6 +2595,10 @@ h2{
 
   .xl\:mt-20{
     margin-top:5rem
+  }
+
+  .xl\:-mt-24{
+    margin-top:-6rem
   }
 
   .xl\:grid-cols-12{
