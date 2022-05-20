@@ -4,6 +4,7 @@
  */
 $copy = get_field('copy');
 $img_loc = get_field('image_location');
+$image = get_field('image');
 ?>
 <div class="page-image-text container mx-auto px-8 lg:px-4">
 	<div class="grid lg:grid-cols-12 mt-4 gap-8 items-center relative">
@@ -25,7 +26,9 @@ $img_loc = get_field('image_location');
         <?php endif; ?>
       "
       >
-			<img src="//via.placeholder.com/520x520" alt="" class="rounded-4xl w-full h-auto">
+      <?php if($image) {
+        echo wp_get_attachment_image( $image, 'medium', '', ['class' => 'rounded-4xl w-full h-auto'] );
+      } ?>
 		</div>
 		<div 
       class="

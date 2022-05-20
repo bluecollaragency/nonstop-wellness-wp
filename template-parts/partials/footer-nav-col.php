@@ -10,7 +10,7 @@
 			}
 			?>
 			<li>
-				<a class="inline-flex" href="<?= esc_url( $link_url ); ?>" target="<?= esc_attr( $link_target ); ?>"><?= esc_html( $link_title ); ?></a>
+				<a class="inline-flex transition-all text-dark underline-offset-4 hover:text-black hover:underline" href="<?= esc_url( $link_url ); ?>" target="<?= esc_attr( $link_target ); ?>"><?= esc_html( $link_title ); ?></a>
 			</li>
 		<?php endwhile; ?>
 	</ul>
