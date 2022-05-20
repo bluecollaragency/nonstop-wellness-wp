@@ -42,9 +42,27 @@ function my_acf_init_block_types() {
         'render_template'   => 'template-parts/blocks/page-hero.php',
         'category'          => 'nstp',
         'icon'              => 'align-left',
-        'keywords'          => array( 'page', 'end', 'text' ),
+        'keywords'          => array( 'page', 'hero', 'image' ),
       ));
-
-
+      //register page text
+      acf_register_block_type(array(
+        'name'              => 'page-text',
+        'title'             => __('Page Text'),
+        'description'       => __('Page text'),
+        'render_template'   => 'template-parts/blocks/page-text.php',
+        'category'          => 'nstp',
+        'icon'              => 'editor-paragraph',
+        'keywords'          => array( 'page', 'text' ),
+      ));
+      //register page text + image
+      acf_register_block_type(array(
+        'name'              => 'page-image-text',
+        'title'             => __('Page Image + Text'),
+        'description'       => __('Page image + text block'),
+        'render_template'   => 'template-parts/blocks/page-image-text.php',
+        'category'          => 'nstp',
+        'icon'              => 'align-pull-left',
+        'keywords'          => array( 'page', 'image', 'text' ),
+      ));
     }
 }

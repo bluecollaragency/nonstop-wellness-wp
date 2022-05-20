@@ -94,3 +94,17 @@ h2 {
         scale-125
     ;
 }
+
+/* Page text block */
+.page-text-block {
+    h2 { 
+        @apply text-[2rem] lg:text-6xl;
+    }
+}
+
+/* Page Image + Text */
+.page-image-text {
+    h3 {
+        @apply text-2xl lg:text-4xl font-bold;
+    }
+}

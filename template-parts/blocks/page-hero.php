@@ -4,6 +4,16 @@
  */
 
   $img_loc = get_field('image_location');
+  $bg_color = get_field('background_color');
+  $prehead = get_field('preheader');
+  $headline = get_field('header');
+  $copy = get_field('copy');
+  $button = get_field('button');
+  if( $button ) { 
+    $button_url = $button['url'];
+    $button_title = $button['title'];
+    $button_target = $button['target'] ? $button['target'] : '_self';
+  }
 ?>
 
 <div class="relative">
@@ -55,10 +65,20 @@
           lg:pb-32 
           lg:mt-12"
         >
-        <span class="inline-block rounded-full border border-dark px-3 py-1 uppercase text-xs font-bold">Outcomes</span>
-        <h1 class="text-5xl xl:text-7xl font-bold mt-2">Nonstop Benefits</h1>
-        <p class="font-semibold mt-4 text-base lg:text-xl">Duis mollis, est non commodo luctus.</p>
-        <a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Get a quote</a>
+        <?php if($prehead): ?>
+          <span class="inline-block rounded-full border border-dark px-3 py-1 uppercase text-xs font-bold"><?= esc_html($prehead); ?></span>
+        <?php endif; ?>
+        <?php if($headline): ?>
+          <h1 class="text-5xl xl:text-7xl font-bold mt-2"><?= esc_html($headline); ?></h1>
+        <?php endif; ?>
+        <?php if($copy): ?>
+          <div class="space-y-4 mt-4 text-base lg:text-xl font-semibold">
+            <?= $copy; ?>
+          </div>
+        <?php endif; ?>
+        <?php if($button): ?>
+          <a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-dark text-white mx-auto mt-8 no-underline"><?= esc_html($button_title); ?></a>
+        <?php endif; ?>
       </div>
     </div>
     <div 
@@ -68,7 +88,12 @@
         lg:w-7/12 
         h-[80%] 
         lg:h-full 
-        bg-primary 
+        <?php if( $bg_color == 'green' ) {
+          echo 'bg-primary ';
+          } else {
+            echo 'bg-secondary ';
+          } 
+       ?>
         bottom-0 
         lg:top-12 
         z-0 

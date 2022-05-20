@@ -920,6 +920,10 @@
   line-height: 1.5rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1374,6 +1378,37 @@ h2 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+/* Page text block */
+
+.page-text-block h2 {
+    font-size: 2rem;
+  }
+
+@media (min-width: 960px) {
+    .page-text-block h2 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+  }
+
+/* Page Image + Text */
+
+.page-image-text h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+.page-image-text h3 {
+    font-weight: 700;
+  }
+
+@media (min-width: 960px) {
+    .page-image-text h3 {
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+    }
+  }
 
 body {
   font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1848,12 +1883,24 @@ body {
     grid-column-start: 2;
   }
 
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
   .lg\:col-end-6 {
     grid-column-end: 6;
   }
 
   .lg\:col-end-7 {
     grid-column-end: 7;
+  }
+
+  .lg\:col-end-11 {
+    grid-column-end: 11;
+  }
+
+  .lg\:col-end-5 {
+    grid-column-end: 5;
   }
 
   .lg\:-mx-4 {
@@ -2239,6 +2286,10 @@ body {
 
   .xl\:col-end-6 {
     grid-column-end: 6;
+  }
+
+  .xl\:col-end-5 {
+    grid-column-end: 5;
   }
 
   .xl\:-mt-24 {

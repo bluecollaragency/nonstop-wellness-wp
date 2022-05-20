@@ -37,24 +37,28 @@
       ?>
     ">
 		<div class="max-w-prose lg:max-w-screen-md mx-auto text-center">
-      <h2 
-        class="
-          text-center 
-          text-3xl 
-          <?php if( $headline_size == 'md' ) {
-            echo 'lg:text-4xl';
-          } else if( $headline_size == 'lg' ) {
-            echo 'lg:text-6xl';
-          } 
-          ?>
-        "
-        >
-        <?= $headline; ?>
-      </h2>
+      <?php if($headline): ?>  
+        <h2 
+          class="
+            text-center 
+            text-3xl 
+            <?php if( $headline_size == 'md' ) {
+              echo 'lg:text-4xl';
+            } else if( $headline_size == 'lg' ) {
+              echo 'lg:text-6xl';
+            } 
+            ?>
+          "
+          >
+          <?= esc_html($headline); ?>
+        </h2>
+      <?php endif; ?>
       <?php if($text) {
         echo $text;
       } ?>
-			<a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-dark text-white mx-auto mt-8 no-underline"><?= esc_html($button_title); ?></a>
+      <?php if($button): ?>
+			  <a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-dark text-white mx-auto mt-8 no-underline"><?= esc_html($button_title); ?></a>
+      <?php endif; ?>
 		</div>
 	</div>
 </div>
