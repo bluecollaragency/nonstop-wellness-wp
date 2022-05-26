@@ -16,10 +16,12 @@
   }
 
   $bg_color = get_field('background_color');
+  $last_block = get_field('last_block');
 ?>
 <div 
 	class="
     relative
+    <?php if( $last_block ): ?>
     after:w-full
     after:bg-white
     after:rounded-4xl
@@ -28,6 +30,7 @@
     after:h-32
     after:-bottom-8
     after:left-0
+    <?php endif; ?>
   "
 	>
 	<div class="
