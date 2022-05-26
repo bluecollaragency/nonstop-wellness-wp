@@ -1,9 +1,9 @@
 <?php if( have_rows('page_tabs') ): ?>
-<div class="relative">
+<div class="relative page-tabs-container">
   <div class="container mx-auto px-8 lg:px-4">
     <div class="text-center">
-      <h2>How You Benefit</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
+      <h2 class="text-[2rem] lg:text-6xl">How You Benefit</h2>
+      <p class="mt-4">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
     </div>
     <div  
       x-data="{
@@ -23,7 +23,7 @@
         }
       }"
       x-id="['tab']"
-      class="page-tabs"
+      class="page-tabs mt-12"
       >
       <ul
         x-ref="tablist"

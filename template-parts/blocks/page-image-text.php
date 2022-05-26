@@ -2,7 +2,7 @@
 /**
  * Page Image + Text Block Template
  */
-$copy = get_field('copy');
+$copy = get_field('copy') ?: 'Copy goes here';
 $img_loc = get_field('image_location');
 $image = get_field('image');
 ?>

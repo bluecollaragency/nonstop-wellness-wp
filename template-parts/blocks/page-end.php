@@ -18,12 +18,22 @@
   $bg_color = get_field('background_color');
 ?>
 <div 
-	class="relative"
+	class="
+    relative
+    after:w-full
+    after:bg-white
+    after:rounded-4xl
+    after:rounded-b-none
+    after:absolute
+    after:h-32
+    after:-bottom-8
+    after:left-0
+  "
 	>
 	<div class="
       container 
-      
-      py-24 px-8 
+      py-24 
+      px-8 
       mx-auto 
       rounded-4xl 
       mt-32 

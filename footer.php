@@ -7,7 +7,17 @@
 
 <?php do_action( 'tailpress_content_after' ); ?>
 
-<footer id="colophon" class="site-footer bg-white pt-44 pb-20 -mt-24 rounded-t-4xl" role="contentinfo">
+<footer 
+	id="colophon" 
+	class="
+		site-footer 
+		bg-white 
+		pt-20 
+		pb-20  
+		rounded-t-4xl
+	" 
+	role="contentinfo"
+	>
 	<?php do_action( 'tailpress_footer' ); ?>
 	<div class="container px-8 lg:px-4 mx-auto">
 		<?php	

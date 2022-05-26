@@ -1,0 +1,9 @@
+/* Page Image + Text */
+.page-image-text {
+  h3 {
+    @apply text-2xl lg:text-4xl font-bold;
+  }
+  ul {
+    @apply list-disc ml-6 space-y-2;
+  }
+}
