@@ -45,7 +45,7 @@
         >
         <!-- Tab -->
         <?php while( have_rows('page_tabs') ): the_row(); 
-          $tab_title = get_sub_field('tab_title');
+          $tab_title = get_sub_field('tab_title') ?: 'Tab Title';
           ?>
           <li class="flex-1">
             <button
@@ -65,7 +65,7 @@
       </ul>
       <div role="tabpanels" class="">
         <?php while( have_rows('page_tabs') ): the_row(); 
-          $tab_content = get_sub_field('tab_content');
+          $tab_content = get_sub_field('tab_content') ?: 'Tab Content';
           ?>
           <!-- Panel -->
           <section
