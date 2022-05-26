@@ -2,9 +2,10 @@ import Alpine from 'alpinejs';
 import focus from '@alpinejs/focus';
 import Glide from '@glidejs/glide';
 import { siblings } from '@glidejs/glide/src/utils/dom';
- 
+
+
 window.Alpine = Alpine;
-Alpine.plugin(focus);
+Alpine.plugin(focus)
 Alpine.start();
 
 

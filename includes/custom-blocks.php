@@ -64,5 +64,15 @@ function my_acf_init_block_types() {
         'icon'              => 'align-pull-left',
         'keywords'          => array( 'page', 'image', 'text' ),
       ));
+      //register page tabs
+      acf_register_block_type(array(
+        'name'              => 'page-tabs',
+        'title'             => __('Page Tabs'),
+        'description'       => __('Tab section for page'),
+        'render_template'   => 'template-parts/blocks/page-tabs.php',
+        'category'          => 'nstp',
+        'icon'              => 'archive',
+        'keywords'          => array( 'page', 'tabs' ),
+      ));
     }
 }
