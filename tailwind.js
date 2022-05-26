@@ -1,22 +1,13 @@
 module.exports = {
-    mode: 'jit',
     future: {
         removeDeprecatedGapUtilities: true,
         purgeLayersByDefault: true,
     },
-    purge: {
-        content: [
-            './*.php',
-            './templates/**/*.php',
-            './build/js/**/*.js',
-        ],
-        options: {
-            safelist: [],
-            blocklist: [],
-            keyframes: true,
-            fontFace: true,
-        },
-    },
+    content: [
+        './*.php',
+        './templates/**/*.php',
+        './build/js/**/*.js',
+    ],
     theme: {
         container: {
             center: true,
@@ -36,9 +27,6 @@ module.exports = {
                 tighter: '1.125',
             },
         }
-    },
-    variants: {
-        textColor: ['responsive', 'hover', 'focus', 'visited'],
     },
     plugins: [
         ({addUtilities}) => {
