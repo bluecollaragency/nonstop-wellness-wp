@@ -66,10 +66,10 @@
           lg:mt-12"
         >
         <?php if($prehead): ?>
-          <span class="inline-block rounded-full border border-dark px-3 py-1 uppercase text-xs font-bold"><?= esc_html($prehead); ?></span>
+          <span class="inline-block uppercase text-xs font-bold mb-4"><?= esc_html($prehead); ?></span>
         <?php endif; ?>
         <?php if($headline): ?>
-          <h1 class="text-5xl xl:text-7xl font-bold mt-2"><?= esc_html($headline); ?></h1>
+          <h1 class="text-5xl xl:text-7xl font-bold"><?= esc_html($headline); ?></h1>
         <?php endif; ?>
         <?php if($copy): ?>
           <div class="space-y-4 mt-4 text-base lg:text-xl font-semibold">

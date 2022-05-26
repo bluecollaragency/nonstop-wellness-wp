@@ -4,82 +4,202 @@
 
 get_header(); ?>
 
-  <!-- <div class="relative">
-    <div class="relative lg:absolute w-full lg:w-1/2 lg:h-full z-10 rounded-4xl lg:rounded-l-none">
-      <img src="//via.placeholder.com/708x560" alt="" class="w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-l-none">
-    </div>
-    <div class="container mx-auto px-8 lg:px-4 overflow-visible">
-      <div class="relative grid gap-x-8 lg:grid-cols-12 z-10">
-        <div class="lg:col-span-5 lg:col-start-8 py-20 lg:pt-44 lg:pb-32 lg:mt-12">
-          <span class="inline-block rounded-full border border-dark px-3 py-1 uppercase text-xs font-bold">Outcomes</span>
-          <h1 class="text-5xl xl:text-7xl font-bold mt-2">Nonstop Benefits</h1>
-          <p class="font-semibold mt-4 text-base lg:text-xl">Duis mollis, est non commodo luctus.</p>
-          <a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Get a quote</a>
-        </div>
+  <div class="relative">
+    <div class="container mx-auto px-8 lg:px-4">
+      <div class="text-center">
+        <h2>How You Benefit</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
       </div>
-      <div class="absolute w-full lg:w-7/12 h-[80%] lg:h-full bg-primary right-0 bottom-0 lg:top-12 z-0 rounded-4xl lg:rounded-r-none"></div>
+      <div  
+        x-data="{
+          selectedId: null,
+          init() {
+              // Set the first available tab on the page on page load.
+              this.$nextTick(() => this.select(this.$id('tab', 1)))
+          },
+          select(id) {
+              this.selectedId = id
+          },
+          isSelected(id) {
+              return this.selectedId === id
+          },
+          whichChild(el, parent) {
+              return Array.from(parent.children).indexOf(el) + 1
+          }
+        }"
+        x-id="['tab']"
+        class="page-tabs"
+        >
+        <ul
+          x-ref="tablist"
+          @keydown.right.prevent.stop="$focus.wrap().next()"
+          @keydown.home.prevent.stop="$focus.first()"
+          @keydown.page-up.prevent.stop="$focus.first()"
+          @keydown.left.prevent.stop="$focus.wrap().prev()"
+          @keydown.end.prevent.stop="$focus.last()"
+          @keydown.page-down.prevent.stop="$focus.last()"
+          role="tablist"
+          class="tablist 
+            w-full 
+            max-w-screen-md
+            flex 
+            items-center 
+            justify-center 
+            space-x-4
+            mx-auto"
+          >
+          <!-- Tab -->
+          <li class="flex-1">
+            <button
+              :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+              @click="select($el.id)"
+              @mousedown.prevent
+              @focus="select($el.id)"
+              type="button"
+              :tabindex="isSelected($el.id) ? 0 : -1"
+              :aria-selected="isSelected($el.id)"
+              :class="isSelected($el.id) ? 'border-b-primary text-dark' : 'border-b-[#D6DCE9] text-gray-400'"
+              class="w-full font-semibold border-b-2 pb-3 hover:border-b-primary  hover:text-dark"
+              role="tab"
+            >Tab 1</button>
+          </li>
+          <li class="flex-1">
+            <button
+              :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+              @click="select($el.id)"
+              @mousedown.prevent
+              @focus="select($el.id)"
+              type="button"
+              :tabindex="isSelected($el.id) ? 0 : -1"
+              :aria-selected="isSelected($el.id)"
+              :class="isSelected($el.id) ? 'border-b-primary text-dark' : 'border-b-[#D6DCE9] text-gray-400'"
+              class="w-full flex-1 font-semibold border-b-2 pb-3 hover:border-b-primary  hover:text-dark"
+              role="tab"
+            >Tab 2</button>
+          </li>
+          <li class="flex-1">
+            <button
+              :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+              @click="select($el.id)"
+              @mousedown.prevent
+              @focus="select($el.id)"
+              type="button"
+              :tabindex="isSelected($el.id) ? 0 : -1"
+              :aria-selected="isSelected($el.id)"
+              :class="isSelected($el.id) ? 'border-b-primary text-dark' : 'border-b-[#D6DCE9] text-gray-400'"
+              class="w-full flex-1 font-semibold border-b-2 pb-3 hover:border-b-primary  hover:text-dark"
+              role="tab"
+            >Tab 3</button>
+          </li>
+        </ul>
+        <div role="tabpanels" class="">
+          <!-- Panel -->
+          <section
+            x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+            :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+            role="tabpanel"
+            class="p-8"
+            >
+            Tab 1
+          </section>
+  
+          <section
+            x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+            :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+            role="tabpanel"
+            class="p-8"
+            >
+            Tab 2
+          </section>
+
+          <section
+            x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+            :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+            role="tabpanel"
+            class="p-8"
+            >
+            Tab 3
+          </section>
+        </div>
+        
+      </div>
     </div>
   </div>
 
-  <div class="relative mt-24">
-    <div 
-      class="
-        relative 
-        lg:absolute 
-        w-full 
-        lg:w-1/2 
-        lg:h-full 
-        z-10 
-        rounded-4xl 
-        lg:rounded-r-none 
-        right-0
-      "
-      >
-      <img 
-        src="//via.placeholder.com/708x560" 
-        alt="" 
-        class="
-          w-full 
-          lg:h-full 
-          lg:object-cover 
-          rounded-4xl 
-          lg:rounded-r-none
-        "
-      >
-    </div>
-    <div class="container mx-auto px-8 lg:px-4 overflow-visible">
-      <div class="relative grid gap-x-8 lg:grid-cols-12 z-10">
-        <div 
+  <!-- <div 
           class="
-            lg:col-span-5 
-            lg:col-start-2 
-            py-20 
-            lg:pt-44 
-            lg:pb-32 lg:mt-12">
-          <span class="inline-block rounded-full border border-dark px-3 py-1 uppercase text-xs font-bold">Outcomes</span>
-          <h1 class="text-5xl xl:text-7xl font-bold mt-2">Nonstop Benefits</h1>
-          <p class="font-semibold mt-4 text-base lg:text-xl">Duis mollis, est non commodo luctus.</p>
-          <a href="#" class="btn-lg bg-dark text-white mx-auto mt-8">Get a quote</a>
-        </div>
-      </div>
-      <div 
-        class="
-          absolute 
-          w-full 
-          lg:w-7/12 
-          h-[80%] 
-          lg:h-full 
-          bg-primary 
-          left-0 
-          bottom-0 
-          lg:top-12 
-          z-0 
-          rounded-4xl 
-          lg:rounded-l-none
-        "
-      ></div>
-    </div>
-  </div> -->
+            tablist 
+            w-full 
+            max-w-screen-md
+            flex 
+            items-center 
+            justify-center 
+            space-x-4
+            mx-auto
+          "
+          role="tablist"
+          aria-label="benefit tabs"
+          >
+          <button
+            role="tab"
+            class="flex-1 font-semibold border-b-2 pb-3 hover:border-b-primary  hover:text-dark"
+            :class="{ 
+              'border-b-primary text-dark': tab === 'item1',
+              'border-b-[#D6DCE9] text-gray-400': tab !== 'item1'
+             }"
+            @click="tab = 'item1'"
+            @keyup.right="tab = 'item2'"
+            aria-controls="item1"
+            tabindex="0"
+            >
+            Employer
+          </button>
+          <button
+            role="button"
+            class="flex-1 font-semibold border-b-2 border-b-[#D6DCE9] pb-3 hover:border-b-primary text-gray-400 hover:text-dark"
+            :class="{ 
+              'border-b-primary text-dark': tab === 'item2'
+             }"
+            @click="tab = 'item2'"
+            aria-controls="item2"
+            tabindex="-1"
+            >
+            Employee
+          </button>
+          <button
+            role="button"
+            class="flex-1 font-semibold border-b-2 border-b-[#D6DCE9] pb-3 hover:border-b-primary text-gray-400 hover:text-dark"
+            :class="{ 
+              'border-b-primary text-dark': tab === 'item3'
+             }"
+            @click="tab = 'item3'"
+            aria-controls="item3"
+            tabindex="-1"
+            >
+            Broker
+          </button>
+        </div> -->
+        <!-- <div class="relative">
+          <div 
+            role="tabpanel"
+            class="tabpanel absolute w-full"
+            id="item1"
+            aria-labelledby="item1"
+            x-show.transition.opacity.duration.750ms="tab === 'item1'"
+            >
+            <a href="#">Item 1</a>
+          </div>
+
+          <div 
+            role="tabpanel"
+            class="tabpanel absolute w-full"
+            id="item2"
+            aria-labelledby="item2"
+            x-show.transition.opacity.duration.750ms="tab === 'item2'"
+            >
+            Item 2
+          </div>
+        </div> -->
 
 	<?php if ( have_posts() ) : ?>
 		<?php
