@@ -52,7 +52,7 @@ get_header(); ?>
 				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
 					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
 						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
-							<h1 class="text-3xl lg:text-6xl font-bold">Slide 2</h1>
+							<h1 class="text-3xl lg:text-6xl font-bold">Slide 3</h1>
 							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
 							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
 						</div>
