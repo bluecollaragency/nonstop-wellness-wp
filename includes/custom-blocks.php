@@ -74,5 +74,15 @@ function my_acf_init_block_types() {
         'icon'              => 'archive',
         'keywords'          => array( 'page', 'tabs' ),
       ));
+      //register page form select
+      acf_register_block_type(array(
+        'name'              => 'page-form-select',
+        'title'             => __('Page form select'),
+        'description'       => __('Form select for contact pages'),
+        'render_template'   => 'template-parts/blocks/page-form-select.php',
+        'category'          => 'nstp',
+        'icon'              => 'feedback',
+        'keywords'          => array( 'page', 'tabs' ),
+      ));
     }
 }

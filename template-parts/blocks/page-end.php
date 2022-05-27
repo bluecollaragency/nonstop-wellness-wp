@@ -33,7 +33,8 @@
     <?php endif; ?>
   "
 	>
-	<div class="
+	<div 
+    class="
       container 
       py-24 
       px-8 
@@ -42,10 +43,10 @@
       mt-32 
       relative 
       z-10
-      <?php if( $bg_color == 'green' ) {
-        echo 'bg-primary ';
+      <?php if( $bg_color == 'teal' ) {
+        echo 'bg-secondary ';
         } else {
-          echo 'bg-secondary ';
+          echo 'bg-primary ';
         } 
       ?>
     ">

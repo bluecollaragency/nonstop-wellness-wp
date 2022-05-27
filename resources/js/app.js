@@ -2,11 +2,15 @@ import Alpine from 'alpinejs';
 import focus from '@alpinejs/focus';
 import Glide from '@glidejs/glide';
 import { siblings } from '@glidejs/glide/src/utils/dom';
+import Choices from 'choices.js';
 
 
 window.Alpine = Alpine;
 Alpine.plugin(focus)
 Alpine.start();
+
+// const choice_element = document.querySelector('[data-choices-select]');
+// const choices = new Choices(choice_element);
 
 
 // Put active classes immediatly when glide changes
