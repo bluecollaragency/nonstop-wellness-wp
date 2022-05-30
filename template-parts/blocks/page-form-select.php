@@ -1,34 +1,46 @@
-<div class="max-w-screen-sm mx-auto px-8 lg:px-4">
-	
-    <div x-data="{ formselect: '' }">
-			<span id="contactLabel">Please select a reason for contacting us</span>
-    	<select 
-				name="" 
-				id="" 
-				class="w-full rounded-2xl border-none outline-none focus:ring-gray-300 mt-1 px-4 py-3 cursor-pointer"
-				x-model="formselect"
-				aria-labelledby="contactLabel"
-				>
-				<option value="" disabled>Please select a reason for contacting us</option>
-	      <option>Name</option>
-	      <option>Something else</option>
-	      <option>Another thing</option>
-	    </select>
-			<div 
-				x-show="formselect === 'Name'"
-				>
-				name
+<?php
+	$header = get_field('section_header');
+	$intro = get_field('section_intro_text');
+	$placeholder = get_field('form_select_placeholder');
+?>
+<?php if( have_rows('contact_form_select') ): ?>
+<div class="block-page-form-select max-w-screen-sm mx-auto px-8 lg:px-4">
+  <div x-data="{ formselect: '' }">
+		<?php if( $header or $intro ): ?>
+			<div class="text-center space-y-4 mb-8">
+			<?php if($header): ?>	
+				<h2 id="contactLabel"><?= $header; ?></h2>
+			<?php endif; ?>
+			<?php if($intro): ?>	
+				<?= $intro; ?>
+			<?php endif; ?>
 			</div>
-			<div 
-				x-show="formselect === 'Something else'"
-				>
-				something else
-			</div>
-			<div 
-				x-show="formselect === 'Another thing'"
-				>
-				another thing
-			</div>
-
-    </div>
+		<?php endif; ?>
+    <select 
+			name="" 
+			id="" 
+			class="w-full rounded-2xl border-none outline-none focus:ring-gray-300 px-4 py-3 cursor-pointer"
+			x-model="formselect"
+			aria-labelledby="contactLabel"
+			>
+			<option value="" disabled><?= esc_html($placeholder); ?></option>
+      <?php while( have_rows('contact_form_select') ): the_row(); 
+        $form_name = get_sub_field('form_name');
+      ?>
+	    <option><?= esc_html($form_name); ?></option>
+      <?php endwhile; ?>
+	  </select>
+    <?php while( have_rows('contact_form_select') ): the_row(); 
+        $form_name = get_sub_field('form_name');
+        $form_content = get_sub_field('form_content');
+    ?>
+		<div 
+			x-show="formselect === '<?= $form_name; ?>'"
+			class="form-panel"
+			>
+			<?= $form_content; ?>
+		</div>
+    <?php endwhile; ?>
   </div>
+</div>
+<?php endif; ?>

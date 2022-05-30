@@ -84,5 +84,15 @@ function my_acf_init_block_types() {
         'icon'              => 'feedback',
         'keywords'          => array( 'page', 'tabs' ),
       ));
+      //register page row - two column
+      acf_register_block_type(array(
+        'name'              => 'page-row-two-column',
+        'title'             => __('Page row, two column'),
+        'description'       => __('Two column row for pages'),
+        'render_template'   => 'template-parts/blocks/page-row-two-column.php',
+        'category'          => 'nstp',
+        'icon'              => 'layout',
+        'keywords'          => array( 'page', 'row', 'two', 'columns', 'column' ),
+      ));
     }
 }
