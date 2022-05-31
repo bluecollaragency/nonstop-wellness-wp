@@ -1462,6 +1462,10 @@ select{
   height:4rem
 }
 
+.h-0{
+  height:0px
+}
+
 .min-h-screen{
   min-height:100vh
 }
@@ -1742,6 +1746,11 @@ select{
   border-bottom-left-radius:2rem
 }
 
+.rounded-b-none{
+  border-bottom-right-radius:0px;
+  border-bottom-left-radius:0px
+}
+
 .border-b{
   border-bottom-width:1px
 }
@@ -1916,6 +1925,11 @@ select{
   padding-bottom:2rem
 }
 
+.px-10{
+  padding-left:2.5rem;
+  padding-right:2.5rem
+}
+
 .pt-20{
   padding-top:5rem
 }
@@ -1942,6 +1956,10 @@ select{
 
 .pb-3{
   padding-bottom:0.75rem
+}
+
+.pb-\[100\%\]{
+  padding-bottom:100%
 }
 
 .text-left{
@@ -3071,6 +3089,10 @@ h2{
     grid-template-columns:repeat(2, minmax(0, 1fr))
   }
 
+  .lg\:grid-cols-3{
+    grid-template-columns:repeat(3, minmax(0, 1fr))
+  }
+
   .lg\:flex-row{
     flex-direction:row
   }
@@ -3314,6 +3336,10 @@ h2{
 
   .xl\:grid-cols-12{
     grid-template-columns:repeat(12, minmax(0, 1fr))
+  }
+
+  .xl\:grid-cols-3{
+    grid-template-columns:repeat(3, minmax(0, 1fr))
   }
 
   .xl\:text-7xl{

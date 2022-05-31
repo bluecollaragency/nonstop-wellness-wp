@@ -31,7 +31,7 @@ $image_icon = get_field('image_icon');
         <?php if($image) {
           echo wp_get_attachment_image( $image, 'medium', '', ['class' => 'rounded-4xl w-full h-auto'] );
         } ?>
-        
+        <?php if($image_icon): ?>
         <img 
   				src="https://via.placeholder.com/94x94" 
   				alt="Placeholder Image"
@@ -48,7 +48,7 @@ $image_icon = get_field('image_icon');
             } ?>
           "
   			>
-        
+        <?php endif; ?>
   		</div>
   		<div 
         class="
