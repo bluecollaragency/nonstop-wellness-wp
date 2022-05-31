@@ -44,14 +44,14 @@
         $image, 
         'full', 
         '', 
-        ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-l-none'] 
+        ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-l-none', 'sizes' => '(max-width: 959px) 100vw, 50vw'] 
       ); 
       } else {
         echo wp_get_attachment_image( 
           $image, 
           'full', 
           '', 
-          ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-r-none'] 
+          ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-r-none', 'sizes' => '(max-width: 959px) 100vw, 50vw'] 
         );
       }
     ?>
