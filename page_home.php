@@ -394,7 +394,11 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="order-1 lg:order-2 lg:col-start-7 xl:col-start-7 lg:col-span-6 xl:col-span-5 relative">
-			<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-4xl w-full h-auto">
+			<img 
+				src="//via.placeholder.com/520x520" 
+				alt="" 
+				class="mx-auto rounded-4xl w-full h-auto"
+			>
 			<img 
 				src="https://via.placeholder.com/94x94" 
 				alt="Placeholder Image"
