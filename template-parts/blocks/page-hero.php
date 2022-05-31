@@ -5,10 +5,14 @@
 
   $img_loc = get_field('image_location');
   $bg_color = get_field('background_color');
-  $prehead = get_field('preheader');
-  $headline = get_field('header');
-  $copy = get_field('copy');
-  $button = get_field('button');
+  $image = get_field('image') ?: 209;
+  $content = get_field('content_group');
+  if($content){
+    $prehead = $content['preheader'];
+    $headline = $content['header'];
+    $copy = $content['copy'];
+    $button = $content['button'];
+  }
   if( $button ) { 
     $button_url = $button['url'];
     $button_title = $button['title'];
@@ -34,7 +38,24 @@
       <?php endif; ?>
     "
     >
-    <img 
+    <?php 
+      if($img_loc){
+      echo wp_get_attachment_image( 
+        $image, 
+        'full', 
+        '', 
+        ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-l-none'] 
+      ); 
+      } else {
+        echo wp_get_attachment_image( 
+          $image, 
+          'full', 
+          '', 
+          ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-r-none'] 
+        );
+      }
+    ?>
+    <!-- <img 
       src="//via.placeholder.com/708x560" 
       alt="" 
       class="
@@ -48,7 +69,7 @@
           lg:rounded-r-none 
         <?php endif; ?>
       "
-    >
+    > -->
   </div>
   <div class="container mx-auto px-8 lg:px-4 overflow-visible">
     <div class="relative grid gap-x-8 lg:grid-cols-12 z-10">
