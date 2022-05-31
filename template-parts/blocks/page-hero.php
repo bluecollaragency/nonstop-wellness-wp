@@ -55,21 +55,6 @@
         );
       }
     ?>
-    <!-- <img 
-      src="//via.placeholder.com/708x560" 
-      alt="" 
-      class="
-        w-full 
-        lg:h-full 
-        lg:object-cover 
-        rounded-4xl 
-        <?php if($img_loc): ?>
-          lg:rounded-l-none
-        <?php else: ?>
-          lg:rounded-r-none 
-        <?php endif; ?>
-      "
-    > -->
   </div>
   <div class="container mx-auto px-8 lg:px-4 overflow-visible">
     <div class="relative grid gap-x-8 lg:grid-cols-12 z-10">
