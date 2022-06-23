@@ -3,68 +3,8 @@
 
 get_header(); ?>
 
-<div class="glide hero-slider z-10">
-	<div class="absolute w-full h-full top-0 left-0 right-0 mx-auto">
-		<div class="container relative mx-auto h-full">
-			<div class="absolute right-0 w-20 h-20 rounded-full drop-shadow-[0_0_20px_rgba(0,0,0,0.15)] transform -translate-y-1/2 top-1/2 z-20 hidden lg:block" data-glide-el="controls">
-				<button class="w-full h-full rounded-full bg-white" data-glide-dir=">">nxt</button>
-			</div>
-			<div class="absolute left-0 right-0 mx-auto w-full flex lg:hidden items-center justify-center bottom-12">
-				<div class="glide__bullets flex gap-4 z-20" data-glide-el="controls[nav]">
-					<button class="glide__bullet" data-glide-dir="=0"></button>
-					<button class="glide__bullet" data-glide-dir="=1"></button>
-					<button class="glide__bullet" data-glide-dir="=2"></button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div data-glide-el="track" class="glide__track">
-		<ul class="glide__slides">
-			<li class="glide__slide">
-				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
-					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-						<div class="w-full lg:w-7/12 lg:ml-[8.33%] py-12 lg:py-0">
-							<h1 class="text-3xl lg:text-6xl font-bold">Lower premiums.<br/>Accesible benefits.<br/>Better health.</h1>
-							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
-						</div>
-					</div>
-					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
-					</div>
-				</div>
-			</li>
-			<li class="glide__slide">
-				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
-					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
-							<h1 class="text-3xl lg:text-6xl font-bold">Slide 2</h1>
-							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
-						</div>
-					</div>
-					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
-					</div>
-				</div>
-			</li>
-			<li class="glide__slide">
-				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
-					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
-							<h1 class="text-3xl lg:text-6xl font-bold">Slide 3</h1>
-							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
-						</div>
-					</div>
-					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
+<?php the_content(); ?>
+
 <div class="
 	relative 
 	bg-primary 
@@ -276,133 +216,51 @@ get_header(); ?>
 
 <div>
 	<div class="container mx-auto px-8 lg:px-4 mt-40">
-		<div class="grid grid-cols-12">
+		<div class="grid grid-cols-12 rounded-[40px] px-8 lg:px-12">
 			<div class="col-start-1 xl:col-start-2 col-end-12 md:col-end-6 lg:col-end-6">
 				<h2>Our mission drives our service</h2>
 			</div>
 		</div>
 	</div>
 	<div class="container mx-auto px-8 lg:px-4">
-		<div class="grid lg:grid-cols-12 mt-4 gap-y-16 gap-x-6 relative">
-			<div class="col-start-1 xl:col-start-2 col-end-12 lg:col-end-6 overflow-visible">
+		<div class="grid lg:grid-cols-12 xl:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative rounded-[40px] px-8 lg:px-12">
+			<div class="order-2 lg:order-1 col-start-1 xl:col-start-2 lg:col-end-6 xl:col-end-6 lg:col-span-6 xl:col-span-5 overflow-visible">
 				<p class="">The Nonstop team takes immense pride in our level of customer service and the ability to develop strong trusting relationships with our clients.</p>
 				<a href="#" class="btn-lg bg-dark text-white mt-6">Learn about us</a>
-				<p class="mt-12 xl:mt-20 hidden lg:block">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
-				<div class="absolute w-1/2 h-[2px] bg-primary hidden lg:flex items-center z-20 mt-4 after:right-0 after:absolute after:h-4 after:w-4 after:border-t-2 after:border-r-2 after:transform after:rotate-45 after:border-primary"></div>
+				<p class="mt-12">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
 			</div>
-			<div class="relative col-start-1 lg:col-start-7 col-end-12 md:col-end-12">
-				<div class="relative">
-					<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-4xl w-full h-auto">
-					<img 
-						src="https://via.placeholder.com/94x94" 
-						alt="Placeholder Image"
-						class="absolute right-6 -bottom-6 w-1/3 lg:bottom-12 lg:-right-12"
-					>
-				</div>
-				<p class="mt-8 block lg:hidden ml-12">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>			
-				<div class="absolute h-1/2 bottom-0 w-[2px] bg-primary flex lg:hidden z-20 ml-7 after:mx-auto after:top-0 after:absolute after:h-3 after:w-3 after:border-t-2 after:border-l-2 after:transform after:rotate-45 after:border-primary after:-ml-[5px]"></div>
+			<div class="order-1 lg:order-2 lg:col-start-7 xl:col-start-7 lg:col-span-6 xl:col-span-6 relative">
+				<img 
+					src="//via.placeholder.com/644x470" 
+					alt="" 
+					class="mx-auto rounded-4xl w-full h-auto"
+				>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="container mx-auto px-8 lg:px-4 mt-24">
-	<div class="grid lg:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
-		<div class="relative col-start-1 xl:col-start-2 col-end-12 lg:col-end-7 overflow-visible">
-			<img src="//via.placeholder.com/520x520" alt="" class="mx-auto rounded-4xl w-full h-auto">
-			<img 
-				src="https://via.placeholder.com/94x94" 
-				alt="Placeholder Image"
-				class="absolute right-6 -bottom-6 w-1/3 lg:bottom-12 lg:-left-12"
-			>
+	<div class="grid lg:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative bg-white rounded-[40px] py-12 px-8 lg:px-12">
+		<div class="relative col-start-1 col-end-12 lg:col-end-7 overflow-visible">
+			<img src="//via.placeholder.com/644x470" alt="" class="mx-auto rounded-4xl w-full h-auto">
 		</div>
 		<div class="col-start-1 lg:col-start-8 xl:col-start-8 col-end-12 md:col-end-12 lg:col-span-5 xl:col-span-4">
-			<p class="lg:mt-12 ml-12 lg:ml-0">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
-			<div class="
-				absolute 
-				w-[2px] 
-				lg:w-1/2 
-				h-1/2 
-				lg:h-[2px] 
-				bottom-0 
-				lg:bottom-auto 
-				lg:right-0 
-				bg-primary 
-				flex 
-				lg:items-center 
-				z-20 
-				lg:mr-[8.33%]
-				ml-7 
-				lg:ml-0 
-				lg:mt-4 
-
-				after:absolute
-				lg:after:left-0 
-				after:h-3 
-				lg:after:h-4 
-				after:w-3 
-				lg:after:w-4 
-				after:border-t-2 
-				after:border-l-2 
-				after:transform 
-				after:rotate-45 
-				lg:after:-rotate-45 
-				after:border-primary 
-				after:-ml-[5px] 
-				lg:after:ml-0">
-			</div>
+			<p>Nothing is greater than the power of human connection: no complicated automated phone system, no 45-minute hold for the next agent to get the answers you need.</p>
 		</div>
 	</div>
 </div>
 
 <div class="container mx-auto px-8 lg:px-4 mt-24">
-	<div class="grid lg:grid-cols-12 xl:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative">
+	<div class="grid lg:grid-cols-12 xl:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative rounded-[40px] py-12 px-8 lg:px-12">
 		<div class="order-2 lg:order-1 col-start-1 xl:col-start-2 lg:col-end-6 xl:col-end-6 lg:col-span-6 xl:col-span-5 overflow-visible">
-			<p class="lg:mt-12 ml-12 lg:ml-0">A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
-			<div class="
-				absolute 
-				w-[2px] 
-				lg:w-1/2 
-				h-1/2 
-				lg:h-[2px] 
-				bottom-0 
-				lg:bottom-auto 
-				lg:left-0 
-				bg-primary 
-				flex 
-				lg:items-center 
-				z-20 
-				lg:ml-[8.33%]
-				ml-7 
-				lg:mt-4 
-
-				after:absolute
-				lg:after:right-0 
-				after:h-3 
-				lg:after:h-4 
-				after:w-3 
-				lg:after:w-4 
-				after:border-t-2 
-				after:border-l-2 
-				lg:after:border-r-2 
-				lg:after:border-l-0
-				after:transform 
-				after:rotate-45 
-				after:border-primary 
-				after:-ml-[5px] 
-				lg:after:ml-0">
-			</div>
+			<p>A healthy community is a thriving one. Early access and preventative care is key to driving the wellbeing of our communities. Everyone deserves equal access to comprehensive health coverage.</p>
 		</div>
-		<div class="order-1 lg:order-2 lg:col-start-7 xl:col-start-7 lg:col-span-6 xl:col-span-5 relative">
+		<div class="order-1 lg:order-2 lg:col-start-7 xl:col-start-7 lg:col-span-6 xl:col-span-6 relative">
 			<img 
-				src="//via.placeholder.com/520x520" 
+				src="//via.placeholder.com/644x470" 
 				alt="" 
 				class="mx-auto rounded-4xl w-full h-auto"
-			>
-			<img 
-				src="https://via.placeholder.com/94x94" 
-				alt="Placeholder Image"
-				class="absolute right-6 -bottom-6 w-1/3 lg:bottom-12 lg:-right-12"
 			>
 		</div>
 	</div>

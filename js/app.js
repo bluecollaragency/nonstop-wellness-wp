@@ -10807,13 +10807,15 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     });
     return Component;
   };
-  if (document.getElementsByClassName("hero-slider").length > 0) {
-    new Glide(".hero-slider", {
-      type: "slider",
-      startAt: 0,
-      perView: 1
-    }).mount({ CustomActiveClass });
-  }
+  var heroSlider = document.querySelectorAll(".hero-slider");
+  var heroSliderconf = {
+    type: "slider",
+    startAt: 0,
+    perView: 1
+  };
+  heroSlider.forEach((item) => {
+    new Glide(item, heroSliderconf).mount({ CustomActiveClass });
+  });
   if (document.getElementsByClassName("testimonial-slider").length > 0) {
     new Glide(".testimonial-slider", {
       type: "slider",

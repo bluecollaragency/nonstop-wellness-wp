@@ -36,6 +36,11 @@
           "name": "Gray 300",
           "slug": "gray-300",
           "color": "#767A87"
+        },
+        {
+          "name": "Navy",
+          "slug": "navy",
+          "color": "#002835"
         }
       ]
     },

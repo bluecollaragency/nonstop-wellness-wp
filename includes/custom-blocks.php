@@ -44,6 +44,16 @@ function my_acf_init_block_types() {
         'icon'              => 'align-left',
         'keywords'          => array( 'page', 'hero', 'image' ),
       ));
+      //register page hero slider
+      acf_register_block_type(array(
+        'name'              => 'page-hero-slider',
+        'title'             => __('Page Hero Slider'),
+        'description'       => __('Page hero slider'),
+        'render_template'   => 'template-parts/blocks/page-hero-slider.php',
+        'category'          => 'nstp',
+        'icon'              => 'align-left',
+        'keywords'          => array( 'page', 'hero', 'slider', 'image' ),
+      ));
       //register page text
       acf_register_block_type(array(
         'name'              => 'page-text',
