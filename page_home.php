@@ -5,52 +5,7 @@ get_header(); ?>
 
 <?php the_content(); ?>
 
-<!-- <div class="
-	relative 
-	bg-primary 
-	lg:bg-transparent 
-	rounded-4xl 
-	z-0
-	bg-watermark 
-	lg:bg-none 
-	bg-right-bottom 
-	bg-no-repeat 
-	bg-contain
-
-	after:bg-primary
-	after:top-0
-	after:h-8
-	after:w-full
-	after:transform
-	after:-translate-y-full
-	after:absolute
-	after:block
-	lg:after:hidden
-
-	before:block 
-	before:bg-primary 
-	before:absolute 
-	before:left-0 
-	before:top-0 
-	before:w-full 
-	lg:before:w-1/2 
-	before:h-8 
-	lg:before:h-full 
-	before:z-0">
-	<div class="container relative mx-auto px-8 lg:px-4 lg:bg-primary z-10 rounded-b-4xl lg:rounded-r-4xl h-full flex items-end lg:items-center lg:bg-watermark bg-right-bottom bg-no-repeat bg-contain lg:-mt-12 xl:-mt-24">
-		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-48 items-center">
-			<div class="lg:col-span-6">
-				<img src="//via.placeholder.com/504x378" alt="" class="mx-auto rounded-4xl">
-			</div>
-			<div class="lg:col-span-5">
-				<h2 class="text-2xl md:text-4xl font-bold tracking-[0.01em]">The cost of health insurance is crushing the american workforce – and their employers</h2>
-				<p class="mt-4 md:mt-6">In the last 10 years, health insurance premiums have risen 55% and deductibles have risen 157%*. The result is employee health insurance that neither employers nor their employees can afford.</p>
-			</div>
-		</div>
-	</div>
-</div> -->
-
-<div class="container mx-auto px-8 lg:px-4 py-36">
+<!-- <div class="container mx-auto px-8 lg:px-4 py-36">
 	<h2>Why choose Nonstop</h2>
 	<div class="grid md:grid-cols-2 mt-20 gap-x-10 gap-y-24">
 
@@ -95,7 +50,7 @@ get_header(); ?>
 	<div class="flex w-full justify-end mt-10">
 		<a href="#" class="font-semibold">View all our benefits.</a>
 	</div>
-</div>
+</div> -->
 
 <div class="
 	overflow-hidden

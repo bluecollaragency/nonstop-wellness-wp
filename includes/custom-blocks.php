@@ -44,6 +44,17 @@ function my_acf_init_block_types() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
 
+      //register page benefits grid
+      acf_register_block_type(array(
+        'name'              => 'page-benefits-grid',
+        'title'             => __('Page Benefits Grid'),
+        'description'       => __('Two column grid that holds icon + text'),
+        'render_template'   => 'template-parts/blocks/page-benefits-grid.php',
+        'category'          => 'nstp',
+        'icon'              => 'archive',
+        'keywords'          => array( 'page', 'grid', 'benefits', 'icon' ),
+      ));
+
       //register block meant to go above footer
       acf_register_block_type(array(
         'name'              => 'page-end',
