@@ -135,6 +135,17 @@ function my_acf_init_block_types() {
         'icon'              => 'layout',
         'keywords'          => array( 'page', 'row', 'two', 'columns', 'column' ),
       ));
+      //register page watermark row
+      acf_register_block_type(array(
+        'name'              => 'page-watermark-row',
+        'title'             => __('Page Watermark Row'),
+        'description'       => __('Two column grid that holds image + text with watermark logo watermark background'),
+        'render_template'   => 'template-parts/blocks/page-watermark-row.php',
+        'category'          => 'nstp',
+        'icon'              => 'screenoptions',
+        'keywords'          => array( 'page', 'grid', 'row', 'watermark' ),
+      ));
+
       //register homepage zone1
       acf_register_block_type(array(
         'name'              => 'homepage-zone1',

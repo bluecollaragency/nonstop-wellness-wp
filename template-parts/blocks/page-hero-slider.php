@@ -35,7 +35,7 @@
 					</div>
 					<div class="w-full md:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
 						<picture>
-							<source srcset="<?= get_template_directory_uri();?>/img/hero-placeholder-lg.jpg" media="(min-width: 768px)">
+							<source srcset="<?= get_template_directory_uri();?>/img/hero-placeholder-lg.jpg 2x, <?= get_template_directory_uri();?>/img/hero-placeholder.jpg 1x" media="(min-width: 768px)">
 							<source srcset="<?= get_template_directory_uri();?>/img/hero-placeholder-sm.jpg">
 							<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
 						</picture>
