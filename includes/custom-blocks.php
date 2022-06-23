@@ -51,7 +51,7 @@ function my_acf_init_block_types() {
         'description'       => __('Two column grid that holds icon + text'),
         'render_template'   => 'template-parts/blocks/page-benefits-grid.php',
         'category'          => 'nstp',
-        'icon'              => 'archive',
+        'icon'              => 'screenoptions',
         'keywords'          => array( 'page', 'grid', 'benefits', 'icon' ),
       ));
 

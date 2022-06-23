@@ -976,6 +976,22 @@ select {
   height: 4rem;
 }
 
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[77\%\] {
+  height: 77%;
+}
+
+.max-h-\[77\%\] {
+  max-height: 77%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -986,6 +1002,10 @@ select {
 
 .min-h-\[400px\] {
   min-height: 400px;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
 }
 
 .w-full {
@@ -1326,6 +1346,11 @@ select {
   background-color: transparent;
 }
 
+.bg-\[\#00C4B3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 196 179 / var(--tw-bg-opacity));
+}
+
 .bg-watermark {
   background-image: url('../img/watermark2.svg');
 }
@@ -1350,9 +1375,29 @@ select {
   fill: #ef4444;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-4 {
@@ -2395,12 +2440,24 @@ h2 {
     width: 62.5%;
   }
 
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .md\:w-\[77\%\] {
+    width: 77%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2411,6 +2468,10 @@ h2 {
 
   .md\:rounded-4xl {
     border-radius: 2rem;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:p-12 {
@@ -2815,6 +2876,10 @@ h2 {
 
   .xl\:-mt-24 {
     margin-top: -6rem;
+  }
+
+  .xl\:ml-\[8\.33\%\] {
+    margin-left: 8.33%;
   }
 
   .xl\:grid-cols-3 {
