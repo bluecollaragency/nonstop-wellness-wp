@@ -5,53 +5,6 @@ get_header(); ?>
 
 <?php the_content(); ?>
 
-<!-- <div class="container mx-auto px-8 lg:px-4 py-36">
-	<h2>Why choose Nonstop</h2>
-	<div class="grid md:grid-cols-2 mt-20 gap-x-10 gap-y-24">
-
-		<div class="lg:flex items-center gap-12">
-			<div class="bg-white p-4 md:p-12 rounded-lg md:rounded-4xl inline-flex justify-center items-center flex-none">
-				<img src="//via.placeholder.com/60x60" alt="">
-			</div>
-			<div class="shrink my-4 space-y-4">
-				<h3 class="font-bold md:text-2xl">First dollar coverage</h3>
-				<p>Employees get first-dollar coverage, meaning that they can go to the doctor, get their prescriptions, without a financial burden.</p>
-			</div>
-		</div>
-		<div class="lg:flex items-center gap-12">
-			<div class="bg-white p-4 md:p-12 rounded-lg md:rounded-4xl inline-flex justify-center items-center flex-none">
-				<img src="//via.placeholder.com/60x60" alt="">
-			</div>
-			<div class="shrink my-4 space-y-4">
-				<h3 class="font-bold md:text-2xl">First dollar coverage</h3>
-				<p>Employees get first-dollar coverage, meaning that they can go to the doctor, get their prescriptions, without a financial burden.</p>
-			</div>
-		</div>
-		<div class="lg:flex items-center gap-12">
-			<div class="bg-white p-4 md:p-12 rounded-lg md:rounded-4xl inline-flex justify-center items-center flex-none">
-				<img src="//via.placeholder.com/60x60" alt="">
-			</div>
-			<div class="shrink my-4 space-y-4">
-				<h3 class="font-bold md:text-2xl">First dollar coverage</h3>
-				<p>Employees get first-dollar coverage, meaning that they can go to the doctor, get their prescriptions, without a financial burden.</p>
-			</div>
-		</div>
-		<div class="lg:flex items-center gap-12">
-			<div class="bg-white p-4 md:p-12 rounded-lg md:rounded-4xl inline-flex justify-center items-center flex-none">
-				<img src="//via.placeholder.com/60x60" alt="">
-			</div>
-			<div class="shrink my-4 space-y-4">
-				<h3 class="font-bold md:text-2xl">First dollar coverage</h3>
-				<p>Employees get first-dollar coverage, meaning that they can go to the doctor, get their prescriptions, without a financial burden.</p>
-			</div>
-		</div>
-
-	</div>
-	<div class="flex w-full justify-end mt-10">
-		<a href="#" class="font-semibold">View all our benefits.</a>
-	</div>
-</div> -->
-
 <div class="
 	overflow-hidden
 	relative 
