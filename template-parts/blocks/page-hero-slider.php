@@ -6,8 +6,12 @@
 <div class="glide hero-slider z-10">
 	<div class="absolute w-full h-full top-0 left-0 right-0 mx-auto">
 		<div class="container relative mx-auto h-full">
-			<div class="absolute right-0 w-20 h-20 rounded-full drop-shadow-[0_0_20px_rgba(0,0,0,0.15)] transform -translate-y-1/2 top-1/2 z-20 hidden lg:block" data-glide-el="controls">
-				<button class="w-full h-full rounded-full bg-white" data-glide-dir="<?= esc_attr('>');?>">nxt</button>
+			<div class="absolute right-0 w-20 h-20 rounded-full transform -translate-y-1/2 top-1/2 z-20 hidden lg:block" data-glide-el="controls">
+				<button class="w-full h-full rounded-full flex justify-center items-center text-white" data-glide-dir="<?= esc_attr('>');?>">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="44" fill="none" viewBox="0 0 35 64" class="fill-current text-white">
+            <path fill-rule="evenodd" d="M29.172 32 .586 3.414 3.414.586 34.828 32 3.414 63.414.586 60.586 29.172 32Z" clip-rule="evenodd"/>
+          </svg>
+        </button>
 			</div>
 			<div class="absolute left-0 right-0 mx-auto w-full flex lg:hidden items-center justify-center bottom-12">
 				<div class="glide__bullets flex gap-4 z-20" data-glide-el="controls[nav]">

@@ -1,6 +1,6 @@
 <?php
 /* Register our custom category so its easy to find our blocks
-================================================== */
+================================================== 
 function cp_block_categories( $categories ) {
 	$category_slugs = wp_list_pluck( $categories, 'slug' );
 	return in_array( 'nstp', $category_slugs, true ) ? $categories : array_merge(
@@ -8,13 +8,33 @@ function cp_block_categories( $categories ) {
 			array(
 					array(
 							'slug'  => 'nstp',
-							'title' => __( 'Nonstop Blocks', 'nstp' ),
+							'title' => __( 'Nonstop Page Blocks', 'nstp' ),
 							'icon'  => null,
 					),
 			)
 	);
 }
 add_filter( 'block_categories', 'cp_block_categories' );
+
+*/
+
+add_filter( 'block_categories_all' , function( $categories ) {
+
+  // Adding a new category.
+  $categories[] = array(
+    'slug'  => 'nstp',
+    'title' => 'Nonstop Page Blocks'
+  );
+
+  // Adding a new category.
+  $categories[] = array(
+    'slug'  => 'nstp-home',
+    'title' => 'Nonstop Homepage Blocks'
+  );
+
+return $categories;
+} );
+
 /**
  * ACF Blocks
  */
@@ -103,6 +123,16 @@ function my_acf_init_block_types() {
         'category'          => 'nstp',
         'icon'              => 'layout',
         'keywords'          => array( 'page', 'row', 'two', 'columns', 'column' ),
+      ));
+      //register homepage zone1
+      acf_register_block_type(array(
+        'name'              => 'homepage-zone1',
+        'title'             => __('Homepage Zone 1'),
+        'description'       => __('For use under the hero on the homepage'),
+        'render_template'   => 'template-parts/blocks/home/homepage-zone1.php',
+        'category'          => 'nstp-home',
+        'icon'              => 'layout',
+        'keywords'          => array( 'page', 'row', 'two', 'columns', 'column', 'watermark' ),
       ));
     }
 }

@@ -5,7 +5,7 @@ get_header(); ?>
 
 <?php the_content(); ?>
 
-<div class="
+<!-- <div class="
 	relative 
 	bg-primary 
 	lg:bg-transparent 
@@ -40,7 +40,7 @@ get_header(); ?>
 	<div class="container relative mx-auto px-8 lg:px-4 lg:bg-primary z-10 rounded-b-4xl lg:rounded-r-4xl h-full flex items-end lg:items-center lg:bg-watermark bg-right-bottom bg-no-repeat bg-contain lg:-mt-12 xl:-mt-24">
 		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-48 items-center">
 			<div class="lg:col-span-6">
-				<img src="//via.placeholder.com/410x410" alt="" class="mx-auto rounded-4xl">
+				<img src="//via.placeholder.com/504x378" alt="" class="mx-auto rounded-4xl">
 			</div>
 			<div class="lg:col-span-5">
 				<h2 class="text-2xl md:text-4xl font-bold tracking-[0.01em]">The cost of health insurance is crushing the american workforce – and their employers</h2>
@@ -48,7 +48,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <div class="container mx-auto px-8 lg:px-4 py-36">
 	<h2>Why choose Nonstop</h2>
