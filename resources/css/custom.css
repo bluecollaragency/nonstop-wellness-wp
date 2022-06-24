@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 body.mobile-nav-open {
-    @apply overflow-hidden lg:overflow-auto;
+    @apply overflow-hidden lg:overflow-auto text-navy;
 }
 article > *:not(.entry-content),
 .entry-content > * {

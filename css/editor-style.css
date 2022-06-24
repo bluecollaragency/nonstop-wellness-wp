@@ -813,6 +813,10 @@
   background-position:right bottom
 }
 
+.bg-right{
+  background-position:right
+}
+
 .bg-no-repeat{
   background-repeat:no-repeat
 }
@@ -1333,7 +1337,9 @@ html {
 }
 
 body.mobile-nav-open{
-  overflow:hidden
+  overflow:hidden;
+  --tw-text-opacity:1;
+  color:rgb(0 40 53 / var(--tw-text-opacity))
 }
 
 @media (min-width: 960px){
@@ -2125,6 +2131,10 @@ body{
   .lg\:gap-x-20{
     -moz-column-gap:5rem;
          column-gap:5rem
+  }
+
+  .lg\:overflow-auto{
+    overflow:auto
   }
 
   .lg\:overflow-visible{

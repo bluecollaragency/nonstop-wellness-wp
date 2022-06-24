@@ -11,7 +11,7 @@
     $section_link_target = $section_link['target'] ? $section_link['target'] : '_self';
   }
 ?>
-<div class="container mx-auto px-8 lg:px-4 mt-32">
+<div class="container mx-auto px-8 lg:px-4 mt-32 text-navy">
   <?php if($section_headline) {
     echo '<h2>' . $section_headline . '</h2>';
   } ?>
@@ -19,7 +19,7 @@
     <?= $section_intro; ?>
   </div>
   <?php if( have_rows('partner_logos') ): ?>
-	<div class="grid grid-cols-1 md:flex gap-8 lg:gap-x-20 mt-12 justify-start items-center">
+	<div class="grid grid-cols-1 md:flex gap-8 lg:gap-x-20 mt-12 justify-between items-center">
     <?php while( have_rows('partner_logos') ): the_row();
       $image = get_sub_field('partner_image');
       $link = get_sub_field('partner_link');
@@ -34,10 +34,6 @@
         } ?>
     </a>
     <?php endwhile; ?>
-		<a href=""><img src="//via.placeholder.com/127x50" alt="" class="mx-auto"></a>
-		<a href=""><img src="//via.placeholder.com/240x54" alt="" class="mx-auto"></a>
-		<a href=""><img src="//via.placeholder.com/62x55" alt="" class="mx-auto"></a>
-		<a href=""><img src="//via.placeholder.com/237x52" alt="" class="mx-auto"></a>
 	</div>
   <?php endif; ?>
   <?php if($section_link) {

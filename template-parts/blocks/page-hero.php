@@ -94,6 +94,9 @@
         lg:w-7/12 
         h-[80%] 
         lg:h-full 
+        bg-watermark
+        bg-no-repeat
+        bg-right
         <?php if( $bg_color == 'green' ) {
           echo 'bg-primary ';
           } else {
