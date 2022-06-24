@@ -94,9 +94,7 @@
         lg:w-7/12 
         h-[80%] 
         lg:h-full 
-        bg-watermark
         bg-no-repeat
-        bg-right
         <?php if( $bg_color == 'green' ) {
           echo 'bg-primary ';
           } else {
@@ -110,9 +108,13 @@
         <?php if($img_loc): ?>
           right-0 
           lg:rounded-r-none
+          bg-watermark
+          bg-right
         <?php else: ?>
           left-0
           lg:rounded-l-none
+          bg-watermark-flip
+          bg-left
         <?php endif; ?>
       "
     ></div>

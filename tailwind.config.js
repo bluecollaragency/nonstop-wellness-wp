@@ -30,7 +30,8 @@ module.exports = {
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
             backgroundImage: {
-                'watermark': "url('../img/watermark2.svg')"
+                'watermark': "url('../img/watermark2.svg')",
+                'watermark-flip': "url('../img/watermark-flip.svg')"
             },
             borderRadius: {
                 '4xl': '2rem'

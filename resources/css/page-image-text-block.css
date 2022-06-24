@@ -11,6 +11,9 @@
     @apply mb-6;
   }
   ul {
-    @apply list-disc ml-6 space-y-2;
+    @apply list-none list-outside ml-0 space-y-2 ;
+    li {
+      @apply flex before:content-['+'] before:text-secondary before:mr-2 before:font-bold;
+    }
   }
 }
