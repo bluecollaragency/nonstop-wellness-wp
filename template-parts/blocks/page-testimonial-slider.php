@@ -76,7 +76,9 @@
 			<div class="flex justify-between items-center mt-12">
 				<div>
 					<div class="glide__bullets flex gap-4" data-glide-el="controls[nav]">
-						<button class="glide__bullet" data-glide-dir="=0"></button>
+            <?php while( have_rows('slides') ): ?>
+              <button class="glide__bullet" data-glide-dir="=<?= get_row_index(); ?>"></button>
+            <?php endwhile; ?>
 						<button class="glide__bullet" data-glide-dir="=1"></button>
 						<button class="glide__bullet" data-glide-dir="=2"></button>
 						<button class="glide__bullet" data-glide-dir="=3"></button>

@@ -139,6 +139,7 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 require get_stylesheet_directory() . '/includes/custom-blocks.php';
+add_filter('acf/settings/row_index_offset', '__return_zero');
 
 function mce_font_drop( $font_drop ) {
     
