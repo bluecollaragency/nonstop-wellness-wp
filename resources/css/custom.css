@@ -98,3 +98,11 @@ h2 {
         scale-125
     ;
 }
+.glide.testimonial-slider {
+    .glide__slides {
+        @apply flex;
+    }
+    .glide__slide {
+        @apply h-auto;
+    }
+}

@@ -152,7 +152,7 @@ function my_acf_init_block_types() {
         'description'       => __('Testimonial / Card slider. Holds a small image + text'),
         'render_template'   => 'template-parts/blocks/page-testimonial-slider.php',
         'category'          => 'nstp',
-        'icon'              => 'contract',
+        'icon'              => 'format-quote',
         'keywords'          => array( 'page', 'slider', 'testimonial', 'card' ),
       ));
 

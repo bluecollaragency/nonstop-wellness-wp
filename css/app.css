@@ -2109,6 +2109,14 @@ h2{
   transition-duration:150ms
 }
 
+.glide.testimonial-slider .glide__slides{
+    display:flex
+  }
+
+.glide.testimonial-slider .glide__slide{
+    height:auto
+  }
+
 .before\:absolute::before{
   content:var(--tw-content);
   position:absolute
