@@ -155,6 +155,26 @@ function my_acf_init_block_types() {
         'icon'              => 'format-quote',
         'keywords'          => array( 'page', 'slider', 'testimonial', 'card' ),
       ));
+      //register nonstop toolbox feed
+      acf_register_block_type(array(
+        'name'              => 'page-toolbox-feed',
+        'title'             => __('Page Toolbox Feed'),
+        'description'       => __('Toolbax page feed'),
+        'render_template'   => 'template-parts/blocks/page-toolbox-feed.php',
+        'category'          => 'nstp',
+        'icon'              => 'format-quote',
+        'keywords'          => array( 'page', 'toolbox', 'feed', 'slider' ),
+      ));
+      //register partner list
+      acf_register_block_type(array(
+        'name'              => 'page-partner-list',
+        'title'             => __('Page Partner List'),
+        'description'       => __('List of partner images'),
+        'render_template'   => 'template-parts/blocks/page-partner-list.php',
+        'category'          => 'nstp',
+        'icon'              => 'format-quote',
+        'keywords'          => array( 'page', 'partner', 'list', 'logos' ),
+      ));
 
       //register homepage zone1
       acf_register_block_type(array(

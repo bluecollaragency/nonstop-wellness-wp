@@ -86,11 +86,11 @@ testimonialSlider.forEach(item => {
   new Glide(item, testimonialSliderconf).mount({ CustomActiveClass });
 });
 
-
-if( document.getElementsByClassName('blog-slider').length > 0 ) {
-  new Glide('.blog-slider', {
-    type: 'slider',
-    startAt: 0,
+// Testimonial Glide Slider
+const blogSlider = document.querySelectorAll('.blog-slider');
+const blogSliderconf = {
+  type: 'slider',
+  startAt: 0,
     perView: 3,
     gap: 24,
     breakpoints: {
@@ -101,8 +101,11 @@ if( document.getElementsByClassName('blog-slider').length > 0 ) {
         perView: 1
       }
     }
-  }).mount({ CustomActiveClass });
 }
+blogSlider.forEach(item => {
+  new Glide(item, blogSliderconf).mount({ CustomActiveClass });
+});
+
 // window.addEventListener('load', function () {
 //       let main_navigation = document.querySelector('#primary-menu');
 //       document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {

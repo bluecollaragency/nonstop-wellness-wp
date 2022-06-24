@@ -1107,6 +1107,14 @@ select{
   width:5rem
 }
 
+.w-1\/2{
+  width:50%
+}
+
+.w-auto{
+  width:auto
+}
+
 .max-w-sm{
   max-width:24rem
 }
@@ -1218,6 +1226,10 @@ select{
 
 .items-center{
   align-items:center
+}
+
+.justify-start{
+  justify-content:flex-start
 }
 
 .justify-end{

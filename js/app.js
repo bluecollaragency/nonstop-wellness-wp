@@ -10826,22 +10826,24 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
   testimonialSlider.forEach((item) => {
     new Glide(item, testimonialSliderconf).mount({ CustomActiveClass });
   });
-  if (document.getElementsByClassName("blog-slider").length > 0) {
-    new Glide(".blog-slider", {
-      type: "slider",
-      startAt: 0,
-      perView: 3,
-      gap: 24,
-      breakpoints: {
-        1024: {
-          perView: 2
-        },
-        640: {
-          perView: 1
-        }
+  var blogSlider = document.querySelectorAll(".blog-slider");
+  var blogSliderconf = {
+    type: "slider",
+    startAt: 0,
+    perView: 3,
+    gap: 24,
+    breakpoints: {
+      1024: {
+        perView: 2
+      },
+      640: {
+        perView: 1
       }
-    }).mount({ CustomActiveClass });
-  }
+    }
+  };
+  blogSlider.forEach((item) => {
+    new Glide(item, blogSliderconf).mount({ CustomActiveClass });
+  });
 })();
 /*!
  * Glide.js v3.5.2
