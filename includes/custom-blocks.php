@@ -145,6 +145,16 @@ function my_acf_init_block_types() {
         'icon'              => 'screenoptions',
         'keywords'          => array( 'page', 'grid', 'row', 'watermark' ),
       ));
+      //register page block testimonial slider
+      acf_register_block_type(array(
+        'name'              => 'page-testimonial-slider',
+        'title'             => __('Page Testimonial Slider'),
+        'description'       => __('Testimonial / Card slider. Holds a small image + text'),
+        'render_template'   => 'template-parts/blocks/page-testimonial-slider.php',
+        'category'          => 'nstp',
+        'icon'              => 'contract',
+        'keywords'          => array( 'page', 'slider', 'testimonial', 'card' ),
+      ));
 
       //register homepage zone1
       acf_register_block_type(array(

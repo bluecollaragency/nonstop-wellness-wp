@@ -10816,16 +10816,16 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
   heroSlider.forEach((item) => {
     new Glide(item, heroSliderconf).mount({ CustomActiveClass });
   });
-  if (document.getElementsByClassName("testimonial-slider").length > 0) {
-    new Glide(".testimonial-slider", {
-      type: "slider",
-      startAt: 0,
-      perView: 1,
-      gap: 24
-    }).mount({
-      CustomActiveClass
-    });
-  }
+  var testimonialSlider = document.querySelectorAll(".testimonial-slider");
+  var testimonialSliderconf = {
+    type: "slider",
+    startAt: 0,
+    perView: 1,
+    gap: 24
+  };
+  testimonialSlider.forEach((item) => {
+    new Glide(item, testimonialSliderconf).mount({ CustomActiveClass });
+  });
   if (document.getElementsByClassName("blog-slider").length > 0) {
     new Glide(".blog-slider", {
       type: "slider",
