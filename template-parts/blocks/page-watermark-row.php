@@ -2,6 +2,18 @@
 /**
  * Page Block Watermark Row
  */
+$image = get_field('image') ?: 237;
+$content = get_field('content');
+if($content) {
+	$heading = $content['heading'];
+	$copy = $content['copy'];
+  $button = $content['button'];
+}
+if( $button ) { 
+  $button_url = $button['url'];
+  $button_title = $button['title'];
+  $button_target = $button['target'] ? $button['target'] : '_self';
+}
 ?>
 <div class="
 	overflow-hidden
@@ -45,12 +57,22 @@
 		before:bg-contain">
 		<div class="grid lg:grid-cols-12 gap-12 py-16 lg:py-44 items-center z-10">
 			<div class="lg:col-span-6 text-center">
-				<img src="//via.placeholder.com/410x410" alt="" class="mx-auto rounded-4xl">
+        <?php if($image) {
+          echo wp_get_attachment_image( $image, 'medium', '', ['class' => 'mx-auto rounded-4xl'] );
+        } ?>
 			</div>
 			<div class="lg:col-span-6 xl:col-span-5">
-				<h2 class="text-4xl md:text-4xl font-bold tracking-[0.01em]">Brokers can bring a competitive advantage to your renewals and win new business</h2>
-				<p class="mt-4 md:mt-6">Our employer-sponsored group health insurance solution combines a High-Deductible Health Plan (HDHP) with a Medical Expense Reimbursement Program (MERP) that helps your clients get more bang for their health insurance buck.</p>
-				<a href="#" class="btn-lg bg-dark text-white mt-6">Learn how to save</a>
+        <?php if($heading) : ?>
+				<h2 class="text-4xl md:text-4xl font-bold tracking-[0.01em]"><?= esc_html( $heading ); ?></h2>
+        <?php endif; ?>
+        <div class="space-y-4 md:space-y-6 mt-6">
+          <?php if($copy) {
+  					echo $copy;
+  				} ?>
+        </div>
+				<?php if($button): ?>
+          <a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-dark text-white mt-8 no-underline"><?= esc_html($button_title); ?></a>
+        <?php endif; ?>
 			</div>
 		</div>
 	</div>

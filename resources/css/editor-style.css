@@ -1,7 +1,8 @@
+@import "@glidejs/glide/dist/css/glide.core.min.css";
+
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "fonts.css";
 @import "custom.css";
 
 body {

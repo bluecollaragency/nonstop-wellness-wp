@@ -1,3 +1,8 @@
+@import "@glidejs/glide/dist/css/glide.core.min.css";
+/*
+@import "choices.js/public/assets/styles/choices.css";
+*/
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";

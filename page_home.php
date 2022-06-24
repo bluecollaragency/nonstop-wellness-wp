@@ -5,7 +5,7 @@ get_header(); ?>
 
 <?php the_content(); ?>
 
-<div class="
+<!-- <div class="
 	overflow-hidden
 	relative 
 	bg-secondary 
@@ -56,7 +56,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <div class="relative overflow-hidden pt-32">
 	<div class="container mx-auto px-8 lg:px-4">
