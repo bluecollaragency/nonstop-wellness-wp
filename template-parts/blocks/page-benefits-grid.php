@@ -30,10 +30,9 @@
           <div class="bg-white p-4 md:p-12 rounded-lg md:rounded-4xl inline-flex justify-center items-center flex-none">
             <div class="w-16">
               <?php if($image) {
-                echo wp_get_attachment_image( $image, 'thumbnail', '', ['class' => 'w-full h-auto'] );
+                echo wp_get_attachment_image( $image, ['128', '128'], '', ['class' => 'w-full h-auto'] );
               } ?>
             </div>
-            
           </div>
           <div class="shrink my-4 space-y-4">
             <h3 class="font-bold md:text-2xl">

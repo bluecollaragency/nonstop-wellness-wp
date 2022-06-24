@@ -1979,10 +1979,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body.mobile-nav-open{
-  overflow:hidden;
+main{
   --tw-text-opacity:1;
   color:rgb(0 40 53 / var(--tw-text-opacity))
+}
+
+body.mobile-nav-open{
+  overflow:hidden
 }
 
 @media (min-width: 960px){
@@ -2350,6 +2353,11 @@ h2{
   color:rgb(0 0 0 / var(--tw-text-opacity))
 }
 
+.hover\:text-navy:hover{
+  --tw-text-opacity:1;
+  color:rgb(0 40 53 / var(--tw-text-opacity))
+}
+
 .hover\:underline:hover{
   -webkit-text-decoration-line:underline;
           text-decoration-line:underline
@@ -2443,8 +2451,16 @@ h2{
     width:62.5%
   }
 
+  .md\:max-w-\[66\%\]{
+    max-width:66%
+  }
+
   .md\:grid-cols-2{
     grid-template-columns:repeat(2, minmax(0, 1fr))
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns:repeat(3, minmax(0, 1fr))
   }
 
   .md\:flex-nowrap{
@@ -2697,6 +2713,11 @@ h2{
   .lg\:gap-x-20{
     -moz-column-gap:5rem;
          column-gap:5rem
+  }
+
+  .lg\:gap-x-12{
+    -moz-column-gap:3rem;
+         column-gap:3rem
   }
 
   .lg\:overflow-auto{

@@ -1,9 +1,15 @@
+<?php
+/**
+  * Page Tabs Block Template
+  */
+
+?>
 <?php if( have_rows('page_tabs') ): ?>
 <div class="relative page-tabs-container">
   <div class="container mx-auto px-8 lg:px-4">
-    <div class="text-center">
+    <div class="text-center text-navy">
       <h2 class="text-[2rem] lg:text-6xl">How You Benefit</h2>
-      <p class="mt-4">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
+      <p class="mt-4 text-2xl">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
     </div>
     <div  
       x-data="{
@@ -56,8 +62,8 @@
               type="button"
               :tabindex="isSelected($el.id) ? 0 : -1"
               :aria-selected="isSelected($el.id)"
-              :class="isSelected($el.id) ? 'border-b-primary text-dark' : 'border-b-[#D6DCE9] text-gray-400'"
-              class="w-full font-semibold border-b-2 pb-3 hover:border-b-primary  hover:text-dark"
+              :class="isSelected($el.id) ? 'border-b-primary text-navy' : 'border-b-[#D6DCE9] text-gray-400'"
+              class="w-full font-semibold border-b-2 pb-3 hover:border-b-primary text-base hover:text-navy"
               role="tab"
             ><?= esc_html( $tab_title ); ?></button>
           </li>
@@ -72,7 +78,7 @@
             x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
             :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
             role="tabpanel"
-            class="p-8"
+            class="py-8"
             >
             <?= $tab_content; ?>
           </section>

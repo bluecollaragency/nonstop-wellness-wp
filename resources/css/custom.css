@@ -5,8 +5,11 @@
 html {
     scroll-behavior: smooth;
 }
+main {
+    @apply text-navy;
+}
 body.mobile-nav-open {
-    @apply overflow-hidden lg:overflow-auto text-navy;
+    @apply overflow-hidden lg:overflow-auto;
 }
 article > *:not(.entry-content),
 .entry-content > * {
