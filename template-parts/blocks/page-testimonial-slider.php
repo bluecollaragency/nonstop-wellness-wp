@@ -40,34 +40,7 @@
                     <p class="font-semibold mt-4 text-sm"><?= esc_html($attribute); ?></p>
                   </div>
                 </li>
-              <?php endwhile; ?>
-							<li class="glide__slide bg-white rounded-4xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
-								<div class="w-full md:w-[37.5%] text-center">
-									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
-								</div>
-								<div class="w-full md:w-[62.5%] text-center md:text-left">
-									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
-									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
-								</div>
-							</li>
-							<li class="glide__slide bg-white rounded-4xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
-								<div class="w-full md:w-[37.5%] text-center">
-									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
-								</div>
-								<div class="w-full md:w-[62.5%] text-center md:text-left">
-									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
-									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
-								</div>
-							</li>
-							<li class="glide__slide bg-white rounded-4xl py-16 px-8 md:px-20 flex flex-wrap md:flex-nowrap gap-12 items-center">
-								<div class="w-full md:w-[37.5%] text-center">
-									<img src="//via.placeholder.com/170x64" alt="" class="mx-auto md:mx-0">
-								</div>
-								<div class="w-full md:w-[62.5%] text-center md:text-left">
-									<p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem velit magni ea ut repellendus accusantium, tempore omnis necessitatibus odio sequi qui nesciunt a maxime recusandae iusto modi voluptatum reprehenderit similique?</p>
-									<p class="font-semibold mt-4 text-sm">Unity Health Care</p>
-								</div>
-							</li>
+              <?php endwhile; ?>							
 						</ul>
 					</div>
 				</div>
@@ -76,12 +49,9 @@
 			<div class="flex justify-between items-center mt-12">
 				<div>
 					<div class="glide__bullets flex gap-4" data-glide-el="controls[nav]">
-            <?php while( have_rows('slides') ): ?>
+            <?php while( have_rows('slides') ): the_row(); ?>
               <button class="glide__bullet" data-glide-dir="=<?= get_row_index(); ?>"></button>
             <?php endwhile; ?>
-						<button class="glide__bullet" data-glide-dir="=1"></button>
-						<button class="glide__bullet" data-glide-dir="=2"></button>
-						<button class="glide__bullet" data-glide-dir="=3"></button>
 					</div>
 				</div>
         <?php if($section_link): ?>
