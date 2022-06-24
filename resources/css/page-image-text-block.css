@@ -1,7 +1,14 @@
 /* Page Image + Text */
 .page-image-text {
-  h3 {
-    @apply text-2xl lg:text-4xl font-bold;
+  @apply text-navy;
+  h2, h3 {
+    @apply text-2xl lg:text-4xl font-bold mb-6;
+  }
+  p {
+    @apply mt-4;
+  }
+  .btn {
+    @apply mb-6;
   }
   ul {
     @apply list-disc ml-6 space-y-2;

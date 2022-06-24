@@ -2,15 +2,15 @@
 /**
  * Page Image + Text Block Template
  */
-$copy = get_field('copy') ?: 'Copy goes here';
-$img_loc = get_field('image_location');
-$image = get_field('image') ?: 237;
-$image_icon = get_field('image_icon');
-$bg_color = get_field('background_color');
+  $copy = get_field('copy') ?: 'Copy goes here';
+  $img_loc = get_field('image_location');
+  $image = get_field('image') ?: 293;
+  $image_icon = get_field('image_icon');
+  $bg_color = get_field('background_color');
 ?>
 <div class="page-image-text overflow-hidden">
-  <div class="container mx-auto px-8 lg:px-4">
-  	<div class="grid lg:grid-cols-12 mt-4 gap-8 items-center relative rounded-[40px] py-12 px-8 lg:px-12 <?php if( $bg_color == 'white' ) {
+  <div class="container mx-auto px-4">
+  	<div class="grid lg:grid-cols-12 mt-4 gap-8 items-center relative rounded-[40px] py-8 md:py-12 px-4 md:px-12 <?php if( $bg_color == 'white' ) {
           echo 'bg-white ';
           } else {
             echo 'bg-transparent ';
@@ -34,7 +34,7 @@ $bg_color = get_field('background_color');
         "
         >
         <?php if($image) {
-          echo wp_get_attachment_image( $image, 'medium_large', '', ['class' => 'rounded-4xl w-full h-auto'] );
+          echo wp_get_attachment_image( $image, 'medium_large', '', ['class' => 'rounded-4xl w-full h-auto max-w-full'] );
         } ?>
   		</div>
   		<div 
@@ -55,9 +55,7 @@ $bg_color = get_field('background_color');
           <?php endif; ?>
         "
         >
-        <div class="space-y-4">
-          <?= $copy; ?>
-        </div>
+        <?= $copy; ?>
   		</div>
   	</div>
   </div>

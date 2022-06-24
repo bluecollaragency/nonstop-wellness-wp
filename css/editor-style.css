@@ -340,6 +340,10 @@
   margin-top:2.5rem
 }
 
+.mb-6{
+  margin-bottom:1.5rem
+}
+
 .block{
   display:block
 }
@@ -482,6 +486,10 @@
 
 .max-w-screen-2xl{
   max-width:1440px
+}
+
+.max-w-full{
+  max-width:100%
 }
 
 .flex-none{
@@ -642,6 +650,12 @@
   --tw-space-x-reverse:0;
   margin-right:calc(0.5rem * var(--tw-space-x-reverse));
   margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse:0;
+  margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))
 }
 
 .overflow-auto{
@@ -1255,20 +1269,37 @@
 
 /* Page Image + Text */
 
-.page-image-text h3{
+.page-image-text{
+  --tw-text-opacity:1;
+  color:rgb(0 40 53 / var(--tw-text-opacity));
+}
+
+.page-image-text h2, .page-image-text h3{
+    margin-bottom:1.5rem
+  }
+
+.page-image-text h2, .page-image-text h3{
     font-size:1.5rem;
     line-height:2rem
   }
 
-.page-image-text h3{
+.page-image-text h2, .page-image-text h3{
     font-weight:700
   }
 
 @media (min-width: 960px){
-    .page-image-text h3{
+    .page-image-text h2, .page-image-text h3{
       font-size:2.5rem;
       line-height:2.75rem
     }
+  }
+
+.page-image-text p{
+    margin-top:1rem
+  }
+
+.page-image-text .btn{
+    margin-bottom:1.5rem
   }
 
 .page-image-text ul{
@@ -1859,6 +1890,16 @@ body{
     padding-right:5rem
   }
 
+  .md\:py-12{
+    padding-top:3rem;
+    padding-bottom:3rem
+  }
+
+  .md\:px-12{
+    padding-left:3rem;
+    padding-right:3rem
+  }
+
   .md\:text-left{
     text-align:left
   }
@@ -2160,6 +2201,11 @@ body{
   .lg\:py-48{
     padding-top:12rem;
     padding-bottom:12rem
+  }
+
+  .lg\:py-12{
+    padding-top:3rem;
+    padding-bottom:3rem
   }
 
   .lg\:pt-44{

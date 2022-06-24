@@ -32,7 +32,7 @@ get_header(); ?>
 </div>
 
 <div class="container mx-auto px-8 lg:px-4 mt-24">
-	<div class="grid lg:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative bg-white rounded-[40px] py-12 px-8 lg:px-12">
+	<div class="grid lg:grid-cols-12 mt-4 gap-y-8 gap-x-6 items-center relative bg-white rounded-[40px] py-8 lg:py-12 px-8 lg:px-12">
 		<div class="relative col-start-1 col-end-12 lg:col-end-7 overflow-visible">
 			<img src="//via.placeholder.com/644x470" alt="" class="mx-auto rounded-4xl w-full h-auto">
 		</div>
