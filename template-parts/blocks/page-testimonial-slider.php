@@ -3,6 +3,12 @@
  * Page Block Testimonial Slider
  */
   $section_headline = get_field('section_headline');
+  $section_link = get_field('section_link');
+  if( $section_link ) { 
+    $link_url = $section_link['url'];
+    $link_title = $section_link['title'];
+    $link_target = $section_link['target'] ? $section_link['target'] : '_self';
+  }
 ?>
 <div class="relative overflow-hidden pt-32">
 	<div class="container mx-auto px-8 lg:px-4">
@@ -76,7 +82,17 @@
 						<button class="glide__bullet" data-glide-dir="=3"></button>
 					</div>
 				</div>
-				<div>Read more reviews</div>
+        <?php if($section_link): ?>
+          <div>      
+            <?php get_template_part( 'template-parts/partials/block-section-link', null, array(
+              'data' => array(
+                'link_url' => $link_url,
+                'link_target' => $link_target,
+                'link_title' => $link_title
+              )
+            ) ); ?>
+          </div>
+        <?php endif; ?>
 			</div>
 		</div>
     <?php endif; ?>
