@@ -1087,6 +1087,10 @@ select{
   width:5rem
 }
 
+.w-8{
+  width:2rem
+}
+
 .max-w-sm{
   max-width:24rem
 }
@@ -1695,6 +1699,11 @@ select{
   color:rgb(118 122 135 / var(--tw-text-opacity))
 }
 
+.text-primary{
+  --tw-text-opacity:1;
+  color:rgb(112 212 75 / var(--tw-text-opacity))
+}
+
 .no-underline{
   -webkit-text-decoration-line:none;
           text-decoration-line:none
@@ -1975,6 +1984,82 @@ select{
       --tw-content:'+';
       content:var(--tw-content)
     }
+
+@font-face {
+  font-family: 'icomoon';
+
+  src:  url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.eot?bhcnfw');
+
+  src:  url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.eot?bhcnfw#iefix') format('embedded-opentype'),
+    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.ttf?bhcnfw') format('truetype'),
+    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.woff?bhcnfw') format('woff'),
+    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.svg?bhcnfw#icomoon') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play-bubble:before {
+  content: "\e900";
+  color: inherit;
+}
+
+.icon-people:before {
+  content: "\e901";
+  color: inherit;
+}
+
+.icon-person-step:before {
+  content: "\e902";
+  color: inherit;
+}
+
+.icon-chat-bubbles:before {
+  content: "\e903";
+  color: inherit;
+}
+
+.icon-heart:before {
+  content: "\e904";
+  color: inherit;
+}
+
+.icon-paper:before {
+  content: "\e905";
+  color: inherit;
+}
+
+.icon-chevron-right:before {
+  content: "\e906";
+  color: inherit;
+}
+
+.icon-right-arrow:before {
+  content: "\e907";
+  color: inherit;
+}
+
+.icon-leaf:before {
+  content: "\e908";
+  color: inherit;
+}
 
 html {
   scroll-behavior: smooth;
@@ -2355,6 +2440,10 @@ h2{
   background-color:rgb(229 231 235 / var(--tw-bg-opacity))
 }
 
+.hover\:bg-primary\/10:hover{
+  background-color:rgb(112 212 75 / 0.1)
+}
+
 .hover\:text-navy:hover{
   --tw-text-opacity:1;
   color:rgb(0 40 53 / var(--tw-text-opacity))
@@ -2400,9 +2489,18 @@ h2{
   background-color:rgb(229 231 235 / var(--tw-bg-opacity))
 }
 
+.focus\:bg-primary\/10:focus{
+  background-color:rgb(112 212 75 / 0.1)
+}
+
 .focus\:text-gray-900:focus{
   --tw-text-opacity:1;
   color:rgb(17 24 39 / var(--tw-text-opacity))
+}
+
+.focus\:text-navy:focus{
+  --tw-text-opacity:1;
+  color:rgb(0 40 53 / var(--tw-text-opacity))
 }
 
 .focus\:outline-none:focus{
