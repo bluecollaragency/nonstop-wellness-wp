@@ -19,8 +19,6 @@
 					<?php while( have_rows('slides') ): the_row(); ?>
 						<button class="glide__bullet" data-glide-dir="=<?= get_row_index(); ?>"></button>
 					<?php endwhile; ?>
-					<button class="glide__bullet" data-glide-dir="=1"></button>
-					<button class="glide__bullet" data-glide-dir="=2"></button>
 				</div>
 			</div>
 		</div>
