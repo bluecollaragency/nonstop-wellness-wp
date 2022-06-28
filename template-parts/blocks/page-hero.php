@@ -97,9 +97,11 @@
         bg-no-repeat
         <?php if( $bg_color == 'green' ) {
           echo 'bg-primary ';
-          } else {
+          } else if( $bg_color == 'teal' ) {
             echo 'bg-secondary ';
-          } 
+          } else {
+            echo 'bg-red-orange';
+          }
        ?>
         bottom-0 
         lg:top-12 

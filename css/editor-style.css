@@ -615,16 +615,16 @@
   margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse:0;
-  margin-right:calc(1rem * var(--tw-space-x-reverse));
-  margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse:0;
   margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom:calc(1rem * var(--tw-space-y-reverse))
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse:0;
+  margin-right:calc(1rem * var(--tw-space-x-reverse));
+  margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -762,6 +762,11 @@
 .bg-\[\#52D3E5\]{
   --tw-bg-opacity:1;
   background-color:rgb(82 211 229 / var(--tw-bg-opacity))
+}
+
+.bg-red-orange{
+  --tw-bg-opacity:1;
+  background-color:rgb(255 77 0 / var(--tw-bg-opacity))
 }
 
 .bg-watermark{
@@ -1616,11 +1621,6 @@ body{
   z-index:0
 }
 
-.before\:mr-4::before{
-  content:var(--tw-content);
-  margin-right:1rem
-}
-
 .before\:mr-2::before{
   content:var(--tw-content);
   margin-right:0.5rem
@@ -1681,11 +1681,6 @@ body{
 .before\:bg-no-repeat::before{
   content:var(--tw-content);
   background-repeat:no-repeat
-}
-
-.before\:font-bold::before{
-  content:var(--tw-content);
-  font-weight:700
 }
 
 .before\:text-secondary::before{

@@ -41,6 +41,11 @@
           "name": "Navy",
           "slug": "navy",
           "color": "#002835"
+        },
+        {
+          "name": "Red-Orange",
+          "slug": "red-orange",
+          "color": "#FF4D00"
         }
       ]
     },

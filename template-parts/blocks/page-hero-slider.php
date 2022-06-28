@@ -3,6 +3,7 @@
  * Page Hero Slider
  */
 ?>
+<?php if( have_rows('slides') ): ?>
 <div class="glide hero-slider z-10">
 	<div class="absolute w-full h-full top-0 left-0 right-0 mx-auto">
 		<div class="container relative mx-auto h-full">
@@ -15,7 +16,9 @@
 			</div>
 			<div class="absolute left-0 right-0 mx-auto w-full flex lg:hidden items-center justify-center bottom-12">
 				<div class="glide__bullets flex gap-4 z-20" data-glide-el="controls[nav]">
-					<button class="glide__bullet" data-glide-dir="=0"></button>
+					<?php while( have_rows('slides') ): the_row(); ?>
+						<button class="glide__bullet" data-glide-dir="=<?= get_row_index(); ?>"></button>
+					<?php endwhile; ?>
 					<button class="glide__bullet" data-glide-dir="=1"></button>
 					<button class="glide__bullet" data-glide-dir="=2"></button>
 				</div>
@@ -24,52 +27,63 @@
 	</div>
 	<div data-glide-el="track" class="glide__track">
 		<ul class="glide__slides">
-			<li class="glide__slide">
-				<div class="relative bg-transparent rounded-4xl lg:rounded-none z-20">
-					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[600px] flex md:items-center">
-						<div class="w-full md:w-7/12 xl:ml-[8.33%] py-12 lg:py-0 text-navy">
-							<h1 class="text-3xl lg:text-6xl font-bold">Lower premiums.<br/>Accesible benefits.<br/>Better health.</h1>
-							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-							<a href="#" class="btn-lg bg-navy text-white mt-8">See our services</a>
+			<?php while( have_rows('slides') ): the_row(); 
+				$image_desktop = get_sub_field('desktop_image');
+				$image_mobile = get_sub_field('mobile_image');
+
+				$headline = get_sub_field('headline');
+				$copy = get_sub_field('copy');
+				$button = get_sub_field('button');
+				if( $button ) { 
+					$button_url = $button['url'];
+					$button_title = $button['title'];
+					$button_target = $button['target'] ? $button['target'] : '_self';
+				}
+
+				$custom = get_sub_field('custom_html');
+
+				if($image_desktop) {
+					$img_2x = $image_desktop['url'];
+					$img_1x = $image_desktop['sizes']['hero-image'];
+				}
+				if($image_mobile){
+					$img_mobile = $image_mobile['sizes']['large'];
+				}
+				?>
+				<li class="glide__slide">
+					<div class="relative bg-transparent rounded-4xl lg:rounded-none z-20">
+						<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[600px] flex md:items-center">
+							<div class="w-full md:w-7/12 xl:ml-[8.33%] py-12 lg:py-0">
+								<?php if( $custom ): ?>
+									<?= $custom; ?>
+								<? else : ?>
+									<div class="text-navy">
+										<?php if($headline): ?>
+										<h2 class="text-3xl lg:text-6xl font-bold"><?= $headline; ?></h2>
+										<?php endif; ?>
+										<?php if($copy): ?>
+										<div class="space-y-4 mt-6 lg:text-xl font-semibold">
+											<?= $copy; ?>
+										</div>
+										<?php endif; ?>
+										<?php if($button): ?>
+											<a href="<?= esc_url($button_url); ?>" target="<?= esc_attr($button_target); ?>" class="btn-lg bg-navy text-white mt-8"><?= esc_html($button_title); ?></a>
+										<?php endif; ?>
+									</div>
+								<?php endif; ?>
+							</div>
+						</div>
+						<div class="w-full md:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
+							<picture>
+								<source srcset="<?= esc_url( $img_2x ); ?> 2x, <?= esc_url( $img_1x ); ?> 1x" media="(min-width: 768px)">
+								<source srcset="<?= esc_url( $img_mobile ); ?>">
+								<img src="<?= esc_url( $img_1x ); ?>" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
+							</picture>
 						</div>
 					</div>
-					<div class="w-full md:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-						<picture>
-							<source srcset="<?= get_template_directory_uri();?>/img/hero-placeholder-lg.jpg 2x, <?= get_template_directory_uri();?>/img/hero-placeholder.jpg 1x" media="(min-width: 768px)">
-							<source srcset="<?= get_template_directory_uri();?>/img/hero-placeholder-sm.jpg">
-							<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
-						</picture>
-					</div>
-				</div>
-			</li>
-			<li class="glide__slide">
-				<div class="relative bg-[#00C4B3] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
-					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
-							<h1 class="text-3xl lg:text-6xl font-bold">Slide 2</h1>
-							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
-						</div>
-					</div>
-					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
-					</div>
-				</div>
-			</li>
-			<li class="glide__slide">
-				<div class="relative bg-[#52D3E5] lg:bg-transparent rounded-4xl lg:rounded-none z-20">
-					<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[400px] lg:min-h-[600px] flex lg:items-center">
-						<div class="w-full lg:w-7/12 lg:ml-[8.33%] pt-6 pb-12 lg:py-0">
-							<h1 class="text-3xl lg:text-6xl font-bold">Slide 3</h1>
-							<p class="mt-6 lg:text-xl font-semibold">Provide the best health insurance for less.</p>
-							<a href="#" class="btn-lg bg-dark text-white mt-8">See our services</a>
-						</div>
-					</div>
-					<div class="w-full lg:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">
-						<img src="<?= get_template_directory_uri();?>/img/hero-placeholder.jpg" alt="" class="w-full h-full object-cover rounded-4xl lg:rounded-r-none">
-					</div>
-				</div>
-			</li>
+				</li>
+			<?php endwhile; ?>
 		</ul>
 	</div>
 </div>
+<?php endif; ?>
