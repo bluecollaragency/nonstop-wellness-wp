@@ -3,12 +3,10 @@
 Template Name: Archives
 */
 
-
-
 get_header(); ?>
 
 <?php 
-		get_template_part( 'template-parts/blocks/page-hero-test', null, array(
+		get_template_part( 'template-parts/blocks/page-hero', null, array(
 				'image'	=> 209,
 				'bg_color' => get_field('background_color', get_queried_object() ),
 				'headline'	=> 'Blog',

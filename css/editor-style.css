@@ -2335,6 +2335,14 @@ body{
     padding-bottom:3rem
   }
 
+  .lg\:pl-4{
+    padding-left:1rem
+  }
+
+  .lg\:pr-4{
+    padding-right:1rem
+  }
+
   .lg\:text-5xl{
     font-size:3rem;
     line-height:1

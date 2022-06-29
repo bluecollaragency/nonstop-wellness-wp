@@ -3,20 +3,37 @@
  * Page Hero Block Template
  */
 
-  $img_loc = get_field('image_location');
-  $bg_color = get_field('background_color');
-  $image = get_field('image') ?: 209;
-  $content = get_field('content_group');
-  if($content){
-    $prehead = $content['preheader'];
-    $headline = $content['header'];
-    $copy = $content['copy'];
-    $button = $content['button'];
+ $args = wp_parse_args(
+  $args,
+  array(
+    'img_loc' => get_field('image_location'),
+    'bg_color' => get_field('background_color'),
+    'image' => get_field('image') ?: 209,
+    'content' => get_field('content_group'),
+  )
+  );
+
+  if( $args['content'] ) {
+    $args = wp_parse_args(
+      $args,
+      array(
+        'prehead' => get_field('content_group')['preheader'],
+        'headline' => get_field('content_group')['header'],
+        'copy' => get_field('content_group')['copy'],
+        'button' => get_field('content_group')['button'],
+      )
+    );
   }
-  if( $button ) { 
-    $button_url = $button['url'];
-    $button_title = $button['title'];
-    $button_target = $button['target'] ? $button['target'] : '_self';
+
+  if( $args['button'] ) {
+    $args = wp_parse_args(
+      $args,
+      array(
+        'button_url'  => get_field('content_group')['button']['url'],
+        'button_title'  => get_field('content_group')['button']['title'],
+        'button_target'  => get_field('content_group')['button']['target'] ? get_field('content_group')['button']['target'] : '_self'
+      )
+    );
   }
 ?>
 
@@ -30,25 +47,27 @@
       lg:h-full 
       z-10 
       rounded-4xl 
-      <?php if($img_loc): ?>
+      <?php if($args['img_loc']): ?>
         lg:rounded-l-none
+        lg:pr-4
       <?php else: ?>
         lg:rounded-r-none 
         right-0
+        lg:pl-4
       <?php endif; ?>
     "
     >
     <?php 
-      if($img_loc){
+      if($args['img_loc']){
       echo wp_get_attachment_image( 
-        $image, 
+        $args['image'], 
         'full', 
         '', 
         ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-l-none', 'sizes' => '(max-width: 959px) 100vw, 50vw'] 
       ); 
       } else {
         echo wp_get_attachment_image( 
-          $image, 
+          $args['image'], 
           'full', 
           '', 
           ['class' => 'w-full lg:h-full lg:object-cover rounded-4xl lg:rounded-r-none', 'sizes' => '(max-width: 959px) 100vw, 50vw'] 
@@ -61,7 +80,7 @@
       <div 
         class="
           lg:col-span-5 
-          <?php if($img_loc): ?>
+          <?php if($args['img_loc']): ?>
             lg:col-start-8 
           <?php else: ?>
             lg:col-start-2 
@@ -71,19 +90,19 @@
           lg:pb-32 
           lg:mt-12"
         >
-        <?php if($prehead): ?>
-          <span class="inline-block uppercase text-xs font-bold mb-4"><?= esc_html($prehead); ?></span>
+        <?php if($args['prehead']): ?>
+          <span class="inline-block uppercase text-xs font-bold mb-4"><?= esc_html($args['prehead']); ?></span>
         <?php endif; ?>
-        <?php if($headline): ?>
-          <h1 class="text-5xl xl:text-7xl font-bold"><?= esc_html($headline); ?></h1>
+        <?php if($args['headline']): ?>
+          <h1 class="text-5xl xl:text-7xl font-bold"><?= esc_html($args['headline']); ?></h1>
         <?php endif; ?>
-        <?php if($copy): ?>
+        <?php if($args['copy']): ?>
           <div class="space-y-4 mt-4 text-base lg:text-xl font-semibold">
-            <?= $copy; ?>
+            <?= $args['copy']; ?>
           </div>
         <?php endif; ?>
-        <?php if($button): ?>
-          <a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-dark text-white mx-auto mt-8 no-underline"><?= esc_html($button_title); ?></a>
+        <?php if($args['button']): ?>
+          <a href="<?= esc_url($args['button_url']); ?>"  target="<?= esc_attr($args['button_target']); ?>" class="btn-lg bg-dark text-white mx-auto mt-8 no-underline"><?= esc_html($args['button_title']); ?></a>
         <?php endif; ?>
       </div>
     </div>
@@ -95,25 +114,25 @@
         h-[80%] 
         lg:h-full 
         bg-no-repeat
-        <?php if( $bg_color == 'green' ) {
+        <?php if( $args['bg_color'] == 'green' ) {
           echo 'bg-primary ';
-          } else if( $bg_color == 'teal' ) {
+          } else if( $args['bg_color'] == 'teal' ) {
             echo 'bg-secondary ';
-          } else if( $bg_color == 'fuchsia' ) {
+          } else if( $args['bg_color'] == 'fuchsia' ) {
             echo 'bg-fuchsia ';
-          } else if( $bg_color == 'purple' ) {
+          } else if( $args['bg_color'] == 'purple' ) {
             echo 'bg-purple ';
-          } else if( $bg_color == 'red-orange' ) {
+          } else if( $args['bg_color'] == 'red-orange' ) {
             echo 'bg-red-orange ';
           } else {
             echo 'bg-primary ';
           }
-        ?>
+       ?>
         bottom-0 
         lg:top-12 
         z-0 
         rounded-4xl 
-        <?php if($img_loc): ?>
+        <?php if($args['img_loc']): ?>
           right-0 
           lg:rounded-r-none
           bg-watermark
