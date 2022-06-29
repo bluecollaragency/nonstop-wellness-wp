@@ -6,9 +6,8 @@
 			<?php if( has_post_thumbnail() ){
 				echo the_post_thumbnail('medium', array('class' => 'absolute w-full h-full object-cover rounded-t-4xl') );
 			} else {
-				echo '<img 
-					src="https://via.placeholder.com/822x822" 
-					alt="Placeholder Image"
+				echo '<img  src="'.get_stylesheet_directory_uri().'/img/blog-post-placeholder-2x.jpg"
+					alt="Nonstop blogpost image placeholder"
 					class="absolute w-full h-full object-cover rounded-t-4xl"
 				>';
 			} ?>
@@ -25,7 +24,9 @@
 			<div class="entry-summary mt-6">
 				<?php the_excerpt(); ?>
 			</div>
-
+			<a href="#" class="mt-4 inline-flex items-center space-x-2 font-semibold hover:brightness-90">
+				<span>Read More</span><i class="icon-right-arrow text-3xl"></i>
+			</a>
 		<?php else : ?>
 
 			<div class="entry-content">
