@@ -57,7 +57,7 @@
 					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>
 				<?php endwhile; endif; ?>
 			</div>
-			<div>
+			<div class="break-all">
 				<?php if( have_rows('footer_column_6', 'option') ):
 					while( have_rows('footer_column_6', 'option') ): the_row(); ?>
 					<?php get_template_part( 'template-parts/partials/footer-nav-col' ); ?>

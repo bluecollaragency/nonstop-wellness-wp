@@ -657,6 +657,10 @@
   overflow:visible
 }
 
+.break-all{
+  word-break:break-all
+}
+
 .rounded{
   border-radius:0.25rem
 }
@@ -1931,6 +1935,10 @@ body{
 .hover\:text-black:hover{
   --tw-text-opacity:1;
   color:rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.hover\:text-navy\/90:hover{
+  color:rgb(0 40 53 / 0.9)
 }
 
 .hover\:underline:hover{

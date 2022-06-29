@@ -1,6 +1,6 @@
-<h3 class="font-semibold"><?= get_sub_field('title'); ?></h3>
+<h3 class="font-semibold text-navy"><?= get_sub_field('title'); ?></h3>
 <?php if( have_rows('links') ): ?>
-	<ul class="flex flex-col gap-y-2 mt-2">
+	<ul class="flex flex-col gap-y-2 mt-2 text-sm">
 		<?php while( have_rows('links') ): the_row();
 			$link = get_sub_field('link');
 			if ($link) {
@@ -10,7 +10,7 @@
 			}
 			?>
 			<li>
-				<a class="inline-flex transition-all text-dark underline-offset-4 hover:text-black hover:underline" href="<?= esc_url( $link_url ); ?>" target="<?= esc_attr( $link_target ); ?>"><?= esc_html( $link_title ); ?></a>
+				<a class="inline-flex transition-all text-navy underline-offset-4 hover:text-navy/90 hover:underline" href="<?= esc_url( $link_url ); ?>" target="<?= esc_attr( $link_target ); ?>"><?= esc_html( $link_title ); ?></a>
 			</li>
 		<?php endwhile; ?>
 	</ul>
