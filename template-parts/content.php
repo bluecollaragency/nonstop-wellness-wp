@@ -17,12 +17,12 @@
 	</div>
 	<div class="bg-white p-10 rounded-b-4xl">
 		<header class="entry-header">
-			<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1 text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		</header>
 
 		<?php if ( is_search() || is_archive() ) : ?>
 
-			<div class="entry-summary mt-6 text-gray-400">
+			<div class="entry-summary mt-6">
 				<?php the_excerpt(); ?>
 			</div>
 
