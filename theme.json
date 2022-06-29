@@ -38,6 +38,16 @@
           "color": "#767A87"
         },
         {
+          "name": "Gray 200",
+          "slug": "gray-200",
+          "color": "#ABAEBA"
+        },
+        {
+          "name": "Gray 100",
+          "slug": "gray-100",
+          "color": "#EFF1F5"
+        },
+        {
           "name": "Navy",
           "slug": "navy",
           "color": "#002835"
