@@ -10,10 +10,9 @@ get_header(); ?>
 <?php 
 		get_template_part( 'template-parts/blocks/page-hero-test', null, array(
 				'image'	=> 209,
-				'bg_color' => 'green',
+				'bg_color' => get_field('background_color', get_queried_object() ),
 				'headline'	=> 'Blog',
-				'button'	=> true,
-				'button_title' => 'CTA'
+				'copy'	=> 'Explore expert insights, tips, tools, and articles created to help your organization navigate the healthcare landscape.'
 			)
 	 	); ?>
 

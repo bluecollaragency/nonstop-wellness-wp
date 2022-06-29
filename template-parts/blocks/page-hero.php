@@ -103,10 +103,12 @@
             echo 'bg-fuchsia ';
           } else if( $bg_color == 'purple' ) {
             echo 'bg-purple ';
-          } else {
+          } else if( $bg_color == 'red-orange' ) {
             echo 'bg-red-orange ';
+          } else {
+            echo 'bg-primary ';
           }
-       ?>
+        ?>
         bottom-0 
         lg:top-12 
         z-0 

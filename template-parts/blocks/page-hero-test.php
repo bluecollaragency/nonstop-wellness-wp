@@ -10,12 +10,20 @@
     'bg_color' => get_field('background_color'),
     'image' => get_field('image') ?: 209,
     'content' => get_field('content_group'),
-    'prehead' => get_field('content_group')['preheader'],
-    'headline' => get_field('content_group')['header'],
-    'copy' => get_field('content_group')['copy'],
-    'button' => get_field('content_group')['button'],
   )
   );
+
+  if( $args['content'] ) {
+    $args = wp_parse_args(
+      $args,
+      array(
+        'prehead' => get_field('content_group')['preheader'],
+        'headline' => get_field('content_group')['header'],
+        'copy' => get_field('content_group')['copy'],
+        'button' => get_field('content_group')['button'],
+      )
+    );
+  }
 
   if( $args['button'] ) {
     $args = wp_parse_args(
@@ -112,8 +120,10 @@
             echo 'bg-fuchsia ';
           } else if( $args['bg_color'] == 'purple' ) {
             echo 'bg-purple ';
-          } else {
+          } else if( $args['bg_color'] == 'red-orange' ) {
             echo 'bg-red-orange ';
+          } else {
+            echo 'bg-primary ';
           }
        ?>
         bottom-0 
