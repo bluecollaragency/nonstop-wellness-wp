@@ -43,9 +43,24 @@
           "color": "#002835"
         },
         {
+          "name": "Orange",
+          "slug": "orange",
+          "color": "#FFA400"
+        },
+        {
           "name": "Red-Orange",
           "slug": "red-orange",
           "color": "#FF4D00"
+        },
+        {
+          "name": "Fuchsia",
+          "slug": "fuchsia",
+          "color": "#B31983"
+        },
+        {
+          "name": "Purple",
+          "slug": "purple",
+          "color": "#8B85CA"
         }
       ]
     },
