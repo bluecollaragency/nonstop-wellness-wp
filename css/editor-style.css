@@ -400,6 +400,10 @@
   height:5rem
 }
 
+.h-10{
+  height:2.5rem
+}
+
 .min-h-screen{
   min-height:100vh
 }
@@ -446,6 +450,10 @@
 
 .w-8{
   width:2rem
+}
+
+.w-10{
+  width:2.5rem
 }
 
 .max-w-sm{
@@ -818,6 +826,14 @@
   padding:1rem
 }
 
+.p-2{
+  padding:0.5rem
+}
+
+.p-3{
+  padding:0.75rem
+}
+
 .px-4{
   padding-left:1rem;
   padding-right:1rem
@@ -1107,6 +1123,14 @@
   transition-duration:150ms
 }
 
+.transition-colors{
+  transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms
+}
+
 .duration-200{
   transition-duration:200ms
 }
@@ -1345,12 +1369,12 @@
 @font-face {
   font-family: 'icomoon';
 
-  src:  url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.eot?bhcnfw');
+  src:  url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.eot?ezfcyw');
 
-  src:  url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.eot?bhcnfw#iefix') format('embedded-opentype'),
-    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.ttf?bhcnfw') format('truetype'),
-    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.woff?bhcnfw') format('woff'),
-    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.svg?bhcnfw#icomoon') format('svg');
+  src:  url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.eot?ezfcyw#iefix') format('embedded-opentype'),
+    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.ttf?ezfcyw') format('truetype'),
+    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.woff?ezfcyw') format('woff'),
+    url('https://i.icomoon.io/public/temp/4fbd523b16/NonstopWellness/icomoon.svg?ezfcyw#icomoon') format('svg');
 
   font-weight: normal;
 
@@ -1375,47 +1399,54 @@
 
 .icon-play-bubble:before {
   content: "\e900";
-  color: inherit;
 }
 
 .icon-people:before {
   content: "\e901";
-  color: inherit;
 }
 
 .icon-person-step:before {
   content: "\e902";
-  color: inherit;
 }
 
 .icon-chat-bubbles:before {
   content: "\e903";
-  color: inherit;
 }
 
 .icon-heart:before {
   content: "\e904";
-  color: inherit;
 }
 
 .icon-paper:before {
   content: "\e905";
-  color: inherit;
 }
 
 .icon-chevron-right:before {
   content: "\e906";
-  color: inherit;
 }
 
 .icon-right-arrow:before {
   content: "\e907";
-  color: inherit;
 }
 
 .icon-leaf:before {
   content: "\e908";
-  color: inherit;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin:before {
+  content: "\eaca";
 }
 
 html {
@@ -1878,6 +1909,10 @@ body{
   background-color:rgb(112 212 75 / 0.1)
 }
 
+.hover\:bg-navy\/90:hover{
+  background-color:rgb(0 40 53 / 0.9)
+}
+
 .hover\:text-navy:hover{
   --tw-text-opacity:1;
   color:rgb(0 40 53 / var(--tw-text-opacity))
@@ -1905,6 +1940,11 @@ body{
 
 .hover\:opacity-100:hover{
   opacity:1
+}
+
+.hover\:brightness-90:hover{
+  --tw-brightness:brightness(.9);
+  filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
 .focus\:not-sr-only:focus{

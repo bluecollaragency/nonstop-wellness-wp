@@ -71,7 +71,7 @@
         echo $text;
       } ?>
       <?php if($button): ?>
-			  <a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-dark text-white mx-auto mt-8 no-underline"><?= esc_html($button_title); ?></a>
+			  <a href="<?= esc_url($button_url); ?>"  target="<?= esc_attr($button_target); ?>" class="btn-lg bg-navy text-white mx-auto mt-8 no-underline"><?= esc_html($button_title); ?></a>
       <?php endif; ?>
 		</div>
 	</div>

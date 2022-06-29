@@ -64,11 +64,25 @@
 				<?php endwhile; endif; ?>
 			</div>
 		</div>
+
+		<?php if( have_rows('footer_social_icons', 'option') ): ?>
 		<ul class="mx-auto flex mt-20 space-x-6 justify-center items-center">
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
+			<?php while( have_rows('footer_social_icons', 'option') ): the_row();
+				$icon = get_sub_field('social_icon');
+				$link = get_sub_field('social_link');
+				if( $link ) {
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+				}
+				?>
+				<li>
+					<a href="<?= esc_url( $link_url ); ?>" class="rounded-full bg-navy w-10 h-10 flex items-center justify-center text-white text-lg transition-all hover:brightness-90" target="_blank" rel="noopener">
+						<i class="<?= esc_html( $icon ); ?>" aria-hidden="true"></i><span class="sr-only"><?= esc_html( $link_title ); ?></span>
+					</a>
+				</li>
+			<?php endwhile; ?>
 		</ul>
+		<?php endif; ?>
 		<div class="text-center mt-8 text-xs">
 			&copy; Copyright <?php echo date_i18n( 'Y' );?> <?= the_field('copyright_text', 'option'); ?> <span  class="font-semibold"><a href="#">Terms & Conditions</a> • <a href="#">Privacy Policy</a></span>
 		</div>
