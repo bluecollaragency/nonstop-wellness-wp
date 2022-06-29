@@ -85,7 +85,7 @@
                       class="flex flex-row items-center lg:items-start px-4 py-2 mt-2 text-sm font-semibold bg-transparent lg:mt-0 hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none focus:shadow-outline <?= $child_nav_item->classes; ?> <?= $child_nav_item->active ? 'current-item' : ''; ?>"
                       > 
                         <?php if (get_field('nav_item_icon', $child_nav_item->id)) {
-                          echo '<span class="inline mr-2 text-primary w-8 text-3xl"><span class="w-full h-auto '.get_field('nav_item_icon', $child_nav_item->id).'"></span></span>';
+                          echo '<span class="inline-block mr-2 text-primary text-2xl"><span class="'.get_field('nav_item_icon', $child_nav_item->id).'"></span></span>';
                         } ?>
                         <div>
                           <span class="font-semibold"><?= $child_nav_item->label ?></span>

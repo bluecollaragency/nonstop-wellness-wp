@@ -99,8 +99,12 @@
           echo 'bg-primary ';
           } else if( $bg_color == 'teal' ) {
             echo 'bg-secondary ';
+          } else if( $bg_color == 'fuchsia' ) {
+            echo 'bg-fuchsia ';
+          } else if( $bg_color == 'purple' ) {
+            echo 'bg-purple ';
           } else {
-            echo 'bg-red-orange';
+            echo 'bg-red-orange ';
           }
        ?>
         bottom-0 
