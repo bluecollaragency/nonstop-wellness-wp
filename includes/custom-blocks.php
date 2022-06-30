@@ -85,6 +85,16 @@ function my_acf_init_block_types() {
         'icon'              => 'align-left',
         'keywords'          => array( 'page', 'hero', 'slider', 'image' ),
       ));
+      //register page hero text
+      acf_register_block_type(array(
+        'name'              => 'page-hero-text',
+        'title'             => __('Page Hero Text'),
+        'description'       => __('Page hero text'),
+        'render_template'   => 'template-parts/blocks/page-hero-text.php',
+        'category'          => 'nstp',
+        'icon'              => 'align-left',
+        'keywords'          => array( 'page', 'hero', 'text' ),
+      ));
       //register page text
       acf_register_block_type(array(
         'name'              => 'page-text',

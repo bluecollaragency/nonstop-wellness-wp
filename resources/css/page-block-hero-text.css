@@ -1,0 +1,19 @@
+.hero-text-only {
+  h1, h2 {
+    @apply text-4xl md:text-6xl font-bold mb-4;
+  }
+  p {
+    @apply mt-4;
+  }
+  
+}
+.hero-text-buttons {
+  .btn-lg {
+    &:first-child {
+      @apply bg-white;
+    }
+    &:nth-child(2) {
+      @apply bg-navy text-white;
+    }
+  }
+}

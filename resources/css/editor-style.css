@@ -36,7 +36,7 @@ body {
 
     p, ul, ol {
         a {
-            @apply text-blue-500 underline;
+            @apply text-blue underline;
 
             &:hover {
                 @apply no-underline;
