@@ -42,18 +42,14 @@ get_header(); ?>
 		<?php endwhile; ?>
     </div>
 	<?php endif; ?>
-
-	<div class="post-archive-nav flex align-middle justify-between font-bold mt-24 text-sm">
-    <div class=""><i class="far fa-long-arrow-alt-left mr-2"></i> Older posts</div>
-    <div class="">Newer posts <i class="far fa-long-arrow-alt-right fill-current ml-2"></i></div>
-  </div>
-
-	<!-- <?php if( get_the_post_navigation() ): ?>
-  <div class="post-archive-nav flex align-middle justify-between font-bold mt-24">
-    <div class=""><?php next_posts_link( '<i class="far fa-long-arrow-alt-left mr-2"></i> Older posts' ); ?></div>
-    <div class=""><?php previous_posts_link( 'Newer posts <i class="far fa-long-arrow-alt-right fill-current ml-2"></i>' ); ?></div>
-  </div>
-  <?php endif; ?> -->
+	
+	<div class="custom-archive-nav mt-24">
+	<?php the_posts_pagination(array(
+		'mid_size' => 2,
+		'prev_text' => __('Prev', 'tailpress'),
+		'next_text'	=> __('Next', 'tailpress')
+	)); ?>
+	</div>
 
 </div>
 <?php 

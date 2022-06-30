@@ -107,3 +107,18 @@ h2 {
         @apply h-auto;
     }
 }
+
+.custom-archive-nav {
+    .nav-links {
+        @apply flex justify-center gap-x-2 w-full;
+        .page-numbers {
+            @apply rounded-lg px-4 py-2 hover:bg-primary/10 focus:bg-primary/10 focus:outline-none;
+        }
+        .prev, .next {
+            @apply font-bold;
+        }
+        .current {
+            @apply bg-primary/10;
+        }
+    }
+}
