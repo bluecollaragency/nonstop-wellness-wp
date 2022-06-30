@@ -28,7 +28,13 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
 		<?php endwhile; ?>
-
+    <?php else : ?>
+      <div class="max-w-screen-lg mx-auto mb-16">
+        <p class="font-bold">No results found.</p>
+        <div class="mt-4">
+          <?php get_search_form(); ?>
+        </div>
+      </div>
 	<?php endif; ?>
 
 </div>
