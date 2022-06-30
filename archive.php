@@ -37,7 +37,7 @@ get_header(); ?>
 			the_post();
 			?>
 
-			<?php get_template_part( 'template-parts/content-category' ); ?>
+			<?php get_template_part( 'template-parts/content-archive' ); ?>
 
 		<?php endwhile; ?>
     </div>

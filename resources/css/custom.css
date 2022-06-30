@@ -15,20 +15,20 @@ article > *:not(.entry-content),
 
 .entry-content {
     h1 {
-        @apply text-2xl;
+        @apply text-2xl font-bold;
     }
 
     h2 {
-        @apply text-xl;
+        @apply text-xl font-bold;
     }
 
     h3 {
-        @apply text-lg;
+        @apply text-lg font-bold;
     }
 
     p, ul, ol {
         a {
-            @apply text-blue-500 underline;
+            @apply text-blue underline;
 
             &:hover {
                 @apply no-underline;
