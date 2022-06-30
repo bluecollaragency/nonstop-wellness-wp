@@ -5,9 +5,6 @@
 html {
     scroll-behavior: smooth;
 }
-main {
-    @apply text-navy;
-}
 body.mobile-nav-open {
     @apply overflow-hidden lg:overflow-auto;
 }
