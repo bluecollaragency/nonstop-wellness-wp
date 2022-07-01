@@ -7,10 +7,11 @@ get_header(); ?>
 
 <?php 
 	get_template_part( 'template-parts/blocks/page-hero', null, array(
-		'image'	=> 209,
+		'img_loc' => get_field('image_location', get_queried_object()),
+		'image'	=> get_field('image', get_queried_object()) ?: 209,
 		'bg_color' => get_field('background_color', get_queried_object() ),
-		'headline'	=> 'Blog',
-		'copy'	=> 'Explore expert insights, tips, tools, and articles created to help your organization navigate the healthcare landscape.'
+		'headline'	=> get_the_category()[0]->name,
+		'copy'	=> get_the_archive_description()
 	)
 ); ?>
 
@@ -26,6 +27,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="w-full lg:w-1/3 lg:pl-4 text-sm">
+			<span class="block text-sm mb-4">Search:</span>
 			<?php get_search_form(); ?>
 		</div>
 	</div>

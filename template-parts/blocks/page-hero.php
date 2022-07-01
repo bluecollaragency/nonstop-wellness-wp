@@ -94,6 +94,7 @@
           <span class="inline-block uppercase text-xs font-bold mb-4"><?= esc_html($args['prehead']); ?></span>
         <?php endif; ?>
         <?php if($args['headline']): ?>
+          
           <h1 class="text-5xl xl:text-7xl font-bold"><?= esc_html($args['headline']); ?></h1>
         <?php endif; ?>
         <?php if($args['copy']): ?>
