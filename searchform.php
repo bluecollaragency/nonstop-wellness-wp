@@ -4,8 +4,6 @@
         max-w-full 
         bg-transparent 
         text-navy
-        placeholder-gray-300
-        lg:placeholder-blue 
         outline-none 
         border
         border-gray-200
@@ -30,7 +28,6 @@
         bg-transparent 
         text-navy
         placeholder-gray-300
-        lg:placeholder-blue 
         outline-none 
         border-none
         focus:outline-none 

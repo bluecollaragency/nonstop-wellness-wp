@@ -20,9 +20,9 @@ get_header(); ?>
 		<div class="w-full lg:w-2/3 lg:pr-4">
 			<span class="block text-sm">Categories:</span>
 			<div class="flex flex-wrap gap-x-8 items-end mt-4 text-sm">
-				<a href="#" class="px-4 py-2 rounded-lg font-semibold hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none focus:shadow-outline bg-primary/10">All Categories</a>
-				<a href="#" class="px-4 py-2 rounded-lg font-semibold hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none focus:shadow-outline">Category 1</a>
-				<a href="#" class="px-4 py-2 rounded-lg font-semibold hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none focus:shadow-outline">Category 2</a>
+				<a href="#" class="px-4 py-2 rounded-lg font-semibold hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none bg-primary/10">All Categories</a>
+				<a href="#" class="px-4 py-2 rounded-lg font-semibold hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none">Category 1</a>
+				<a href="#" class="px-4 py-2 rounded-lg font-semibold hover:text-navy focus:text-navy hover:bg-primary/10 focus:bg-primary/10 focus:outline-none">Category 2</a>
 			</div>
 		</div>
 		<div class="w-full lg:w-1/3 lg:pl-4 text-sm">

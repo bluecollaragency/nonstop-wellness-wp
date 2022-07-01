@@ -32,6 +32,7 @@
 				$headline = get_sub_field('headline');
 				$copy = get_sub_field('copy');
 				$button = get_sub_field('button');
+				$custom = get_sub_field('custom_content');
 				if( $button ) { 
 					$button_url = $button['url'];
 					$button_title = $button['title'];
