@@ -256,6 +256,10 @@
   margin-top:1rem
 }
 
+.mb-4{
+  margin-bottom:1rem
+}
+
 .mt-24{
   margin-top:6rem
 }
@@ -282,10 +286,6 @@
 
 .mt-6{
   margin-top:1.5rem
-}
-
-.mb-4{
-  margin-bottom:1rem
 }
 
 .ml-0{
@@ -732,11 +732,6 @@
 .border-gray-200{
   --tw-border-opacity:1;
   border-color:rgb(171 174 186 / var(--tw-border-opacity))
-}
-
-.border-blue{
-  --tw-border-opacity:1;
-  border-color:rgb(43 85 151 / var(--tw-border-opacity))
 }
 
 .border-b-primary{

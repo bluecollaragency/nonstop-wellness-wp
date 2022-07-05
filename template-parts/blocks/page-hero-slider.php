@@ -32,14 +32,14 @@
 				$headline = get_sub_field('headline');
 				$copy = get_sub_field('copy');
 				$button = get_sub_field('button');
-				$custom = get_sub_field('custom_content');
+				$custom = get_sub_field('custom_html');
 				if( $button ) { 
 					$button_url = $button['url'];
 					$button_title = $button['title'];
 					$button_target = $button['target'] ? $button['target'] : '_self';
 				}
 
-				$custom = get_sub_field('custom_html');
+				
 
 				if($image_desktop) {
 					$img_2x = $image_desktop['url'];
