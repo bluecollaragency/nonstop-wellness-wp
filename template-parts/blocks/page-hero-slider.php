@@ -53,9 +53,6 @@
 					<div class="relative bg-transparent rounded-4xl lg:rounded-none z-20">
 						<div class="container px-8 lg:px-4 mx-auto relative z-20 h-hero min-h-[600px] flex md:items-center">
 							<div class="w-full md:w-7/12 xl:ml-[8.33%] py-12 lg:py-0">
-								<?php if( $custom ): ?>
-									<?= $custom; ?>
-								<? else : ?>
 									<div class="text-navy">
 										<?php if($headline): ?>
 										<h2 class="text-3xl lg:text-6xl font-bold"><?= $headline; ?></h2>
@@ -69,7 +66,6 @@
 											<a href="<?= esc_url($button_url); ?>" target="<?= esc_attr($button_target); ?>" class="btn-lg bg-navy text-white mt-8"><?= esc_html($button_title); ?></a>
 										<?php endif; ?>
 									</div>
-								<?php endif; ?>
 							</div>
 						</div>
 						<div class="w-full md:w-[77%] h-full absolute right-0 bottom-0 lg:top-0 z-10 rounded-4xl lg:rounded-r-none">

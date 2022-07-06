@@ -7,9 +7,7 @@ get_header(); ?>
 		'img_loc' => get_field('image_location', 'option'),
 		'image'	=> get_field('image', 'option') ?: 209,
 		'bg_color' => get_field('background_color', 'option' ),
-		// 'headline'	=> get_the_category()[0]->name,
 		'headline'	=> get_field('content_group', 'option')['header'],
-		// 'copy'	=> get_the_archive_description()
 		'copy'	=> get_field('content_group', 'option')['copy']
 	)
 ); ?>

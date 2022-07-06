@@ -175,6 +175,16 @@ function my_acf_init_block_types() {
         'icon'              => 'format-quote',
         'keywords'          => array( 'page', 'toolbox', 'feed', 'slider' ),
       ));
+      //register nonstop case studies feed
+      acf_register_block_type(array(
+        'name'              => 'page-case-studies-feed',
+        'title'             => __('Page Case Studies Feed'),
+        'description'       => __('Case studies page feed'),
+        'render_template'   => 'template-parts/blocks/page-case-study-feed.php',
+        'category'          => 'nstp',
+        'icon'              => 'format-quote',
+        'keywords'          => array( 'page', 'case', 'study', 'feed', 'slider' ),
+      ));
       //register partner list
       acf_register_block_type(array(
         'name'              => 'page-partner-list',

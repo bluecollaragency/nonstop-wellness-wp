@@ -2,16 +2,11 @@
 /*
 Template Name: Archives
 */
+
+$bg_color = get_field('background_color');
+$content = get_field('content');
+
 get_header(); ?>
-
-<?php
-/**
- * Page Hero Text Block Template
- */
-
- $bg_color = get_field('background_color');
- $content = get_field('content');
-?>
 
 <div 
   class="
