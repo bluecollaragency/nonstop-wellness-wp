@@ -1,7 +1,4 @@
 <?php 
-/*
-Template Name: Archives
-*/
 
 $bg_color = get_field('background_color');
 $content = get_field('content');
