@@ -1,7 +1,5 @@
 <?php 
-/*
-Template Name: Category
-*/
+
 get_header(); ?>
 
 <?php 

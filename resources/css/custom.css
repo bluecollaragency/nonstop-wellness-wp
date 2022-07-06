@@ -122,3 +122,9 @@ h2 {
         }
     }
 }
+
+.block-page-form-select {
+    .intro-text p {
+        @apply text-lg md:text-2xl;
+    }
+}

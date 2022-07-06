@@ -1363,6 +1363,10 @@ select{
   border-bottom-width:2px
 }
 
+.border-t{
+  border-top-width:1px
+}
+
 .border-none{
   border-style:none
 }
@@ -1385,6 +1389,11 @@ select{
 .border-b-\[\#D6DCE9\]{
   --tw-border-opacity:1;
   border-bottom-color:rgb(214 220 233 / var(--tw-border-opacity))
+}
+
+.border-t-gray-200{
+  --tw-border-opacity:1;
+  border-top-color:rgb(171 174 186 / var(--tw-border-opacity))
 }
 
 .bg-primary{
@@ -1586,6 +1595,14 @@ select{
 
 .pt-32{
   padding-top:8rem
+}
+
+.pt-4{
+  padding-top:1rem
+}
+
+.pt-6{
+  padding-top:1.5rem
 }
 
 .text-left{
@@ -2033,7 +2050,8 @@ select{
 /* Page text block */
 
 .page-text-block h2{
-    font-size:2rem
+    font-size:1.875rem;
+    line-height:2.25rem
   }
 
 @media (min-width: 960px){
@@ -2404,6 +2422,18 @@ h2{
 .custom-archive-nav .nav-links .current{
       background-color:rgb(112 212 75 / 0.1)
     }
+
+.block-page-form-select .intro-text p{
+    font-size:1.125rem;
+    line-height:1.75rem
+  }
+
+@media (min-width: 768px){
+    .block-page-form-select .intro-text p{
+      font-size:1.5rem;
+      line-height:2rem
+    }
+  }
 
 .before\:absolute::before{
   content:var(--tw-content);

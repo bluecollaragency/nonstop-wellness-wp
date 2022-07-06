@@ -7,9 +7,9 @@
 <div class="block-page-form-select max-w-screen-sm mx-auto px-8 lg:px-4">
   <div x-data="{ formselect: '' }">
 		<?php if( $header or $intro ): ?>
-			<div class="text-center space-y-4 mb-8">
+			<div class="text-center space-y-4 mb-8 intro-text">
 			<?php if($header): ?>	
-				<h2 id="contactLabel"><?= $header; ?></h2>
+				<h2 class="text-3xl lg:text-6xl" id="contactLabel"><?= esc_html($header); ?></h2>
 			<?php endif; ?>
 			<?php if($intro): ?>	
 				<?= $intro; ?>
@@ -36,7 +36,7 @@
     ?>
 		<div 
 			x-show="formselect === '<?= $form_name; ?>'"
-			class="form-panel"
+			class="form-panel mt-6 pt-4 border-t-gray-200 border-t"
 			>
 			<?= $form_content; ?>
 		</div>

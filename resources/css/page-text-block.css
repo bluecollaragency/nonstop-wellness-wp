@@ -1,6 +1,6 @@
 /* Page text block */
 .page-text-block {
   h2 { 
-      @apply text-[2rem] lg:text-6xl;
+      @apply text-3xl lg:text-6xl;
   }
 }
