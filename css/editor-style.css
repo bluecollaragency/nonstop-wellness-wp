@@ -577,6 +577,10 @@
   align-items:center
 }
 
+.justify-start{
+  justify-content:flex-start
+}
+
 .justify-end{
   justify-content:flex-end
 }
@@ -2208,6 +2212,10 @@ body{
     align-items:center
   }
 
+  .md\:justify-center{
+    justify-content:center
+  }
+
   .md\:space-y-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse:0;
     margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2239,6 +2247,10 @@ body{
 
   .md\:text-left{
     text-align:left
+  }
+
+  .md\:text-center{
+    text-align:center
   }
 
   .md\:text-3xl{

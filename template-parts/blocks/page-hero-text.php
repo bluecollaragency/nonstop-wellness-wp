@@ -9,7 +9,7 @@
 
 <div 
   class="
-    hero-text-only container py-24 mx-auto px-8 rounded-4xl text-center bg-watermark bg-no-repeat bg-right 
+    hero-text-only container py-24 mx-auto px-8 rounded-4xl md:text-center bg-watermark bg-no-repeat bg-right 
     <?php if( $bg_color == 'green' ) {
       echo 'bg-primary ';
       } else if( $bg_color == 'teal' ) {
@@ -30,7 +30,7 @@
     <?= $content; ?>
   </div>
   <?php if( have_rows( 'buttons' ) ): ?>
-  <div class="hero-text-buttons flex flex-row flex-wrap gap-x-8 mx-auto justify-center mt-6">
+  <div class="hero-text-buttons flex flex-row flex-wrap gap-x-8 mx-auto justify-start md:justify-center mt-6">
     <?php while( have_rows( 'buttons' ) ): the_row();
       $button = get_sub_field('button');
       $target = $button['target'] ? $button['target'] : '_self';
