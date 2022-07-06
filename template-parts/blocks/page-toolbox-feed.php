@@ -2,9 +2,14 @@
 /**
  * Page Nonstop Toolbox Feed
  */
-
+$section_link = get_field('section_link');
+  if( $section_link ) { 
+    $section_link_url = $section_link['url'];
+    $section_link_title = $section_link['title'];
+    $section_link_target = $section_link['target'] ? $section_link['target'] : '_self';
+  }
 ?>
-<div class="relative overflow-hidden mt-32">
+<div class="relative overflow-hidden">
 	<div class="container mx-auto px-8 lg:px-4">
 		<h2><?= esc_html( get_field( 'feed_headline' ) ); ?></h2>
 		<div class="max-w-prose space-y-4 mt-4">
@@ -48,7 +53,15 @@
 						?>
 					</div>
 				</div>
-				<?php get_template_part( 'template-parts/partials/block-section-link' ); ?>
+				<?php if($section_link) {
+					get_template_part( 'template-parts/partials/block-section-link', null, array(
+						'data' => array(
+						'link_url' => $section_link_url,
+						'link_target' => $section_link_target,
+						'link_title' => $section_link_title
+						)
+					) );
+				} ?>
 			</div>
 		</div>
 		

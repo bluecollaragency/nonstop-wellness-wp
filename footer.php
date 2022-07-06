@@ -76,7 +76,7 @@
 				}
 				?>
 				<li>
-					<a href="<?= esc_url( $link_url ); ?>" class="rounded-full bg-navy w-10 h-10 flex items-center justify-center text-white text-lg transition-all hover:brightness-90" target="_blank" rel="noopener">
+					<a href="<?= esc_url( $link_url ); ?>" class="rounded-full bg-navy w-10 h-10 flex items-center justify-center text-white text-lg transition-all hover:brightness-125" target="_blank" rel="noopener">
 						<i class="<?= esc_html( $icon ); ?>" aria-hidden="true"></i><span class="sr-only"><?= esc_html( $link_title ); ?></span>
 					</a>
 				</li>
@@ -84,7 +84,7 @@
 		</ul>
 		<?php endif; ?>
 		<div class="text-center mt-8 text-xs">
-			&copy; Copyright <?php echo date_i18n( 'Y' );?> <?= the_field('copyright_text', 'option'); ?> <span  class="font-semibold"><a href="#">Terms & Conditions</a> • <a href="#">Privacy Policy</a></span>
+			&copy; Copyright <?php echo date_i18n( 'Y' );?> <?= the_field('copyright_text', 'option'); ?> <?= get_field('small_footer_links', 'option'); ?>
 		</div>
 	</div>
 </footer>

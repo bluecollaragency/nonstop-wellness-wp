@@ -4,6 +4,9 @@
 @import "tailwindcss/utilities";
 
 @import "custom.css";
+@import "page-text-block.css";
+@import "page-image-text-block.css";
+@import "page-block-hero-text.css";
 
 body {
     @apply font-sans;

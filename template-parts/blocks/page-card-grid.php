@@ -19,7 +19,7 @@ $grid_intro = get_field( 'card_grid_intro_text' );
 	</div>
   <?php endif; ?>
   <?php if( have_rows('card_grid') ): ?>
-  <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-24">
+  <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
 
     <?php while( have_rows('card_grid') ): the_row();
       $image = get_sub_field('image');

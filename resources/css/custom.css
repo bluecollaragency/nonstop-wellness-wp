@@ -1,7 +1,4 @@
 @import "fonts.css";
-@import "page-text-block.css";
-@import "page-image-text-block.css";
-@import "page-block-hero-text.css";
 
 html {
     scroll-behavior: smooth;

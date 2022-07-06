@@ -4,7 +4,7 @@
  */
 
 ?>
-<div class="relative overflow-hidden mt-32">
+<div class="relative overflow-hidden">
 	<div class="container mx-auto px-8 lg:px-4">
 		<h2><?= esc_html( get_field( 'feed_headline' ) ); ?></h2>
 		<div class="max-w-prose space-y-4 mt-4">
